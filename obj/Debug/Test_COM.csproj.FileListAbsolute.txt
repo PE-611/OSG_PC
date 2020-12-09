@@ -1,0 +1,20 @@
+C:\Users\Администратор NUC\source\repos\Test_COM\bin\Debug\Test_COM.exe.config
+C:\Users\Администратор NUC\source\repos\Test_COM\bin\Debug\Test_COM.exe
+C:\Users\Администратор NUC\source\repos\Test_COM\bin\Debug\Test_COM.pdb
+C:\Users\Администратор NUC\source\repos\Test_COM\obj\Debug\Test_COM.csprojAssemblyReference.cache
+C:\Users\Администратор NUC\source\repos\Test_COM\obj\Debug\Test_COM.Form1.resources
+C:\Users\Администратор NUC\source\repos\Test_COM\obj\Debug\Test_COM.Properties.Resources.resources
+C:\Users\Администратор NUC\source\repos\Test_COM\obj\Debug\Test_COM.csproj.GenerateResource.cache
+C:\Users\Администратор NUC\source\repos\Test_COM\obj\Debug\Test_COM.csproj.CoreCompileInputs.cache
+C:\Users\Администратор NUC\source\repos\Test_COM\obj\Debug\Test_COM.exe
+C:\Users\Администратор NUC\source\repos\Test_COM\obj\Debug\Test_COM.pdb
+C:\Users\Администратор NUC\Desktop\Triniti_Projects\Генератор синхроимпульсовFPGA_CPLD\Софт для ПК\WPF\Test_COM\bin\Debug\Test_COM.exe.config
+C:\Users\Администратор NUC\Desktop\Triniti_Projects\Генератор синхроимпульсовFPGA_CPLD\Софт для ПК\WPF\Test_COM\bin\Debug\Test_COM.exe
+C:\Users\Администратор NUC\Desktop\Triniti_Projects\Генератор синхроимпульсовFPGA_CPLD\Софт для ПК\WPF\Test_COM\bin\Debug\Test_COM.pdb
+C:\Users\Администратор NUC\Desktop\Triniti_Projects\Генератор синхроимпульсовFPGA_CPLD\Софт для ПК\WPF\Test_COM\obj\Debug\Test_COM.csprojAssemblyReference.cache
+C:\Users\Администратор NUC\Desktop\Triniti_Projects\Генератор синхроимпульсовFPGA_CPLD\Софт для ПК\WPF\Test_COM\obj\Debug\Test_COM.Properties.Resources.resources
+C:\Users\Администратор NUC\Desktop\Triniti_Projects\Генератор синхроимпульсовFPGA_CPLD\Софт для ПК\WPF\Test_COM\obj\Debug\Test_COM.csproj.GenerateResource.cache
+C:\Users\Администратор NUC\Desktop\Triniti_Projects\Генератор синхроимпульсовFPGA_CPLD\Софт для ПК\WPF\Test_COM\obj\Debug\Test_COM.csproj.CoreCompileInputs.cache
+C:\Users\Администратор NUC\Desktop\Triniti_Projects\Генератор синхроимпульсовFPGA_CPLD\Софт для ПК\WPF\Test_COM\obj\Debug\Test_COM.exe
+C:\Users\Администратор NUC\Desktop\Triniti_Projects\Генератор синхроимпульсовFPGA_CPLD\Софт для ПК\WPF\Test_COM\obj\Debug\Test_COM.pdb
+C:\Users\Администратор NUC\Desktop\Triniti_Projects\Генератор синхроимпульсовFPGA_CPLD\Софт для ПК\WPF\Test_COM\obj\Debug\Test_COM.OSG.resources
