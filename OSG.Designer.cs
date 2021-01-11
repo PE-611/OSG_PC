@@ -116,87 +116,89 @@ namespace Test_COM
             this.DurComboBoxCh5 = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
             this.DurTextBoxCh5 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.CommentCh16 = new System.Windows.Forms.TextBox();
+            this.DelComboBoxCh16 = new System.Windows.Forms.ComboBox();
+            this.DelTextBoxch16 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxTypeStartCh16 = new System.Windows.Forms.ComboBox();
+            this.DurComboBoxCh16 = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.comboBox25 = new System.Windows.Forms.ComboBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.DurTextBoxCh16 = new System.Windows.Forms.TextBox();
+            this.CommentCh15 = new System.Windows.Forms.TextBox();
+            this.DelComboBoxCh15 = new System.Windows.Forms.ComboBox();
+            this.DelTextBoxch15 = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.comboBox26 = new System.Windows.Forms.ComboBox();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxTypeStartCh15 = new System.Windows.Forms.ComboBox();
+            this.DurComboBoxCh15 = new System.Windows.Forms.ComboBox();
             this.label41 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.DurTextBoxCh15 = new System.Windows.Forms.TextBox();
+            this.CommentCh14 = new System.Windows.Forms.TextBox();
+            this.DelComboBoxCh14 = new System.Windows.Forms.ComboBox();
+            this.DelTextBoxch14 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxTypeStartCh14 = new System.Windows.Forms.ComboBox();
+            this.DurComboBoxCh14 = new System.Windows.Forms.ComboBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.comboBox31 = new System.Windows.Forms.ComboBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.DurTextBoxCh14 = new System.Windows.Forms.TextBox();
+            this.CommentCh13 = new System.Windows.Forms.TextBox();
+            this.DelComboBoxCh13 = new System.Windows.Forms.ComboBox();
+            this.DelTextBoxch13 = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.comboBox32 = new System.Windows.Forms.ComboBox();
-            this.comboBox33 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxTypeStartCh13 = new System.Windows.Forms.ComboBox();
+            this.DurComboBoxCh13 = new System.Windows.Forms.ComboBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.comboBox34 = new System.Windows.Forms.ComboBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.DurTextBoxCh13 = new System.Windows.Forms.TextBox();
+            this.CommentCh12 = new System.Windows.Forms.TextBox();
+            this.DelComboBoxCh12 = new System.Windows.Forms.ComboBox();
+            this.DelTextBoxch12 = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.comboBox35 = new System.Windows.Forms.ComboBox();
-            this.comboBox36 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxTypeStartCh12 = new System.Windows.Forms.ComboBox();
+            this.DurComboBoxCh12 = new System.Windows.Forms.ComboBox();
             this.label53 = new System.Windows.Forms.Label();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.comboBox37 = new System.Windows.Forms.ComboBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.DurTextBoxCh12 = new System.Windows.Forms.TextBox();
+            this.CommentCh11 = new System.Windows.Forms.TextBox();
+            this.DelComboBoxCh11 = new System.Windows.Forms.ComboBox();
+            this.DelTextBoxch11 = new System.Windows.Forms.TextBox();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.comboBox38 = new System.Windows.Forms.ComboBox();
-            this.comboBox39 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxTypeStartCh11 = new System.Windows.Forms.ComboBox();
+            this.DurComboBoxCh11 = new System.Windows.Forms.ComboBox();
             this.label57 = new System.Windows.Forms.Label();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.comboBox40 = new System.Windows.Forms.ComboBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.DurTextBoxCh11 = new System.Windows.Forms.TextBox();
+            this.CommentCh10 = new System.Windows.Forms.TextBox();
+            this.DelComboBoxCh10 = new System.Windows.Forms.ComboBox();
+            this.DelTextBoxch10 = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.comboBox41 = new System.Windows.Forms.ComboBox();
-            this.comboBox42 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxTypeStartCh10 = new System.Windows.Forms.ComboBox();
+            this.DurComboBoxCh10 = new System.Windows.Forms.ComboBox();
             this.label61 = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.comboBox43 = new System.Windows.Forms.ComboBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.DurTextBoxCh10 = new System.Windows.Forms.TextBox();
+            this.CommentCh9 = new System.Windows.Forms.TextBox();
+            this.DelComboBoxCh9 = new System.Windows.Forms.ComboBox();
+            this.DelTextBoxch9 = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
-            this.comboBox44 = new System.Windows.Forms.ComboBox();
-            this.comboBox45 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxTypeStartCh9 = new System.Windows.Forms.ComboBox();
+            this.DurComboBoxCh9 = new System.Windows.Forms.ComboBox();
             this.label65 = new System.Windows.Forms.Label();
-            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.DurTextBoxCh9 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ButtonOneInAll = new System.Windows.Forms.Button();
+            this.CearAllCh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -396,6 +398,7 @@ namespace Test_COM
             this.DelComboBoxCh2.Name = "DelComboBoxCh2";
             this.DelComboBoxCh2.Size = new System.Drawing.Size(46, 28);
             this.DelComboBoxCh2.TabIndex = 40;
+            this.DelComboBoxCh2.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh2_SelectedIndexChanged);
             // 
             // DelTextBoxch2
             // 
@@ -405,6 +408,7 @@ namespace Test_COM
             this.DelTextBoxch2.Name = "DelTextBoxch2";
             this.DelTextBoxch2.Size = new System.Drawing.Size(94, 26);
             this.DelTextBoxch2.TabIndex = 39;
+            this.DelTextBoxch2.TextChanged += new System.EventHandler(this.DelTextBoxch2_TextChanged);
             // 
             // label4
             // 
@@ -447,6 +451,7 @@ namespace Test_COM
             this.ComboBoxTypeStartCh2.Name = "ComboBoxTypeStartCh2";
             this.ComboBoxTypeStartCh2.Size = new System.Drawing.Size(133, 28);
             this.ComboBoxTypeStartCh2.TabIndex = 35;
+            this.ComboBoxTypeStartCh2.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh2_SelectedIndexChanged);
             // 
             // DurComboBoxCh2
             // 
@@ -461,6 +466,7 @@ namespace Test_COM
             this.DurComboBoxCh2.Name = "DurComboBoxCh2";
             this.DurComboBoxCh2.Size = new System.Drawing.Size(46, 28);
             this.DurComboBoxCh2.TabIndex = 34;
+            this.DurComboBoxCh2.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh2_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -480,6 +486,7 @@ namespace Test_COM
             this.DurTextBoxCh2.Name = "DurTextBoxCh2";
             this.DurTextBoxCh2.Size = new System.Drawing.Size(94, 26);
             this.DurTextBoxCh2.TabIndex = 32;
+            this.DurTextBoxCh2.TextChanged += new System.EventHandler(this.DurTextBoxCh2_TextChanged);
             // 
             // CommentCh4
             // 
@@ -502,6 +509,7 @@ namespace Test_COM
             this.DelComboBoxCh4.Name = "DelComboBoxCh4";
             this.DelComboBoxCh4.Size = new System.Drawing.Size(46, 28);
             this.DelComboBoxCh4.TabIndex = 60;
+            this.DelComboBoxCh4.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh4_SelectedIndexChanged);
             // 
             // DelTextBoxch4
             // 
@@ -511,6 +519,7 @@ namespace Test_COM
             this.DelTextBoxch4.Name = "DelTextBoxch4";
             this.DelTextBoxch4.Size = new System.Drawing.Size(94, 26);
             this.DelTextBoxch4.TabIndex = 59;
+            this.DelTextBoxch4.TextChanged += new System.EventHandler(this.DelTextBoxch4_TextChanged);
             // 
             // label10
             // 
@@ -553,6 +562,7 @@ namespace Test_COM
             this.ComboBoxTypeStartCh4.Name = "ComboBoxTypeStartCh4";
             this.ComboBoxTypeStartCh4.Size = new System.Drawing.Size(133, 28);
             this.ComboBoxTypeStartCh4.TabIndex = 55;
+            this.ComboBoxTypeStartCh4.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh4_SelectedIndexChanged);
             // 
             // DurComboBoxCh4
             // 
@@ -567,6 +577,7 @@ namespace Test_COM
             this.DurComboBoxCh4.Name = "DurComboBoxCh4";
             this.DurComboBoxCh4.Size = new System.Drawing.Size(46, 28);
             this.DurComboBoxCh4.TabIndex = 54;
+            this.DurComboBoxCh4.TextChanged += new System.EventHandler(this.DurComboBoxCh4_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -586,6 +597,7 @@ namespace Test_COM
             this.DurTextBoxCh4.Name = "DurTextBoxCh4";
             this.DurTextBoxCh4.Size = new System.Drawing.Size(94, 26);
             this.DurTextBoxCh4.TabIndex = 52;
+            this.DurTextBoxCh4.TextChanged += new System.EventHandler(this.DurTextBoxCh4_TextChanged);
             // 
             // CommentCh3
             // 
@@ -608,6 +620,7 @@ namespace Test_COM
             this.DelComboBoxCh3.Name = "DelComboBoxCh3";
             this.DelComboBoxCh3.Size = new System.Drawing.Size(46, 28);
             this.DelComboBoxCh3.TabIndex = 50;
+            this.DelComboBoxCh3.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh3_SelectedIndexChanged);
             // 
             // DelTextBoxch3
             // 
@@ -617,6 +630,7 @@ namespace Test_COM
             this.DelTextBoxch3.Name = "DelTextBoxch3";
             this.DelTextBoxch3.Size = new System.Drawing.Size(94, 26);
             this.DelTextBoxch3.TabIndex = 49;
+            this.DelTextBoxch3.TextChanged += new System.EventHandler(this.DelTextBoxch3_TextChanged);
             // 
             // label14
             // 
@@ -659,6 +673,7 @@ namespace Test_COM
             this.ComboBoxTypeStartCh3.Name = "ComboBoxTypeStartCh3";
             this.ComboBoxTypeStartCh3.Size = new System.Drawing.Size(133, 28);
             this.ComboBoxTypeStartCh3.TabIndex = 45;
+            this.ComboBoxTypeStartCh3.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh3_SelectedIndexChanged);
             // 
             // DurComboBoxCh3
             // 
@@ -673,6 +688,7 @@ namespace Test_COM
             this.DurComboBoxCh3.Name = "DurComboBoxCh3";
             this.DurComboBoxCh3.Size = new System.Drawing.Size(46, 28);
             this.DurComboBoxCh3.TabIndex = 44;
+            this.DurComboBoxCh3.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh3_SelectedIndexChanged);
             // 
             // label17
             // 
@@ -692,6 +708,7 @@ namespace Test_COM
             this.DurTextBoxCh3.Name = "DurTextBoxCh3";
             this.DurTextBoxCh3.Size = new System.Drawing.Size(94, 26);
             this.DurTextBoxCh3.TabIndex = 42;
+            this.DurTextBoxCh3.TextChanged += new System.EventHandler(this.DurTextBoxCh3_TextChanged);
             // 
             // CommentCh8
             // 
@@ -714,6 +731,7 @@ namespace Test_COM
             this.DelComboBoxCh8.Name = "DelComboBoxCh8";
             this.DelComboBoxCh8.Size = new System.Drawing.Size(46, 28);
             this.DelComboBoxCh8.TabIndex = 100;
+            this.DelComboBoxCh8.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh8_SelectedIndexChanged);
             // 
             // DelTextBoxch8
             // 
@@ -723,6 +741,7 @@ namespace Test_COM
             this.DelTextBoxch8.Name = "DelTextBoxch8";
             this.DelTextBoxch8.Size = new System.Drawing.Size(94, 26);
             this.DelTextBoxch8.TabIndex = 99;
+            this.DelTextBoxch8.TextChanged += new System.EventHandler(this.DelTextBoxch8_TextChanged);
             // 
             // label18
             // 
@@ -765,6 +784,7 @@ namespace Test_COM
             this.ComboBoxTypeStartCh8.Name = "ComboBoxTypeStartCh8";
             this.ComboBoxTypeStartCh8.Size = new System.Drawing.Size(133, 28);
             this.ComboBoxTypeStartCh8.TabIndex = 95;
+            this.ComboBoxTypeStartCh8.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh8_SelectedIndexChanged);
             // 
             // DurComboBoxCh8
             // 
@@ -779,6 +799,7 @@ namespace Test_COM
             this.DurComboBoxCh8.Name = "DurComboBoxCh8";
             this.DurComboBoxCh8.Size = new System.Drawing.Size(46, 28);
             this.DurComboBoxCh8.TabIndex = 94;
+            this.DurComboBoxCh8.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh8_SelectedIndexChanged);
             // 
             // label21
             // 
@@ -798,6 +819,7 @@ namespace Test_COM
             this.DurTextBoxCh8.Name = "DurTextBoxCh8";
             this.DurTextBoxCh8.Size = new System.Drawing.Size(94, 26);
             this.DurTextBoxCh8.TabIndex = 92;
+            this.DurTextBoxCh8.TextChanged += new System.EventHandler(this.DurTextBoxCh8_TextChanged);
             // 
             // CommentCh7
             // 
@@ -820,6 +842,7 @@ namespace Test_COM
             this.DelComboBoxCh7.Name = "DelComboBoxCh7";
             this.DelComboBoxCh7.Size = new System.Drawing.Size(46, 28);
             this.DelComboBoxCh7.TabIndex = 90;
+            this.DelComboBoxCh7.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh7_SelectedIndexChanged);
             // 
             // DelTextBoxch7
             // 
@@ -829,6 +852,7 @@ namespace Test_COM
             this.DelTextBoxch7.Name = "DelTextBoxch7";
             this.DelTextBoxch7.Size = new System.Drawing.Size(94, 26);
             this.DelTextBoxch7.TabIndex = 89;
+            this.DelTextBoxch7.TextChanged += new System.EventHandler(this.DelTextBoxch7_TextChanged);
             // 
             // label22
             // 
@@ -871,6 +895,7 @@ namespace Test_COM
             this.ComboBoxTypeStartCh7.Name = "ComboBoxTypeStartCh7";
             this.ComboBoxTypeStartCh7.Size = new System.Drawing.Size(133, 28);
             this.ComboBoxTypeStartCh7.TabIndex = 85;
+            this.ComboBoxTypeStartCh7.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh7_SelectedIndexChanged);
             // 
             // DurComboBoxCh7
             // 
@@ -885,6 +910,7 @@ namespace Test_COM
             this.DurComboBoxCh7.Name = "DurComboBoxCh7";
             this.DurComboBoxCh7.Size = new System.Drawing.Size(46, 28);
             this.DurComboBoxCh7.TabIndex = 84;
+            this.DurComboBoxCh7.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh7_SelectedIndexChanged);
             // 
             // label25
             // 
@@ -904,6 +930,7 @@ namespace Test_COM
             this.DurTextBoxCh7.Name = "DurTextBoxCh7";
             this.DurTextBoxCh7.Size = new System.Drawing.Size(94, 26);
             this.DurTextBoxCh7.TabIndex = 82;
+            this.DurTextBoxCh7.TextChanged += new System.EventHandler(this.DurTextBoxCh7_TextChanged);
             // 
             // CommentCh6
             // 
@@ -926,6 +953,7 @@ namespace Test_COM
             this.DelComboBoxCh6.Name = "DelComboBoxCh6";
             this.DelComboBoxCh6.Size = new System.Drawing.Size(46, 28);
             this.DelComboBoxCh6.TabIndex = 80;
+            this.DelComboBoxCh6.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh6_SelectedIndexChanged);
             // 
             // DelTextBoxch6
             // 
@@ -935,6 +963,7 @@ namespace Test_COM
             this.DelTextBoxch6.Name = "DelTextBoxch6";
             this.DelTextBoxch6.Size = new System.Drawing.Size(94, 26);
             this.DelTextBoxch6.TabIndex = 79;
+            this.DelTextBoxch6.TextChanged += new System.EventHandler(this.DelTextBoxch6_TextChanged);
             // 
             // label26
             // 
@@ -977,6 +1006,7 @@ namespace Test_COM
             this.ComboBoxTypeStartCh6.Name = "ComboBoxTypeStartCh6";
             this.ComboBoxTypeStartCh6.Size = new System.Drawing.Size(133, 28);
             this.ComboBoxTypeStartCh6.TabIndex = 75;
+            this.ComboBoxTypeStartCh6.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh6_SelectedIndexChanged);
             // 
             // DurComboBoxCh6
             // 
@@ -991,6 +1021,7 @@ namespace Test_COM
             this.DurComboBoxCh6.Name = "DurComboBoxCh6";
             this.DurComboBoxCh6.Size = new System.Drawing.Size(46, 28);
             this.DurComboBoxCh6.TabIndex = 74;
+            this.DurComboBoxCh6.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh6_SelectedIndexChanged);
             // 
             // label29
             // 
@@ -1010,6 +1041,7 @@ namespace Test_COM
             this.DurTextBoxCh6.Name = "DurTextBoxCh6";
             this.DurTextBoxCh6.Size = new System.Drawing.Size(94, 26);
             this.DurTextBoxCh6.TabIndex = 72;
+            this.DurTextBoxCh6.TextChanged += new System.EventHandler(this.DurTextBoxCh6_TextChanged);
             // 
             // CommentCh5
             // 
@@ -1032,6 +1064,7 @@ namespace Test_COM
             this.DelComboBoxCh5.Name = "DelComboBoxCh5";
             this.DelComboBoxCh5.Size = new System.Drawing.Size(46, 28);
             this.DelComboBoxCh5.TabIndex = 70;
+            this.DelComboBoxCh5.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh5_SelectedIndexChanged);
             // 
             // DelTextBoxch5
             // 
@@ -1041,6 +1074,7 @@ namespace Test_COM
             this.DelTextBoxch5.Name = "DelTextBoxch5";
             this.DelTextBoxch5.Size = new System.Drawing.Size(94, 26);
             this.DelTextBoxch5.TabIndex = 69;
+            this.DelTextBoxch5.TextChanged += new System.EventHandler(this.DelTextBoxch5_TextChanged);
             // 
             // label30
             // 
@@ -1083,6 +1117,7 @@ namespace Test_COM
             this.ComboBoxTypeStartCh5.Name = "ComboBoxTypeStartCh5";
             this.ComboBoxTypeStartCh5.Size = new System.Drawing.Size(133, 28);
             this.ComboBoxTypeStartCh5.TabIndex = 65;
+            this.ComboBoxTypeStartCh5.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh5_SelectedIndexChanged);
             // 
             // DurComboBoxCh5
             // 
@@ -1097,6 +1132,7 @@ namespace Test_COM
             this.DurComboBoxCh5.Name = "DurComboBoxCh5";
             this.DurComboBoxCh5.Size = new System.Drawing.Size(46, 28);
             this.DurComboBoxCh5.TabIndex = 64;
+            this.DurComboBoxCh5.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh5_SelectedIndexChanged);
             // 
             // label33
             // 
@@ -1116,37 +1152,40 @@ namespace Test_COM
             this.DurTextBoxCh5.Name = "DurTextBoxCh5";
             this.DurTextBoxCh5.Size = new System.Drawing.Size(94, 26);
             this.DurTextBoxCh5.TabIndex = 62;
+            this.DurTextBoxCh5.TextChanged += new System.EventHandler(this.DurTextBoxCh5_TextChanged);
             // 
-            // textBox22
+            // CommentCh16
             // 
-            this.textBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox22.Location = new System.Drawing.Point(962, 910);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(220, 26);
-            this.textBox22.TabIndex = 181;
+            this.CommentCh16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CommentCh16.Location = new System.Drawing.Point(962, 910);
+            this.CommentCh16.Name = "CommentCh16";
+            this.CommentCh16.Size = new System.Drawing.Size(220, 26);
+            this.CommentCh16.TabIndex = 181;
             // 
-            // comboBox22
+            // DelComboBoxCh16
             // 
-            this.comboBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Items.AddRange(new object[] {
+            this.DelComboBoxCh16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelComboBoxCh16.FormattingEnabled = true;
+            this.DelComboBoxCh16.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox22.Location = new System.Drawing.Point(1010, 842);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(46, 28);
-            this.comboBox22.TabIndex = 180;
+            this.DelComboBoxCh16.Location = new System.Drawing.Point(1010, 842);
+            this.DelComboBoxCh16.Name = "DelComboBoxCh16";
+            this.DelComboBoxCh16.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh16.TabIndex = 180;
+            this.DelComboBoxCh16.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh16_SelectedIndexChanged);
             // 
-            // textBox23
+            // DelTextBoxch16
             // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox23.Location = new System.Drawing.Point(962, 842);
-            this.textBox23.MaxLength = 3;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(94, 26);
-            this.textBox23.TabIndex = 179;
+            this.DelTextBoxch16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelTextBoxch16.Location = new System.Drawing.Point(962, 842);
+            this.DelTextBoxch16.MaxLength = 3;
+            this.DelTextBoxch16.Name = "DelTextBoxch16";
+            this.DelTextBoxch16.Size = new System.Drawing.Size(94, 26);
+            this.DelTextBoxch16.TabIndex = 179;
+            this.DelTextBoxch16.TextChanged += new System.EventHandler(this.DelTextBoxch16_TextChanged);
             // 
             // label34
             // 
@@ -1178,31 +1217,33 @@ namespace Test_COM
             this.label36.TabIndex = 176;
             this.label36.Text = "Длительность";
             // 
-            // comboBox23
+            // ComboBoxTypeStartCh16
             // 
-            this.comboBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Items.AddRange(new object[] {
+            this.ComboBoxTypeStartCh16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComboBoxTypeStartCh16.FormattingEnabled = true;
+            this.ComboBoxTypeStartCh16.Items.AddRange(new object[] {
             "Общий",
             "От предыдущего"});
-            this.comboBox23.Location = new System.Drawing.Point(962, 874);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(133, 28);
-            this.comboBox23.TabIndex = 175;
+            this.ComboBoxTypeStartCh16.Location = new System.Drawing.Point(962, 874);
+            this.ComboBoxTypeStartCh16.Name = "ComboBoxTypeStartCh16";
+            this.ComboBoxTypeStartCh16.Size = new System.Drawing.Size(133, 28);
+            this.ComboBoxTypeStartCh16.TabIndex = 175;
+            this.ComboBoxTypeStartCh16.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh16_SelectedIndexChanged);
             // 
-            // comboBox24
+            // DurComboBoxCh16
             // 
-            this.comboBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Items.AddRange(new object[] {
+            this.DurComboBoxCh16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurComboBoxCh16.FormattingEnabled = true;
+            this.DurComboBoxCh16.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox24.Location = new System.Drawing.Point(1010, 808);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(46, 28);
-            this.comboBox24.TabIndex = 174;
+            this.DurComboBoxCh16.Location = new System.Drawing.Point(1010, 808);
+            this.DurComboBoxCh16.Name = "DurComboBoxCh16";
+            this.DurComboBoxCh16.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh16.TabIndex = 174;
+            this.DurComboBoxCh16.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh16_SelectedIndexChanged);
             // 
             // label37
             // 
@@ -1214,45 +1255,48 @@ namespace Test_COM
             this.label37.TabIndex = 173;
             this.label37.Text = "Канал 16";
             // 
-            // textBox24
+            // DurTextBoxCh16
             // 
-            this.textBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox24.Location = new System.Drawing.Point(962, 808);
-            this.textBox24.MaxLength = 3;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(94, 26);
-            this.textBox24.TabIndex = 172;
+            this.DurTextBoxCh16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurTextBoxCh16.Location = new System.Drawing.Point(962, 808);
+            this.DurTextBoxCh16.MaxLength = 3;
+            this.DurTextBoxCh16.Name = "DurTextBoxCh16";
+            this.DurTextBoxCh16.Size = new System.Drawing.Size(94, 26);
+            this.DurTextBoxCh16.TabIndex = 172;
+            this.DurTextBoxCh16.TextChanged += new System.EventHandler(this.DurTextBoxCh16_TextChanged);
             // 
-            // textBox25
+            // CommentCh15
             // 
-            this.textBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox25.Location = new System.Drawing.Point(646, 910);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(220, 26);
-            this.textBox25.TabIndex = 171;
+            this.CommentCh15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CommentCh15.Location = new System.Drawing.Point(646, 910);
+            this.CommentCh15.Name = "CommentCh15";
+            this.CommentCh15.Size = new System.Drawing.Size(220, 26);
+            this.CommentCh15.TabIndex = 171;
             // 
-            // comboBox25
+            // DelComboBoxCh15
             // 
-            this.comboBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Items.AddRange(new object[] {
+            this.DelComboBoxCh15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelComboBoxCh15.FormattingEnabled = true;
+            this.DelComboBoxCh15.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox25.Location = new System.Drawing.Point(694, 842);
-            this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(46, 28);
-            this.comboBox25.TabIndex = 170;
+            this.DelComboBoxCh15.Location = new System.Drawing.Point(694, 842);
+            this.DelComboBoxCh15.Name = "DelComboBoxCh15";
+            this.DelComboBoxCh15.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh15.TabIndex = 170;
+            this.DelComboBoxCh15.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh15_SelectedIndexChanged);
             // 
-            // textBox26
+            // DelTextBoxch15
             // 
-            this.textBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox26.Location = new System.Drawing.Point(646, 842);
-            this.textBox26.MaxLength = 3;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(94, 26);
-            this.textBox26.TabIndex = 169;
+            this.DelTextBoxch15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelTextBoxch15.Location = new System.Drawing.Point(646, 842);
+            this.DelTextBoxch15.MaxLength = 3;
+            this.DelTextBoxch15.Name = "DelTextBoxch15";
+            this.DelTextBoxch15.Size = new System.Drawing.Size(94, 26);
+            this.DelTextBoxch15.TabIndex = 169;
+            this.DelTextBoxch15.TextChanged += new System.EventHandler(this.DelTextBoxch15_TextChanged);
             // 
             // label38
             // 
@@ -1284,31 +1328,33 @@ namespace Test_COM
             this.label40.TabIndex = 166;
             this.label40.Text = "Длительность";
             // 
-            // comboBox26
+            // ComboBoxTypeStartCh15
             // 
-            this.comboBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Items.AddRange(new object[] {
+            this.ComboBoxTypeStartCh15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComboBoxTypeStartCh15.FormattingEnabled = true;
+            this.ComboBoxTypeStartCh15.Items.AddRange(new object[] {
             "Общий",
             "От предыдущего"});
-            this.comboBox26.Location = new System.Drawing.Point(646, 874);
-            this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(133, 28);
-            this.comboBox26.TabIndex = 165;
+            this.ComboBoxTypeStartCh15.Location = new System.Drawing.Point(646, 874);
+            this.ComboBoxTypeStartCh15.Name = "ComboBoxTypeStartCh15";
+            this.ComboBoxTypeStartCh15.Size = new System.Drawing.Size(133, 28);
+            this.ComboBoxTypeStartCh15.TabIndex = 165;
+            this.ComboBoxTypeStartCh15.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh15_SelectedIndexChanged);
             // 
-            // comboBox27
+            // DurComboBoxCh15
             // 
-            this.comboBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Items.AddRange(new object[] {
+            this.DurComboBoxCh15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurComboBoxCh15.FormattingEnabled = true;
+            this.DurComboBoxCh15.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox27.Location = new System.Drawing.Point(694, 808);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(46, 28);
-            this.comboBox27.TabIndex = 164;
+            this.DurComboBoxCh15.Location = new System.Drawing.Point(694, 808);
+            this.DurComboBoxCh15.Name = "DurComboBoxCh15";
+            this.DurComboBoxCh15.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh15.TabIndex = 164;
+            this.DurComboBoxCh15.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh15_SelectedIndexChanged);
             // 
             // label41
             // 
@@ -1320,45 +1366,48 @@ namespace Test_COM
             this.label41.TabIndex = 163;
             this.label41.Text = "Канал 15";
             // 
-            // textBox27
+            // DurTextBoxCh15
             // 
-            this.textBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox27.Location = new System.Drawing.Point(646, 808);
-            this.textBox27.MaxLength = 3;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(94, 26);
-            this.textBox27.TabIndex = 162;
+            this.DurTextBoxCh15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurTextBoxCh15.Location = new System.Drawing.Point(646, 808);
+            this.DurTextBoxCh15.MaxLength = 3;
+            this.DurTextBoxCh15.Name = "DurTextBoxCh15";
+            this.DurTextBoxCh15.Size = new System.Drawing.Size(94, 26);
+            this.DurTextBoxCh15.TabIndex = 162;
+            this.DurTextBoxCh15.TextChanged += new System.EventHandler(this.DurTextBoxCh15_TextChanged);
             // 
-            // textBox28
+            // CommentCh14
             // 
-            this.textBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox28.Location = new System.Drawing.Point(333, 910);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(220, 26);
-            this.textBox28.TabIndex = 161;
+            this.CommentCh14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CommentCh14.Location = new System.Drawing.Point(333, 910);
+            this.CommentCh14.Name = "CommentCh14";
+            this.CommentCh14.Size = new System.Drawing.Size(220, 26);
+            this.CommentCh14.TabIndex = 161;
             // 
-            // comboBox28
+            // DelComboBoxCh14
             // 
-            this.comboBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Items.AddRange(new object[] {
+            this.DelComboBoxCh14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelComboBoxCh14.FormattingEnabled = true;
+            this.DelComboBoxCh14.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox28.Location = new System.Drawing.Point(381, 842);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(46, 28);
-            this.comboBox28.TabIndex = 160;
+            this.DelComboBoxCh14.Location = new System.Drawing.Point(381, 842);
+            this.DelComboBoxCh14.Name = "DelComboBoxCh14";
+            this.DelComboBoxCh14.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh14.TabIndex = 160;
+            this.DelComboBoxCh14.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh14_SelectedIndexChanged);
             // 
-            // textBox29
+            // DelTextBoxch14
             // 
-            this.textBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox29.Location = new System.Drawing.Point(333, 842);
-            this.textBox29.MaxLength = 3;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(94, 26);
-            this.textBox29.TabIndex = 159;
+            this.DelTextBoxch14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelTextBoxch14.Location = new System.Drawing.Point(333, 842);
+            this.DelTextBoxch14.MaxLength = 3;
+            this.DelTextBoxch14.Name = "DelTextBoxch14";
+            this.DelTextBoxch14.Size = new System.Drawing.Size(94, 26);
+            this.DelTextBoxch14.TabIndex = 159;
+            this.DelTextBoxch14.TextChanged += new System.EventHandler(this.DelTextBoxch14_TextChanged);
             // 
             // label42
             // 
@@ -1390,31 +1439,33 @@ namespace Test_COM
             this.label44.TabIndex = 156;
             this.label44.Text = "Длительность";
             // 
-            // comboBox29
+            // ComboBoxTypeStartCh14
             // 
-            this.comboBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Items.AddRange(new object[] {
+            this.ComboBoxTypeStartCh14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComboBoxTypeStartCh14.FormattingEnabled = true;
+            this.ComboBoxTypeStartCh14.Items.AddRange(new object[] {
             "Общий",
             "От предыдущего"});
-            this.comboBox29.Location = new System.Drawing.Point(333, 874);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(133, 28);
-            this.comboBox29.TabIndex = 155;
+            this.ComboBoxTypeStartCh14.Location = new System.Drawing.Point(333, 874);
+            this.ComboBoxTypeStartCh14.Name = "ComboBoxTypeStartCh14";
+            this.ComboBoxTypeStartCh14.Size = new System.Drawing.Size(133, 28);
+            this.ComboBoxTypeStartCh14.TabIndex = 155;
+            this.ComboBoxTypeStartCh14.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh14_SelectedIndexChanged);
             // 
-            // comboBox30
+            // DurComboBoxCh14
             // 
-            this.comboBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Items.AddRange(new object[] {
+            this.DurComboBoxCh14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurComboBoxCh14.FormattingEnabled = true;
+            this.DurComboBoxCh14.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox30.Location = new System.Drawing.Point(381, 808);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(46, 28);
-            this.comboBox30.TabIndex = 154;
+            this.DurComboBoxCh14.Location = new System.Drawing.Point(381, 808);
+            this.DurComboBoxCh14.Name = "DurComboBoxCh14";
+            this.DurComboBoxCh14.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh14.TabIndex = 154;
+            this.DurComboBoxCh14.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh14_SelectedIndexChanged);
             // 
             // label45
             // 
@@ -1426,45 +1477,48 @@ namespace Test_COM
             this.label45.TabIndex = 153;
             this.label45.Text = "Канал 14";
             // 
-            // textBox30
+            // DurTextBoxCh14
             // 
-            this.textBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox30.Location = new System.Drawing.Point(333, 808);
-            this.textBox30.MaxLength = 3;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(94, 26);
-            this.textBox30.TabIndex = 152;
+            this.DurTextBoxCh14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurTextBoxCh14.Location = new System.Drawing.Point(333, 808);
+            this.DurTextBoxCh14.MaxLength = 3;
+            this.DurTextBoxCh14.Name = "DurTextBoxCh14";
+            this.DurTextBoxCh14.Size = new System.Drawing.Size(94, 26);
+            this.DurTextBoxCh14.TabIndex = 152;
+            this.DurTextBoxCh14.TextChanged += new System.EventHandler(this.DurTextBoxCh14_TextChanged);
             // 
-            // textBox31
+            // CommentCh13
             // 
-            this.textBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox31.Location = new System.Drawing.Point(16, 910);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(220, 26);
-            this.textBox31.TabIndex = 151;
+            this.CommentCh13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CommentCh13.Location = new System.Drawing.Point(16, 910);
+            this.CommentCh13.Name = "CommentCh13";
+            this.CommentCh13.Size = new System.Drawing.Size(220, 26);
+            this.CommentCh13.TabIndex = 151;
             // 
-            // comboBox31
+            // DelComboBoxCh13
             // 
-            this.comboBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox31.FormattingEnabled = true;
-            this.comboBox31.Items.AddRange(new object[] {
+            this.DelComboBoxCh13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelComboBoxCh13.FormattingEnabled = true;
+            this.DelComboBoxCh13.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox31.Location = new System.Drawing.Point(64, 842);
-            this.comboBox31.Name = "comboBox31";
-            this.comboBox31.Size = new System.Drawing.Size(46, 28);
-            this.comboBox31.TabIndex = 150;
+            this.DelComboBoxCh13.Location = new System.Drawing.Point(64, 842);
+            this.DelComboBoxCh13.Name = "DelComboBoxCh13";
+            this.DelComboBoxCh13.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh13.TabIndex = 150;
+            this.DelComboBoxCh13.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh13_SelectedIndexChanged);
             // 
-            // textBox32
+            // DelTextBoxch13
             // 
-            this.textBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox32.Location = new System.Drawing.Point(16, 842);
-            this.textBox32.MaxLength = 3;
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(94, 26);
-            this.textBox32.TabIndex = 149;
+            this.DelTextBoxch13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelTextBoxch13.Location = new System.Drawing.Point(16, 842);
+            this.DelTextBoxch13.MaxLength = 3;
+            this.DelTextBoxch13.Name = "DelTextBoxch13";
+            this.DelTextBoxch13.Size = new System.Drawing.Size(94, 26);
+            this.DelTextBoxch13.TabIndex = 149;
+            this.DelTextBoxch13.TextChanged += new System.EventHandler(this.DelTextBoxch13_TextChanged);
             // 
             // label46
             // 
@@ -1496,31 +1550,33 @@ namespace Test_COM
             this.label48.TabIndex = 146;
             this.label48.Text = "Длительность";
             // 
-            // comboBox32
+            // ComboBoxTypeStartCh13
             // 
-            this.comboBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox32.FormattingEnabled = true;
-            this.comboBox32.Items.AddRange(new object[] {
+            this.ComboBoxTypeStartCh13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComboBoxTypeStartCh13.FormattingEnabled = true;
+            this.ComboBoxTypeStartCh13.Items.AddRange(new object[] {
             "Общий",
             "От предыдущего"});
-            this.comboBox32.Location = new System.Drawing.Point(16, 874);
-            this.comboBox32.Name = "comboBox32";
-            this.comboBox32.Size = new System.Drawing.Size(133, 28);
-            this.comboBox32.TabIndex = 145;
+            this.ComboBoxTypeStartCh13.Location = new System.Drawing.Point(16, 874);
+            this.ComboBoxTypeStartCh13.Name = "ComboBoxTypeStartCh13";
+            this.ComboBoxTypeStartCh13.Size = new System.Drawing.Size(133, 28);
+            this.ComboBoxTypeStartCh13.TabIndex = 145;
+            this.ComboBoxTypeStartCh13.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh13_SelectedIndexChanged);
             // 
-            // comboBox33
+            // DurComboBoxCh13
             // 
-            this.comboBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox33.FormattingEnabled = true;
-            this.comboBox33.Items.AddRange(new object[] {
+            this.DurComboBoxCh13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurComboBoxCh13.FormattingEnabled = true;
+            this.DurComboBoxCh13.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox33.Location = new System.Drawing.Point(64, 808);
-            this.comboBox33.Name = "comboBox33";
-            this.comboBox33.Size = new System.Drawing.Size(46, 28);
-            this.comboBox33.TabIndex = 144;
+            this.DurComboBoxCh13.Location = new System.Drawing.Point(64, 808);
+            this.DurComboBoxCh13.Name = "DurComboBoxCh13";
+            this.DurComboBoxCh13.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh13.TabIndex = 144;
+            this.DurComboBoxCh13.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh13_SelectedIndexChanged);
             // 
             // label49
             // 
@@ -1532,45 +1588,48 @@ namespace Test_COM
             this.label49.TabIndex = 143;
             this.label49.Text = "Канал 13";
             // 
-            // textBox33
+            // DurTextBoxCh13
             // 
-            this.textBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox33.Location = new System.Drawing.Point(16, 808);
-            this.textBox33.MaxLength = 3;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(94, 26);
-            this.textBox33.TabIndex = 142;
+            this.DurTextBoxCh13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurTextBoxCh13.Location = new System.Drawing.Point(16, 808);
+            this.DurTextBoxCh13.MaxLength = 3;
+            this.DurTextBoxCh13.Name = "DurTextBoxCh13";
+            this.DurTextBoxCh13.Size = new System.Drawing.Size(94, 26);
+            this.DurTextBoxCh13.TabIndex = 142;
+            this.DurTextBoxCh13.TextChanged += new System.EventHandler(this.DurTextBoxCh13_TextChanged);
             // 
-            // textBox34
+            // CommentCh12
             // 
-            this.textBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox34.Location = new System.Drawing.Point(962, 686);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(220, 26);
-            this.textBox34.TabIndex = 141;
+            this.CommentCh12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CommentCh12.Location = new System.Drawing.Point(962, 686);
+            this.CommentCh12.Name = "CommentCh12";
+            this.CommentCh12.Size = new System.Drawing.Size(220, 26);
+            this.CommentCh12.TabIndex = 141;
             // 
-            // comboBox34
+            // DelComboBoxCh12
             // 
-            this.comboBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox34.FormattingEnabled = true;
-            this.comboBox34.Items.AddRange(new object[] {
+            this.DelComboBoxCh12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelComboBoxCh12.FormattingEnabled = true;
+            this.DelComboBoxCh12.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox34.Location = new System.Drawing.Point(1010, 618);
-            this.comboBox34.Name = "comboBox34";
-            this.comboBox34.Size = new System.Drawing.Size(46, 28);
-            this.comboBox34.TabIndex = 140;
+            this.DelComboBoxCh12.Location = new System.Drawing.Point(1010, 618);
+            this.DelComboBoxCh12.Name = "DelComboBoxCh12";
+            this.DelComboBoxCh12.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh12.TabIndex = 140;
+            this.DelComboBoxCh12.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh12_SelectedIndexChanged);
             // 
-            // textBox35
+            // DelTextBoxch12
             // 
-            this.textBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox35.Location = new System.Drawing.Point(962, 618);
-            this.textBox35.MaxLength = 3;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(94, 26);
-            this.textBox35.TabIndex = 139;
+            this.DelTextBoxch12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelTextBoxch12.Location = new System.Drawing.Point(962, 618);
+            this.DelTextBoxch12.MaxLength = 3;
+            this.DelTextBoxch12.Name = "DelTextBoxch12";
+            this.DelTextBoxch12.Size = new System.Drawing.Size(94, 26);
+            this.DelTextBoxch12.TabIndex = 139;
+            this.DelTextBoxch12.TextChanged += new System.EventHandler(this.DelTextBoxch12_TextChanged);
             // 
             // label50
             // 
@@ -1602,31 +1661,33 @@ namespace Test_COM
             this.label52.TabIndex = 136;
             this.label52.Text = "Длительность";
             // 
-            // comboBox35
+            // ComboBoxTypeStartCh12
             // 
-            this.comboBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox35.FormattingEnabled = true;
-            this.comboBox35.Items.AddRange(new object[] {
+            this.ComboBoxTypeStartCh12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComboBoxTypeStartCh12.FormattingEnabled = true;
+            this.ComboBoxTypeStartCh12.Items.AddRange(new object[] {
             "Общий",
             "От предыдущего"});
-            this.comboBox35.Location = new System.Drawing.Point(962, 650);
-            this.comboBox35.Name = "comboBox35";
-            this.comboBox35.Size = new System.Drawing.Size(133, 28);
-            this.comboBox35.TabIndex = 135;
+            this.ComboBoxTypeStartCh12.Location = new System.Drawing.Point(962, 650);
+            this.ComboBoxTypeStartCh12.Name = "ComboBoxTypeStartCh12";
+            this.ComboBoxTypeStartCh12.Size = new System.Drawing.Size(133, 28);
+            this.ComboBoxTypeStartCh12.TabIndex = 135;
+            this.ComboBoxTypeStartCh12.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh12_SelectedIndexChanged);
             // 
-            // comboBox36
+            // DurComboBoxCh12
             // 
-            this.comboBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox36.FormattingEnabled = true;
-            this.comboBox36.Items.AddRange(new object[] {
+            this.DurComboBoxCh12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurComboBoxCh12.FormattingEnabled = true;
+            this.DurComboBoxCh12.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox36.Location = new System.Drawing.Point(1010, 584);
-            this.comboBox36.Name = "comboBox36";
-            this.comboBox36.Size = new System.Drawing.Size(46, 28);
-            this.comboBox36.TabIndex = 134;
+            this.DurComboBoxCh12.Location = new System.Drawing.Point(1010, 584);
+            this.DurComboBoxCh12.Name = "DurComboBoxCh12";
+            this.DurComboBoxCh12.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh12.TabIndex = 134;
+            this.DurComboBoxCh12.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh12_SelectedIndexChanged);
             // 
             // label53
             // 
@@ -1638,45 +1699,48 @@ namespace Test_COM
             this.label53.TabIndex = 133;
             this.label53.Text = "Канал 12";
             // 
-            // textBox36
+            // DurTextBoxCh12
             // 
-            this.textBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox36.Location = new System.Drawing.Point(962, 584);
-            this.textBox36.MaxLength = 3;
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(94, 26);
-            this.textBox36.TabIndex = 132;
+            this.DurTextBoxCh12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurTextBoxCh12.Location = new System.Drawing.Point(962, 584);
+            this.DurTextBoxCh12.MaxLength = 3;
+            this.DurTextBoxCh12.Name = "DurTextBoxCh12";
+            this.DurTextBoxCh12.Size = new System.Drawing.Size(94, 26);
+            this.DurTextBoxCh12.TabIndex = 132;
+            this.DurTextBoxCh12.TextChanged += new System.EventHandler(this.DurTextBoxCh12_TextChanged);
             // 
-            // textBox37
+            // CommentCh11
             // 
-            this.textBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox37.Location = new System.Drawing.Point(646, 686);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(220, 26);
-            this.textBox37.TabIndex = 131;
+            this.CommentCh11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CommentCh11.Location = new System.Drawing.Point(646, 686);
+            this.CommentCh11.Name = "CommentCh11";
+            this.CommentCh11.Size = new System.Drawing.Size(220, 26);
+            this.CommentCh11.TabIndex = 131;
             // 
-            // comboBox37
+            // DelComboBoxCh11
             // 
-            this.comboBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox37.FormattingEnabled = true;
-            this.comboBox37.Items.AddRange(new object[] {
+            this.DelComboBoxCh11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelComboBoxCh11.FormattingEnabled = true;
+            this.DelComboBoxCh11.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox37.Location = new System.Drawing.Point(694, 618);
-            this.comboBox37.Name = "comboBox37";
-            this.comboBox37.Size = new System.Drawing.Size(46, 28);
-            this.comboBox37.TabIndex = 130;
+            this.DelComboBoxCh11.Location = new System.Drawing.Point(694, 618);
+            this.DelComboBoxCh11.Name = "DelComboBoxCh11";
+            this.DelComboBoxCh11.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh11.TabIndex = 130;
+            this.DelComboBoxCh11.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh11_SelectedIndexChanged);
             // 
-            // textBox38
+            // DelTextBoxch11
             // 
-            this.textBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox38.Location = new System.Drawing.Point(646, 618);
-            this.textBox38.MaxLength = 3;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(94, 26);
-            this.textBox38.TabIndex = 129;
+            this.DelTextBoxch11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelTextBoxch11.Location = new System.Drawing.Point(646, 618);
+            this.DelTextBoxch11.MaxLength = 3;
+            this.DelTextBoxch11.Name = "DelTextBoxch11";
+            this.DelTextBoxch11.Size = new System.Drawing.Size(94, 26);
+            this.DelTextBoxch11.TabIndex = 129;
+            this.DelTextBoxch11.TextChanged += new System.EventHandler(this.DelTextBoxch11_TextChanged);
             // 
             // label54
             // 
@@ -1708,31 +1772,33 @@ namespace Test_COM
             this.label56.TabIndex = 126;
             this.label56.Text = "Длительность";
             // 
-            // comboBox38
+            // ComboBoxTypeStartCh11
             // 
-            this.comboBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox38.FormattingEnabled = true;
-            this.comboBox38.Items.AddRange(new object[] {
+            this.ComboBoxTypeStartCh11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComboBoxTypeStartCh11.FormattingEnabled = true;
+            this.ComboBoxTypeStartCh11.Items.AddRange(new object[] {
             "Общий",
             "От предыдущего"});
-            this.comboBox38.Location = new System.Drawing.Point(646, 650);
-            this.comboBox38.Name = "comboBox38";
-            this.comboBox38.Size = new System.Drawing.Size(133, 28);
-            this.comboBox38.TabIndex = 125;
+            this.ComboBoxTypeStartCh11.Location = new System.Drawing.Point(646, 650);
+            this.ComboBoxTypeStartCh11.Name = "ComboBoxTypeStartCh11";
+            this.ComboBoxTypeStartCh11.Size = new System.Drawing.Size(133, 28);
+            this.ComboBoxTypeStartCh11.TabIndex = 125;
+            this.ComboBoxTypeStartCh11.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh11_SelectedIndexChanged);
             // 
-            // comboBox39
+            // DurComboBoxCh11
             // 
-            this.comboBox39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox39.FormattingEnabled = true;
-            this.comboBox39.Items.AddRange(new object[] {
+            this.DurComboBoxCh11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurComboBoxCh11.FormattingEnabled = true;
+            this.DurComboBoxCh11.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox39.Location = new System.Drawing.Point(694, 584);
-            this.comboBox39.Name = "comboBox39";
-            this.comboBox39.Size = new System.Drawing.Size(46, 28);
-            this.comboBox39.TabIndex = 124;
+            this.DurComboBoxCh11.Location = new System.Drawing.Point(694, 584);
+            this.DurComboBoxCh11.Name = "DurComboBoxCh11";
+            this.DurComboBoxCh11.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh11.TabIndex = 124;
+            this.DurComboBoxCh11.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh11_SelectedIndexChanged);
             // 
             // label57
             // 
@@ -1744,45 +1810,48 @@ namespace Test_COM
             this.label57.TabIndex = 123;
             this.label57.Text = "Канал 11";
             // 
-            // textBox39
+            // DurTextBoxCh11
             // 
-            this.textBox39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox39.Location = new System.Drawing.Point(646, 584);
-            this.textBox39.MaxLength = 3;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(94, 26);
-            this.textBox39.TabIndex = 122;
+            this.DurTextBoxCh11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurTextBoxCh11.Location = new System.Drawing.Point(646, 584);
+            this.DurTextBoxCh11.MaxLength = 3;
+            this.DurTextBoxCh11.Name = "DurTextBoxCh11";
+            this.DurTextBoxCh11.Size = new System.Drawing.Size(94, 26);
+            this.DurTextBoxCh11.TabIndex = 122;
+            this.DurTextBoxCh11.TextChanged += new System.EventHandler(this.DurTextBoxCh11_TextChanged);
             // 
-            // textBox40
+            // CommentCh10
             // 
-            this.textBox40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox40.Location = new System.Drawing.Point(333, 686);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(220, 26);
-            this.textBox40.TabIndex = 121;
+            this.CommentCh10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CommentCh10.Location = new System.Drawing.Point(333, 686);
+            this.CommentCh10.Name = "CommentCh10";
+            this.CommentCh10.Size = new System.Drawing.Size(220, 26);
+            this.CommentCh10.TabIndex = 121;
             // 
-            // comboBox40
+            // DelComboBoxCh10
             // 
-            this.comboBox40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox40.FormattingEnabled = true;
-            this.comboBox40.Items.AddRange(new object[] {
+            this.DelComboBoxCh10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelComboBoxCh10.FormattingEnabled = true;
+            this.DelComboBoxCh10.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox40.Location = new System.Drawing.Point(381, 618);
-            this.comboBox40.Name = "comboBox40";
-            this.comboBox40.Size = new System.Drawing.Size(46, 28);
-            this.comboBox40.TabIndex = 120;
+            this.DelComboBoxCh10.Location = new System.Drawing.Point(381, 618);
+            this.DelComboBoxCh10.Name = "DelComboBoxCh10";
+            this.DelComboBoxCh10.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh10.TabIndex = 120;
+            this.DelComboBoxCh10.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh10_SelectedIndexChanged);
             // 
-            // textBox41
+            // DelTextBoxch10
             // 
-            this.textBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox41.Location = new System.Drawing.Point(333, 618);
-            this.textBox41.MaxLength = 3;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(94, 26);
-            this.textBox41.TabIndex = 119;
+            this.DelTextBoxch10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelTextBoxch10.Location = new System.Drawing.Point(333, 618);
+            this.DelTextBoxch10.MaxLength = 3;
+            this.DelTextBoxch10.Name = "DelTextBoxch10";
+            this.DelTextBoxch10.Size = new System.Drawing.Size(94, 26);
+            this.DelTextBoxch10.TabIndex = 119;
+            this.DelTextBoxch10.TextChanged += new System.EventHandler(this.DelTextBoxch10_TextChanged);
             // 
             // label58
             // 
@@ -1814,31 +1883,33 @@ namespace Test_COM
             this.label60.TabIndex = 116;
             this.label60.Text = "Длительность";
             // 
-            // comboBox41
+            // ComboBoxTypeStartCh10
             // 
-            this.comboBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox41.FormattingEnabled = true;
-            this.comboBox41.Items.AddRange(new object[] {
+            this.ComboBoxTypeStartCh10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComboBoxTypeStartCh10.FormattingEnabled = true;
+            this.ComboBoxTypeStartCh10.Items.AddRange(new object[] {
             "Общий",
             "От предыдущего"});
-            this.comboBox41.Location = new System.Drawing.Point(333, 650);
-            this.comboBox41.Name = "comboBox41";
-            this.comboBox41.Size = new System.Drawing.Size(133, 28);
-            this.comboBox41.TabIndex = 115;
+            this.ComboBoxTypeStartCh10.Location = new System.Drawing.Point(333, 650);
+            this.ComboBoxTypeStartCh10.Name = "ComboBoxTypeStartCh10";
+            this.ComboBoxTypeStartCh10.Size = new System.Drawing.Size(133, 28);
+            this.ComboBoxTypeStartCh10.TabIndex = 115;
+            this.ComboBoxTypeStartCh10.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh10_SelectedIndexChanged);
             // 
-            // comboBox42
+            // DurComboBoxCh10
             // 
-            this.comboBox42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox42.FormattingEnabled = true;
-            this.comboBox42.Items.AddRange(new object[] {
+            this.DurComboBoxCh10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurComboBoxCh10.FormattingEnabled = true;
+            this.DurComboBoxCh10.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox42.Location = new System.Drawing.Point(381, 584);
-            this.comboBox42.Name = "comboBox42";
-            this.comboBox42.Size = new System.Drawing.Size(46, 28);
-            this.comboBox42.TabIndex = 114;
+            this.DurComboBoxCh10.Location = new System.Drawing.Point(381, 584);
+            this.DurComboBoxCh10.Name = "DurComboBoxCh10";
+            this.DurComboBoxCh10.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh10.TabIndex = 114;
+            this.DurComboBoxCh10.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh10_SelectedIndexChanged);
             // 
             // label61
             // 
@@ -1850,45 +1921,48 @@ namespace Test_COM
             this.label61.TabIndex = 113;
             this.label61.Text = "Канал 10";
             // 
-            // textBox42
+            // DurTextBoxCh10
             // 
-            this.textBox42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox42.Location = new System.Drawing.Point(333, 584);
-            this.textBox42.MaxLength = 3;
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(94, 26);
-            this.textBox42.TabIndex = 112;
+            this.DurTextBoxCh10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurTextBoxCh10.Location = new System.Drawing.Point(333, 584);
+            this.DurTextBoxCh10.MaxLength = 3;
+            this.DurTextBoxCh10.Name = "DurTextBoxCh10";
+            this.DurTextBoxCh10.Size = new System.Drawing.Size(94, 26);
+            this.DurTextBoxCh10.TabIndex = 112;
+            this.DurTextBoxCh10.TextChanged += new System.EventHandler(this.DurTextBoxCh10_TextChanged);
             // 
-            // textBox43
+            // CommentCh9
             // 
-            this.textBox43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox43.Location = new System.Drawing.Point(16, 686);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(220, 26);
-            this.textBox43.TabIndex = 111;
+            this.CommentCh9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CommentCh9.Location = new System.Drawing.Point(16, 686);
+            this.CommentCh9.Name = "CommentCh9";
+            this.CommentCh9.Size = new System.Drawing.Size(220, 26);
+            this.CommentCh9.TabIndex = 111;
             // 
-            // comboBox43
+            // DelComboBoxCh9
             // 
-            this.comboBox43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox43.FormattingEnabled = true;
-            this.comboBox43.Items.AddRange(new object[] {
+            this.DelComboBoxCh9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelComboBoxCh9.FormattingEnabled = true;
+            this.DelComboBoxCh9.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox43.Location = new System.Drawing.Point(64, 618);
-            this.comboBox43.Name = "comboBox43";
-            this.comboBox43.Size = new System.Drawing.Size(46, 28);
-            this.comboBox43.TabIndex = 110;
+            this.DelComboBoxCh9.Location = new System.Drawing.Point(64, 618);
+            this.DelComboBoxCh9.Name = "DelComboBoxCh9";
+            this.DelComboBoxCh9.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh9.TabIndex = 110;
+            this.DelComboBoxCh9.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh9_SelectedIndexChanged);
             // 
-            // textBox44
+            // DelTextBoxch9
             // 
-            this.textBox44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox44.Location = new System.Drawing.Point(16, 618);
-            this.textBox44.MaxLength = 3;
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(94, 26);
-            this.textBox44.TabIndex = 109;
+            this.DelTextBoxch9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DelTextBoxch9.Location = new System.Drawing.Point(16, 618);
+            this.DelTextBoxch9.MaxLength = 3;
+            this.DelTextBoxch9.Name = "DelTextBoxch9";
+            this.DelTextBoxch9.Size = new System.Drawing.Size(94, 26);
+            this.DelTextBoxch9.TabIndex = 109;
+            this.DelTextBoxch9.TextChanged += new System.EventHandler(this.DelTextBoxch9_TextChanged);
             // 
             // label62
             // 
@@ -1920,31 +1994,33 @@ namespace Test_COM
             this.label64.TabIndex = 106;
             this.label64.Text = "Длительность";
             // 
-            // comboBox44
+            // ComboBoxTypeStartCh9
             // 
-            this.comboBox44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox44.FormattingEnabled = true;
-            this.comboBox44.Items.AddRange(new object[] {
+            this.ComboBoxTypeStartCh9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ComboBoxTypeStartCh9.FormattingEnabled = true;
+            this.ComboBoxTypeStartCh9.Items.AddRange(new object[] {
             "Общий",
             "От предыдущего"});
-            this.comboBox44.Location = new System.Drawing.Point(16, 650);
-            this.comboBox44.Name = "comboBox44";
-            this.comboBox44.Size = new System.Drawing.Size(133, 28);
-            this.comboBox44.TabIndex = 105;
+            this.ComboBoxTypeStartCh9.Location = new System.Drawing.Point(16, 650);
+            this.ComboBoxTypeStartCh9.Name = "ComboBoxTypeStartCh9";
+            this.ComboBoxTypeStartCh9.Size = new System.Drawing.Size(133, 28);
+            this.ComboBoxTypeStartCh9.TabIndex = 105;
+            this.ComboBoxTypeStartCh9.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeStartCh9_SelectedIndexChanged);
             // 
-            // comboBox45
+            // DurComboBoxCh9
             // 
-            this.comboBox45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox45.FormattingEnabled = true;
-            this.comboBox45.Items.AddRange(new object[] {
+            this.DurComboBoxCh9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurComboBoxCh9.FormattingEnabled = true;
+            this.DurComboBoxCh9.Items.AddRange(new object[] {
             "нс",
             "мкс",
             "мс",
             "с"});
-            this.comboBox45.Location = new System.Drawing.Point(64, 584);
-            this.comboBox45.Name = "comboBox45";
-            this.comboBox45.Size = new System.Drawing.Size(46, 28);
-            this.comboBox45.TabIndex = 104;
+            this.DurComboBoxCh9.Location = new System.Drawing.Point(64, 584);
+            this.DurComboBoxCh9.Name = "DurComboBoxCh9";
+            this.DurComboBoxCh9.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh9.TabIndex = 104;
+            this.DurComboBoxCh9.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh9_SelectedIndexChanged);
             // 
             // label65
             // 
@@ -1956,111 +2032,136 @@ namespace Test_COM
             this.label65.TabIndex = 103;
             this.label65.Text = "Канал 9";
             // 
-            // textBox45
+            // DurTextBoxCh9
             // 
-            this.textBox45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox45.Location = new System.Drawing.Point(16, 584);
-            this.textBox45.MaxLength = 3;
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(94, 26);
-            this.textBox45.TabIndex = 102;
+            this.DurTextBoxCh9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DurTextBoxCh9.Location = new System.Drawing.Point(16, 584);
+            this.DurTextBoxCh9.MaxLength = 3;
+            this.DurTextBoxCh9.Name = "DurTextBoxCh9";
+            this.DurTextBoxCh9.Size = new System.Drawing.Size(94, 26);
+            this.DurTextBoxCh9.TabIndex = 102;
+            this.DurTextBoxCh9.TextChanged += new System.EventHandler(this.DurTextBoxCh9_TextChanged);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1214, 125);
+            this.pictureBox2.Location = new System.Drawing.Point(1196, 125);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(705, 337);
+            this.pictureBox2.Size = new System.Drawing.Size(644, 331);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 182;
             this.pictureBox2.TabStop = false;
+            // 
+            // ButtonOneInAll
+            // 
+            this.ButtonOneInAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonOneInAll.Location = new System.Drawing.Point(1327, 481);
+            this.ButtonOneInAll.Name = "ButtonOneInAll";
+            this.ButtonOneInAll.Size = new System.Drawing.Size(180, 94);
+            this.ButtonOneInAll.TabIndex = 183;
+            this.ButtonOneInAll.Text = "Запись конфигурации канала №1 во все каналы";
+            this.ButtonOneInAll.UseVisualStyleBackColor = true;
+            this.ButtonOneInAll.Click += new System.EventHandler(this.ButtonOneInAll_Click);
+            // 
+            // CearAllCh
+            // 
+            this.CearAllCh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CearAllCh.Location = new System.Drawing.Point(1555, 481);
+            this.CearAllCh.Name = "CearAllCh";
+            this.CearAllCh.Size = new System.Drawing.Size(180, 94);
+            this.CearAllCh.TabIndex = 184;
+            this.CearAllCh.Text = "Стереть все ";
+            this.CearAllCh.UseVisualStyleBackColor = true;
+            this.CearAllCh.Click += new System.EventHandler(this.CearAllCh_Click);
             // 
             // OSG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1852, 992);
+            this.Controls.Add(this.CearAllCh);
+            this.Controls.Add(this.ButtonOneInAll);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.comboBox22);
-            this.Controls.Add(this.textBox23);
+            this.Controls.Add(this.CommentCh16);
+            this.Controls.Add(this.DelComboBoxCh16);
+            this.Controls.Add(this.DelTextBoxch16);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.label36);
-            this.Controls.Add(this.comboBox23);
-            this.Controls.Add(this.comboBox24);
+            this.Controls.Add(this.ComboBoxTypeStartCh16);
+            this.Controls.Add(this.DurComboBoxCh16);
             this.Controls.Add(this.label37);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.comboBox25);
-            this.Controls.Add(this.textBox26);
+            this.Controls.Add(this.DurTextBoxCh16);
+            this.Controls.Add(this.CommentCh15);
+            this.Controls.Add(this.DelComboBoxCh15);
+            this.Controls.Add(this.DelTextBoxch15);
             this.Controls.Add(this.label38);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.label40);
-            this.Controls.Add(this.comboBox26);
-            this.Controls.Add(this.comboBox27);
+            this.Controls.Add(this.ComboBoxTypeStartCh15);
+            this.Controls.Add(this.DurComboBoxCh15);
             this.Controls.Add(this.label41);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.comboBox28);
-            this.Controls.Add(this.textBox29);
+            this.Controls.Add(this.DurTextBoxCh15);
+            this.Controls.Add(this.CommentCh14);
+            this.Controls.Add(this.DelComboBoxCh14);
+            this.Controls.Add(this.DelTextBoxch14);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.label44);
-            this.Controls.Add(this.comboBox29);
-            this.Controls.Add(this.comboBox30);
+            this.Controls.Add(this.ComboBoxTypeStartCh14);
+            this.Controls.Add(this.DurComboBoxCh14);
             this.Controls.Add(this.label45);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.comboBox31);
-            this.Controls.Add(this.textBox32);
+            this.Controls.Add(this.DurTextBoxCh14);
+            this.Controls.Add(this.CommentCh13);
+            this.Controls.Add(this.DelComboBoxCh13);
+            this.Controls.Add(this.DelTextBoxch13);
             this.Controls.Add(this.label46);
             this.Controls.Add(this.label47);
             this.Controls.Add(this.label48);
-            this.Controls.Add(this.comboBox32);
-            this.Controls.Add(this.comboBox33);
+            this.Controls.Add(this.ComboBoxTypeStartCh13);
+            this.Controls.Add(this.DurComboBoxCh13);
             this.Controls.Add(this.label49);
-            this.Controls.Add(this.textBox33);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.comboBox34);
-            this.Controls.Add(this.textBox35);
+            this.Controls.Add(this.DurTextBoxCh13);
+            this.Controls.Add(this.CommentCh12);
+            this.Controls.Add(this.DelComboBoxCh12);
+            this.Controls.Add(this.DelTextBoxch12);
             this.Controls.Add(this.label50);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.label52);
-            this.Controls.Add(this.comboBox35);
-            this.Controls.Add(this.comboBox36);
+            this.Controls.Add(this.ComboBoxTypeStartCh12);
+            this.Controls.Add(this.DurComboBoxCh12);
             this.Controls.Add(this.label53);
-            this.Controls.Add(this.textBox36);
-            this.Controls.Add(this.textBox37);
-            this.Controls.Add(this.comboBox37);
-            this.Controls.Add(this.textBox38);
+            this.Controls.Add(this.DurTextBoxCh12);
+            this.Controls.Add(this.CommentCh11);
+            this.Controls.Add(this.DelComboBoxCh11);
+            this.Controls.Add(this.DelTextBoxch11);
             this.Controls.Add(this.label54);
             this.Controls.Add(this.label55);
             this.Controls.Add(this.label56);
-            this.Controls.Add(this.comboBox38);
-            this.Controls.Add(this.comboBox39);
+            this.Controls.Add(this.ComboBoxTypeStartCh11);
+            this.Controls.Add(this.DurComboBoxCh11);
             this.Controls.Add(this.label57);
-            this.Controls.Add(this.textBox39);
-            this.Controls.Add(this.textBox40);
-            this.Controls.Add(this.comboBox40);
-            this.Controls.Add(this.textBox41);
+            this.Controls.Add(this.DurTextBoxCh11);
+            this.Controls.Add(this.CommentCh10);
+            this.Controls.Add(this.DelComboBoxCh10);
+            this.Controls.Add(this.DelTextBoxch10);
             this.Controls.Add(this.label58);
             this.Controls.Add(this.label59);
             this.Controls.Add(this.label60);
-            this.Controls.Add(this.comboBox41);
-            this.Controls.Add(this.comboBox42);
+            this.Controls.Add(this.ComboBoxTypeStartCh10);
+            this.Controls.Add(this.DurComboBoxCh10);
             this.Controls.Add(this.label61);
-            this.Controls.Add(this.textBox42);
-            this.Controls.Add(this.textBox43);
-            this.Controls.Add(this.comboBox43);
-            this.Controls.Add(this.textBox44);
+            this.Controls.Add(this.DurTextBoxCh10);
+            this.Controls.Add(this.CommentCh9);
+            this.Controls.Add(this.DelComboBoxCh9);
+            this.Controls.Add(this.DelTextBoxch9);
             this.Controls.Add(this.label62);
             this.Controls.Add(this.label63);
             this.Controls.Add(this.label64);
-            this.Controls.Add(this.comboBox44);
-            this.Controls.Add(this.comboBox45);
+            this.Controls.Add(this.ComboBoxTypeStartCh9);
+            this.Controls.Add(this.DurComboBoxCh9);
             this.Controls.Add(this.label65);
-            this.Controls.Add(this.textBox45);
+            this.Controls.Add(this.DurTextBoxCh9);
             this.Controls.Add(this.CommentCh8);
             this.Controls.Add(this.DelComboBoxCh8);
             this.Controls.Add(this.DelTextBoxch8);
@@ -2244,87 +2345,89 @@ namespace Test_COM
         private System.Windows.Forms.ComboBox DurComboBoxCh5;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox DurTextBoxCh5;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox CommentCh16;
+        private System.Windows.Forms.ComboBox DelComboBoxCh16;
+        private System.Windows.Forms.TextBox DelTextBoxch16;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.ComboBox comboBox23;
-        private System.Windows.Forms.ComboBox comboBox24;
+        private System.Windows.Forms.ComboBox ComboBoxTypeStartCh16;
+        private System.Windows.Forms.ComboBox DurComboBoxCh16;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.ComboBox comboBox25;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox DurTextBoxCh16;
+        private System.Windows.Forms.TextBox CommentCh15;
+        private System.Windows.Forms.ComboBox DelComboBoxCh15;
+        private System.Windows.Forms.TextBox DelTextBoxch15;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.ComboBox comboBox26;
-        private System.Windows.Forms.ComboBox comboBox27;
+        private System.Windows.Forms.ComboBox ComboBoxTypeStartCh15;
+        private System.Windows.Forms.ComboBox DurComboBoxCh15;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.ComboBox comboBox28;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox DurTextBoxCh15;
+        private System.Windows.Forms.TextBox CommentCh14;
+        private System.Windows.Forms.ComboBox DelComboBoxCh14;
+        private System.Windows.Forms.TextBox DelTextBoxch14;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.ComboBox comboBox29;
-        private System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.ComboBox ComboBoxTypeStartCh14;
+        private System.Windows.Forms.ComboBox DurComboBoxCh14;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.ComboBox comboBox31;
-        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox DurTextBoxCh14;
+        private System.Windows.Forms.TextBox CommentCh13;
+        private System.Windows.Forms.ComboBox DelComboBoxCh13;
+        private System.Windows.Forms.TextBox DelTextBoxch13;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.ComboBox comboBox32;
-        private System.Windows.Forms.ComboBox comboBox33;
+        private System.Windows.Forms.ComboBox ComboBoxTypeStartCh13;
+        private System.Windows.Forms.ComboBox DurComboBoxCh13;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.ComboBox comboBox34;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox DurTextBoxCh13;
+        private System.Windows.Forms.TextBox CommentCh12;
+        private System.Windows.Forms.ComboBox DelComboBoxCh12;
+        private System.Windows.Forms.TextBox DelTextBoxch12;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.ComboBox comboBox35;
-        private System.Windows.Forms.ComboBox comboBox36;
+        private System.Windows.Forms.ComboBox ComboBoxTypeStartCh12;
+        private System.Windows.Forms.ComboBox DurComboBoxCh12;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.ComboBox comboBox37;
-        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.TextBox DurTextBoxCh12;
+        private System.Windows.Forms.TextBox CommentCh11;
+        private System.Windows.Forms.ComboBox DelComboBoxCh11;
+        private System.Windows.Forms.TextBox DelTextBoxch11;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.ComboBox comboBox38;
-        private System.Windows.Forms.ComboBox comboBox39;
+        private System.Windows.Forms.ComboBox ComboBoxTypeStartCh11;
+        private System.Windows.Forms.ComboBox DurComboBoxCh11;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.ComboBox comboBox40;
-        private System.Windows.Forms.TextBox textBox41;
+        private System.Windows.Forms.TextBox DurTextBoxCh11;
+        private System.Windows.Forms.TextBox CommentCh10;
+        private System.Windows.Forms.ComboBox DelComboBoxCh10;
+        private System.Windows.Forms.TextBox DelTextBoxch10;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.ComboBox comboBox41;
-        private System.Windows.Forms.ComboBox comboBox42;
+        private System.Windows.Forms.ComboBox ComboBoxTypeStartCh10;
+        private System.Windows.Forms.ComboBox DurComboBoxCh10;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.ComboBox comboBox43;
-        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.TextBox DurTextBoxCh10;
+        private System.Windows.Forms.TextBox CommentCh9;
+        private System.Windows.Forms.ComboBox DelComboBoxCh9;
+        private System.Windows.Forms.TextBox DelTextBoxch9;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.ComboBox comboBox44;
-        private System.Windows.Forms.ComboBox comboBox45;
+        private System.Windows.Forms.ComboBox ComboBoxTypeStartCh9;
+        private System.Windows.Forms.ComboBox DurComboBoxCh9;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.TextBox DurTextBoxCh9;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button ButtonOneInAll;
+        private System.Windows.Forms.Button CearAllCh;
     }
 }
 
