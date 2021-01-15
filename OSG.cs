@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Threading;
+
 
 namespace Test_COM
 {
@@ -233,11 +235,12 @@ namespace Test_COM
             DurTextBoxCh16.Text = "0";
             DelTextBoxch16.Text = "0";
 
+            
         }
 
 
 
-        SerialPort Port = new SerialPort("COM", 9600, Parity.None, 8, StopBits.Two);            // Инициализация последовательного порта 
+        SerialPort Port = new SerialPort("COM", 115200, Parity.None, 8, StopBits.One);            // Инициализация последовательного порта 
         // _serialPort.Handshake = Handshake.None;
 
         public void ComComboBox_SelectedIndexChanged(object sender, EventArgs e)                // При выборе СОМ порта осуществляем:
@@ -246,9 +249,9 @@ namespace Test_COM
             {
                 Port.PortName = ComComboBox.Text.ToString();                                    // Изменение имени Комбобокса
                 Port.Open();                                                                    // Открываем порт
-                Port.BaudRate = 9600;
-                //Port.WriteTimeout = 500;                                                      // Эти тайм ауты можно не ставить
-                //Port.ReadTimeout = 500;                                                       // Эти тайм ауты можно не ставить
+                Port.BaudRate = 115200;
+                //Port.WriteTimeout = 1000;                                                       // Эти тайм ауты можно не ставить
+                //Port.ReadTimeout = 1000;                                                        // Эти тайм ауты можно не ставить
                 OffComButton.Text = "Отключить " + Port.PortName;                               // Изменяем текст на кнопке отключения порта на "Отключить СОМ порт"
                 label1.Text = "Подключен";                                                      // Изменяем текст на лейбле на "Подключен"    
                 pictureBox1.BackColor = Color.LightGreen;                                       // Зажигаем зеленым лампочку оповещающую о подключенном СОМ порте
@@ -362,7 +365,25 @@ namespace Test_COM
                   | DurTextBoxCh9.Text == "255" | DelTextBoxch9.Text == "255" | DurTextBoxCh10.Text == "255" | DelTextBoxch10.Text == "255"
                   | DurTextBoxCh11.Text == "255" | DelTextBoxch11.Text == "255" | DurTextBoxCh12.Text == "255" | DelTextBoxch12.Text == "255"
                   | DurTextBoxCh13.Text == "255" | DelTextBoxch13.Text == "255" | DurTextBoxCh14.Text == "255" | DelTextBoxch14.Text == "255"
-                  | DurTextBoxCh15.Text == "255" | DelTextBoxch15.Text == "255" | DurTextBoxCh16.Text == "255" | DelTextBoxch16.Text == "255")
+                  | DurTextBoxCh15.Text == "255" | DelTextBoxch15.Text == "255" | DurTextBoxCh16.Text == "255" | DelTextBoxch16.Text == "255"
+                  
+                  | DurTextBoxCh1.Text == "511" | DelTextBoxch1.Text == "511" | DurTextBoxCh2.Text == "511" | DelTextBoxch2.Text == "511"
+                  | DurTextBoxCh3.Text == "511" | DelTextBoxch3.Text == "511" | DurTextBoxCh4.Text == "511" | DelTextBoxch4.Text == "511"
+                  | DurTextBoxCh5.Text == "511" | DelTextBoxch5.Text == "511" | DurTextBoxCh6.Text == "511" | DelTextBoxch6.Text == "511"
+                  | DurTextBoxCh7.Text == "511" | DelTextBoxch7.Text == "511" | DurTextBoxCh8.Text == "511" | DelTextBoxch8.Text == "511"
+                  | DurTextBoxCh9.Text == "511" | DelTextBoxch9.Text == "511" | DurTextBoxCh10.Text == "511" | DelTextBoxch10.Text == "511"
+                  | DurTextBoxCh11.Text == "511" | DelTextBoxch11.Text == "511" | DurTextBoxCh12.Text == "511" | DelTextBoxch12.Text == "511"  ////////// КОСТЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЛь
+                  | DurTextBoxCh13.Text == "511" | DelTextBoxch13.Text == "511" | DurTextBoxCh14.Text == "511" | DelTextBoxch14.Text == "511"
+                  | DurTextBoxCh15.Text == "511" | DelTextBoxch15.Text == "511" | DurTextBoxCh16.Text == "511" | DelTextBoxch16.Text == "511"
+
+                  | DurTextBoxCh1.Text == "767" | DelTextBoxch1.Text == "767" | DurTextBoxCh2.Text == "767" | DelTextBoxch2.Text == "767"
+                  | DurTextBoxCh3.Text == "767" | DelTextBoxch3.Text == "767" | DurTextBoxCh4.Text == "767" | DelTextBoxch4.Text == "767"
+                  | DurTextBoxCh5.Text == "767" | DelTextBoxch5.Text == "767" | DurTextBoxCh6.Text == "767" | DelTextBoxch6.Text == "767"
+                  | DurTextBoxCh7.Text == "767" | DelTextBoxch7.Text == "767" | DurTextBoxCh8.Text == "767" | DelTextBoxch8.Text == "767"
+                  | DurTextBoxCh9.Text == "767" | DelTextBoxch9.Text == "767" | DurTextBoxCh10.Text == "767" | DelTextBoxch10.Text == "767"
+                  | DurTextBoxCh11.Text == "767" | DelTextBoxch11.Text == "767" | DurTextBoxCh12.Text == "767" | DelTextBoxch12.Text == "767"
+                  | DurTextBoxCh13.Text == "767" | DelTextBoxch13.Text == "767" | DurTextBoxCh14.Text == "767" | DelTextBoxch14.Text == "767"
+                  | DurTextBoxCh15.Text == "767" | DelTextBoxch15.Text == "767" | DurTextBoxCh16.Text == "767" | DelTextBoxch16.Text == "767")
                 
                 {
                         MessageBox.Show("Введите значение отличающееся от 255", "Сообщение",               // Выводим сообщение призывающее выбрать СОМ порт
@@ -403,7 +424,16 @@ namespace Test_COM
                         }
                         else
                         {
+                            
                             Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
+                            //SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
+                            //SerialSendButton.Enabled = false;
+                            //Thread.Sleep(500);
+                            //SerialSendButton.Enabled = true;
+                            //SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
+
+
+
                         }
                     }
                 }
@@ -427,6 +457,7 @@ namespace Test_COM
 
             if (Port.IsOpen == true)                                                            // Если порт открыт 
             {
+                
                 if (DurTextBoxCh1.Text == "0" | DelTextBoxch1.Text == "0")                                  
                 {
                     MessageBox.Show("Введите значение больше 0", "Сообщение",                   // Выводим сообщение призывающее ввести значение больше 0
@@ -458,6 +489,15 @@ namespace Test_COM
                         else
                         {
                             Port.Write(BufStart, offset, count);
+                            //StartButton.Click -= new System.EventHandler(this.StartButton_Click);
+                            ///StartButton.Enabled = false;
+                            //Thread.Sleep(500);
+                            //StartButton.Enabled = true;
+                           // StartButton.Click += new System.EventHandler(StartButton_Click);
+
+
+
+
                         }
 
                     }
@@ -524,7 +564,7 @@ namespace Test_COM
  
         public void DurComboBoxCh1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if  (DurComboBoxCh1.Text == "нс")
+            if  (DurComboBoxCh1.Text == "*10 нс")
             {
                 DurMultiplierCH1 = 1;
             }
@@ -544,7 +584,7 @@ namespace Test_COM
 
         public void DelComboBoxCh1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh1.Text == "нс")
+            if (DelComboBoxCh1.Text == "*10 нс")
             {
                 DelMultiplierCH1 = 1;
             }
@@ -621,7 +661,7 @@ namespace Test_COM
 
         public void DurComboBoxCh2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh2.Text == "нс")
+            if (DurComboBoxCh2.Text == "*10 нс")
             {
                 DurMultiplierCH2 = 1;
             }
@@ -641,7 +681,7 @@ namespace Test_COM
 
         public void DelComboBoxCh2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh2.Text == "нс")
+            if (DelComboBoxCh2.Text == "*10 нс")
             {
                 DelMultiplierCH2 = 1;
             }
@@ -718,7 +758,7 @@ namespace Test_COM
 
         public void DurComboBoxCh3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh3.Text == "нс")
+            if (DurComboBoxCh3.Text == "*10 нс")
             {
                 DurMultiplierCH3 = 1;
             }
@@ -738,7 +778,7 @@ namespace Test_COM
 
         public void DelComboBoxCh3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh3.Text == "нс")
+            if (DelComboBoxCh3.Text == "*10 нс")
             {
                 DelMultiplierCH3 = 1;
             }
@@ -815,7 +855,7 @@ namespace Test_COM
 
         public void DurComboBoxCh4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh4.Text == "нс")
+            if (DurComboBoxCh4.Text == "*10 нс")
             {
                 DurMultiplierCH4 = 1;
             }
@@ -835,7 +875,7 @@ namespace Test_COM
 
         public void DelComboBoxCh4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh4.Text == "нс")
+            if (DelComboBoxCh4.Text == "*10 нс")
             {
                 DelMultiplierCH4 = 1;
             }
@@ -912,7 +952,7 @@ namespace Test_COM
 
         public void DurComboBoxCh5_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh5.Text == "нс")
+            if (DurComboBoxCh5.Text == "*10 нс")
             {
                 DurMultiplierCH5 = 1;
             }
@@ -932,7 +972,7 @@ namespace Test_COM
 
         public void DelComboBoxCh5_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh5.Text == "нс")
+            if (DelComboBoxCh5.Text == "*10 нс")
             {
                 DelMultiplierCH5 = 1;
             }
@@ -1009,7 +1049,7 @@ namespace Test_COM
 
         public void DurComboBoxCh6_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh6.Text == "нс")
+            if (DurComboBoxCh6.Text == "*10 нс")
             {
                 DurMultiplierCH6 = 1;
             }
@@ -1029,7 +1069,7 @@ namespace Test_COM
 
         public void DelComboBoxCh6_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh6.Text == "нс")
+            if (DelComboBoxCh6.Text == "*10 нс")
             {
                 DelMultiplierCH6 = 1;
             }
@@ -1106,7 +1146,7 @@ namespace Test_COM
 
         public void DurComboBoxCh7_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh7.Text == "нс")
+            if (DurComboBoxCh7.Text == "*10 нс")
             {
                 DurMultiplierCH7 = 1;
             }
@@ -1126,7 +1166,7 @@ namespace Test_COM
 
         public void DelComboBoxCh7_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh7.Text == "нс")
+            if (DelComboBoxCh7.Text == "*10 нс")
             {
                 DelMultiplierCH7 = 1;
             }
@@ -1203,7 +1243,7 @@ namespace Test_COM
 
         public void DurComboBoxCh8_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh8.Text == "нс")
+            if (DurComboBoxCh8.Text == "*10 нс")
             {
                 DurMultiplierCH8 = 1;
             }
@@ -1223,7 +1263,7 @@ namespace Test_COM
 
         public void DelComboBoxCh8_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh8.Text == "нс")
+            if (DelComboBoxCh8.Text == "*10 нс")
             {
                 DelMultiplierCH8 = 1;
             }
@@ -1301,7 +1341,7 @@ namespace Test_COM
 
         public void DurComboBoxCh9_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh9.Text == "нс")
+            if (DurComboBoxCh9.Text == "*10 нс")
             {
                 DurMultiplierCH9 = 1;
             }
@@ -1321,7 +1361,7 @@ namespace Test_COM
 
         public void DelComboBoxCh9_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh9.Text == "нс")
+            if (DelComboBoxCh9.Text == "*10 нс")
             {
                 DelMultiplierCH9 = 1;
             }
@@ -1398,7 +1438,7 @@ namespace Test_COM
 
         public void DurComboBoxCh10_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh10.Text == "нс")
+            if (DurComboBoxCh10.Text == "*10 нс")
             {
                 DurMultiplierCH10 = 1;
             }
@@ -1418,7 +1458,7 @@ namespace Test_COM
 
         public void DelComboBoxCh10_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh10.Text == "нс")
+            if (DelComboBoxCh10.Text == "*10 нс")
             {
                 DelMultiplierCH10 = 1;
             }
@@ -1495,7 +1535,7 @@ namespace Test_COM
 
         public void DurComboBoxCh11_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh11.Text == "нс")
+            if (DurComboBoxCh11.Text == "*10 нс")
             {
                 DurMultiplierCH11 = 1;
             }
@@ -1515,7 +1555,7 @@ namespace Test_COM
 
         public void DelComboBoxCh11_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh11.Text == "нс")
+            if (DelComboBoxCh11.Text == "*10 нс")
             {
                 DelMultiplierCH11 = 1;
             }
@@ -1592,7 +1632,7 @@ namespace Test_COM
 
         public void DurComboBoxCh12_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh12.Text == "нс")
+            if (DurComboBoxCh12.Text == "*10 нс")
             {
                 DurMultiplierCH12 = 1;
             }
@@ -1612,7 +1652,7 @@ namespace Test_COM
 
         public void DelComboBoxCh12_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh12.Text == "нс")
+            if (DelComboBoxCh12.Text == "*10 нс")
             {
                 DelMultiplierCH12 = 1;
             }
@@ -1689,7 +1729,7 @@ namespace Test_COM
 
         public void DurComboBoxCh13_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh13.Text == "нс")
+            if (DurComboBoxCh13.Text == "*10 нс")
             {
                 DurMultiplierCH13 = 1;
             }
@@ -1709,7 +1749,7 @@ namespace Test_COM
 
         public void DelComboBoxCh13_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh13.Text == "нс")
+            if (DelComboBoxCh13.Text == "*10 нс")
             {
                 DelMultiplierCH13 = 1;
             }
@@ -1786,7 +1826,7 @@ namespace Test_COM
 
         public void DurComboBoxCh14_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh14.Text == "нс")
+            if (DurComboBoxCh14.Text == "*10 нс")
             {
                 DurMultiplierCH14 = 1;
             }
@@ -1806,7 +1846,7 @@ namespace Test_COM
 
         public void DelComboBoxCh14_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh14.Text == "нс")
+            if (DelComboBoxCh14.Text == "*10 нс")
             {
                 DelMultiplierCH14 = 1;
             }
@@ -1883,7 +1923,7 @@ namespace Test_COM
 
         public void DurComboBoxCh15_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh15.Text == "нс")
+            if (DurComboBoxCh15.Text == "*10 нс")
             {
                 DurMultiplierCH15 = 1;
             }
@@ -1903,7 +1943,7 @@ namespace Test_COM
 
         public void DelComboBoxCh15_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh15.Text == "нс")
+            if (DelComboBoxCh15.Text == "*10 нс")
             {
                 DelMultiplierCH15 = 1;
             }
@@ -1980,7 +2020,7 @@ namespace Test_COM
 
         public void DurComboBoxCh16_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DurComboBoxCh16.Text == "нс")
+            if (DurComboBoxCh16.Text == "*10 нс")
             {
                 DurMultiplierCH16 = 1;
             }
@@ -2000,7 +2040,7 @@ namespace Test_COM
 
         public void DelComboBoxCh16_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (DelComboBoxCh16.Text == "нс")
+            if (DelComboBoxCh16.Text == "*10 нс")
             {
                 DelMultiplierCH16 = 1;
             }
@@ -2051,7 +2091,7 @@ namespace Test_COM
             return res = IsDigit;
         }
 
-        private void ButtonOneInAll_Click(object sender, EventArgs e)                           // По нажатию данной кнопки происходит запись конфигурации 1-го канала во все другие каналы
+       public void ButtonOneInAll_Click(object sender, EventArgs e)                           // По нажатию данной кнопки происходит запись конфигурации 1-го канала во все другие каналы
         {
             DurTextBoxCh2.Text = DurTextBoxCh3.Text = DurTextBoxCh4.Text = DurTextBoxCh5.Text = DurTextBoxCh6.Text = DurTextBoxCh7.Text = DurTextBoxCh8.Text = DurTextBoxCh9.Text =
             DurTextBoxCh10.Text = DurTextBoxCh11.Text = DurTextBoxCh12.Text = DurTextBoxCh13.Text = DurTextBoxCh14.Text = DurTextBoxCh15.Text = DurTextBoxCh16.Text = DurTextBoxCh1.Text;
@@ -2070,7 +2110,7 @@ namespace Test_COM
             DurComboBoxCh10.Text = DurComboBoxCh11.Text = DurComboBoxCh12.Text = DurComboBoxCh13.Text = DurComboBoxCh14.Text = DurComboBoxCh15.Text = DurComboBoxCh16.Text = DurComboBoxCh1.Text;
         }
 
-        private void CearAllCh_Click(object sender, EventArgs e)                                // По нажатию данной кнопки происходит очистка конфигурации всех каналов
+        public void CearAllCh_Click(object sender, EventArgs e)                                // По нажатию данной кнопки происходит очистка конфигурации всех каналов
         {
             DurTextBoxCh2.Text = DurTextBoxCh3.Text = DurTextBoxCh4.Text = DurTextBoxCh5.Text = DurTextBoxCh6.Text = DurTextBoxCh7.Text = DurTextBoxCh8.Text = DurTextBoxCh9.Text =
             DurTextBoxCh10.Text = DurTextBoxCh11.Text = DurTextBoxCh12.Text = DurTextBoxCh13.Text = DurTextBoxCh14.Text = DurTextBoxCh15.Text = DurTextBoxCh16.Text = DurTextBoxCh1.Text =
@@ -2087,9 +2127,43 @@ namespace Test_COM
 
             DurComboBoxCh2.Text = DurComboBoxCh3.Text = DurComboBoxCh4.Text = DurComboBoxCh5.Text = DurComboBoxCh6.Text = DurComboBoxCh7.Text = DurComboBoxCh8.Text = DurComboBoxCh9.Text =
             DurComboBoxCh10.Text = DurComboBoxCh11.Text = DurComboBoxCh12.Text = DurComboBoxCh13.Text = DurComboBoxCh14.Text = DurComboBoxCh15.Text = DurComboBoxCh16.Text = DurComboBoxCh1.Text = "";
+
+            int count = 112;
+            int offset = 0;
+            byte[] CLBUF = new byte[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,};
+
+            if (Port.IsOpen == false)                                                           // Если порт закрыт (а закрыт он может быть только потому что мы его не выбрали в СОМ комбобоксе)
+            {
+                MessageBox.Show("Выберите СОМ порт", "Сообщение",                               // Выводим сообщение призывающее выбрать СОМ порт
+                    MessageBoxButtons.OKCancel,
+                    MessageBoxIcon.Warning,
+                    MessageBoxDefaultButton.Button1);
+                // MessageBoxOptions.ServiceNotification);
+            }
+            else
+            {
+                Port.Write(CLBUF, offset, count);
+             //   CearAllCh.Click -= new System.EventHandler(this.CearAllCh_Click);
+             //   CearAllCh.Enabled = false;
+            //    Thread.Sleep(500);
+             //   CearAllCh.Enabled = true;
+             //   CearAllCh.Click += new System.EventHandler(CearAllCh_Click);
+
+
+
+            }
+
+
+            // Thread.Sleep(1000);
+
         }
 
-        
+
+
+
     }
 
 

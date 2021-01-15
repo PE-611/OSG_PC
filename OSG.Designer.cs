@@ -216,7 +216,7 @@ namespace Test_COM
             // SerialSendButton
             // 
             this.SerialSendButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SerialSendButton.Location = new System.Drawing.Point(1449, 934);
+            this.SerialSendButton.Location = new System.Drawing.Point(1312, 902);
             this.SerialSendButton.Name = "SerialSendButton";
             this.SerialSendButton.Size = new System.Drawing.Size(180, 34);
             this.SerialSendButton.TabIndex = 1;
@@ -271,20 +271,20 @@ namespace Test_COM
             this.DurComboBoxCh1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh1.FormattingEnabled = true;
             this.DurComboBoxCh1.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh1.Location = new System.Drawing.Point(64, 154);
             this.DurComboBoxCh1.Name = "DurComboBoxCh1";
-            this.DurComboBoxCh1.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh1.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh1.TabIndex = 7;
             this.DurComboBoxCh1.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh1_SelectedIndexChanged);
             // 
             // StartButton
             // 
             this.StartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.StartButton.Location = new System.Drawing.Point(1635, 934);
+            this.StartButton.Location = new System.Drawing.Point(1624, 902);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(180, 34);
             this.StartButton.TabIndex = 21;
@@ -309,7 +309,7 @@ namespace Test_COM
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(115, 152);
+            this.label3.Location = new System.Drawing.Point(155, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 20);
             this.label3.TabIndex = 23;
@@ -329,7 +329,7 @@ namespace Test_COM
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(116, 188);
+            this.label6.Location = new System.Drawing.Point(155, 188);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 20);
             this.label6.TabIndex = 27;
@@ -340,13 +340,13 @@ namespace Test_COM
             this.DelComboBoxCh1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh1.FormattingEnabled = true;
             this.DelComboBoxCh1.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh1.Location = new System.Drawing.Point(64, 188);
             this.DelComboBoxCh1.Name = "DelComboBoxCh1";
-            this.DelComboBoxCh1.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh1.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh1.TabIndex = 29;
             this.DelComboBoxCh1.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh1_SelectedIndexChanged);
             // 
@@ -390,13 +390,13 @@ namespace Test_COM
             this.DelComboBoxCh2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh2.FormattingEnabled = true;
             this.DelComboBoxCh2.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh2.Location = new System.Drawing.Point(381, 188);
             this.DelComboBoxCh2.Name = "DelComboBoxCh2";
-            this.DelComboBoxCh2.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh2.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh2.TabIndex = 40;
             this.DelComboBoxCh2.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh2_SelectedIndexChanged);
             // 
@@ -414,7 +414,7 @@ namespace Test_COM
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(433, 188);
+            this.label4.Location = new System.Drawing.Point(472, 188);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 20);
             this.label4.TabIndex = 38;
@@ -434,7 +434,7 @@ namespace Test_COM
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(432, 152);
+            this.label8.Location = new System.Drawing.Point(472, 152);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(121, 20);
             this.label8.TabIndex = 36;
@@ -458,13 +458,13 @@ namespace Test_COM
             this.DurComboBoxCh2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh2.FormattingEnabled = true;
             this.DurComboBoxCh2.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh2.Location = new System.Drawing.Point(381, 154);
             this.DurComboBoxCh2.Name = "DurComboBoxCh2";
-            this.DurComboBoxCh2.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh2.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh2.TabIndex = 34;
             this.DurComboBoxCh2.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh2_SelectedIndexChanged);
             // 
@@ -501,13 +501,13 @@ namespace Test_COM
             this.DelComboBoxCh4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh4.FormattingEnabled = true;
             this.DelComboBoxCh4.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh4.Location = new System.Drawing.Point(1010, 188);
             this.DelComboBoxCh4.Name = "DelComboBoxCh4";
-            this.DelComboBoxCh4.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh4.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh4.TabIndex = 60;
             this.DelComboBoxCh4.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh4_SelectedIndexChanged);
             // 
@@ -525,7 +525,7 @@ namespace Test_COM
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(1062, 188);
+            this.label10.Location = new System.Drawing.Point(1101, 188);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(86, 20);
             this.label10.TabIndex = 58;
@@ -545,7 +545,7 @@ namespace Test_COM
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(1061, 152);
+            this.label12.Location = new System.Drawing.Point(1101, 152);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(121, 20);
             this.label12.TabIndex = 56;
@@ -569,14 +569,15 @@ namespace Test_COM
             this.DurComboBoxCh4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh4.FormattingEnabled = true;
             this.DurComboBoxCh4.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh4.Location = new System.Drawing.Point(1010, 154);
             this.DurComboBoxCh4.Name = "DurComboBoxCh4";
-            this.DurComboBoxCh4.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh4.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh4.TabIndex = 54;
+            this.DurComboBoxCh4.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh4_SelectedIndexChanged);
             this.DurComboBoxCh4.TextChanged += new System.EventHandler(this.DurComboBoxCh4_SelectedIndexChanged);
             // 
             // label13
@@ -612,13 +613,13 @@ namespace Test_COM
             this.DelComboBoxCh3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh3.FormattingEnabled = true;
             this.DelComboBoxCh3.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh3.Location = new System.Drawing.Point(694, 188);
             this.DelComboBoxCh3.Name = "DelComboBoxCh3";
-            this.DelComboBoxCh3.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh3.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh3.TabIndex = 50;
             this.DelComboBoxCh3.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh3_SelectedIndexChanged);
             // 
@@ -636,7 +637,7 @@ namespace Test_COM
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(746, 188);
+            this.label14.Location = new System.Drawing.Point(785, 188);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(86, 20);
             this.label14.TabIndex = 48;
@@ -656,7 +657,7 @@ namespace Test_COM
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(745, 152);
+            this.label16.Location = new System.Drawing.Point(785, 152);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(121, 20);
             this.label16.TabIndex = 46;
@@ -680,13 +681,13 @@ namespace Test_COM
             this.DurComboBoxCh3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh3.FormattingEnabled = true;
             this.DurComboBoxCh3.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh3.Location = new System.Drawing.Point(694, 154);
             this.DurComboBoxCh3.Name = "DurComboBoxCh3";
-            this.DurComboBoxCh3.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh3.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh3.TabIndex = 44;
             this.DurComboBoxCh3.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh3_SelectedIndexChanged);
             // 
@@ -723,13 +724,13 @@ namespace Test_COM
             this.DelComboBoxCh8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh8.FormattingEnabled = true;
             this.DelComboBoxCh8.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh8.Location = new System.Drawing.Point(1010, 396);
             this.DelComboBoxCh8.Name = "DelComboBoxCh8";
-            this.DelComboBoxCh8.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh8.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh8.TabIndex = 100;
             this.DelComboBoxCh8.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh8_SelectedIndexChanged);
             // 
@@ -747,7 +748,7 @@ namespace Test_COM
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.Location = new System.Drawing.Point(1062, 396);
+            this.label18.Location = new System.Drawing.Point(1101, 396);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(86, 20);
             this.label18.TabIndex = 98;
@@ -767,7 +768,7 @@ namespace Test_COM
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.Location = new System.Drawing.Point(1061, 360);
+            this.label20.Location = new System.Drawing.Point(1101, 360);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(121, 20);
             this.label20.TabIndex = 96;
@@ -791,13 +792,13 @@ namespace Test_COM
             this.DurComboBoxCh8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh8.FormattingEnabled = true;
             this.DurComboBoxCh8.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh8.Location = new System.Drawing.Point(1010, 362);
             this.DurComboBoxCh8.Name = "DurComboBoxCh8";
-            this.DurComboBoxCh8.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh8.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh8.TabIndex = 94;
             this.DurComboBoxCh8.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh8_SelectedIndexChanged);
             // 
@@ -834,13 +835,13 @@ namespace Test_COM
             this.DelComboBoxCh7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh7.FormattingEnabled = true;
             this.DelComboBoxCh7.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh7.Location = new System.Drawing.Point(694, 396);
             this.DelComboBoxCh7.Name = "DelComboBoxCh7";
-            this.DelComboBoxCh7.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh7.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh7.TabIndex = 90;
             this.DelComboBoxCh7.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh7_SelectedIndexChanged);
             // 
@@ -858,7 +859,7 @@ namespace Test_COM
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.Location = new System.Drawing.Point(746, 396);
+            this.label22.Location = new System.Drawing.Point(785, 396);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(86, 20);
             this.label22.TabIndex = 88;
@@ -878,7 +879,7 @@ namespace Test_COM
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label24.Location = new System.Drawing.Point(745, 360);
+            this.label24.Location = new System.Drawing.Point(785, 360);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(121, 20);
             this.label24.TabIndex = 86;
@@ -902,13 +903,13 @@ namespace Test_COM
             this.DurComboBoxCh7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh7.FormattingEnabled = true;
             this.DurComboBoxCh7.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh7.Location = new System.Drawing.Point(694, 362);
             this.DurComboBoxCh7.Name = "DurComboBoxCh7";
-            this.DurComboBoxCh7.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh7.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh7.TabIndex = 84;
             this.DurComboBoxCh7.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh7_SelectedIndexChanged);
             // 
@@ -945,13 +946,13 @@ namespace Test_COM
             this.DelComboBoxCh6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh6.FormattingEnabled = true;
             this.DelComboBoxCh6.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh6.Location = new System.Drawing.Point(381, 396);
             this.DelComboBoxCh6.Name = "DelComboBoxCh6";
-            this.DelComboBoxCh6.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh6.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh6.TabIndex = 80;
             this.DelComboBoxCh6.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh6_SelectedIndexChanged);
             // 
@@ -969,7 +970,7 @@ namespace Test_COM
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label26.Location = new System.Drawing.Point(433, 396);
+            this.label26.Location = new System.Drawing.Point(472, 396);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(86, 20);
             this.label26.TabIndex = 78;
@@ -989,7 +990,7 @@ namespace Test_COM
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label28.Location = new System.Drawing.Point(432, 360);
+            this.label28.Location = new System.Drawing.Point(472, 360);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(121, 20);
             this.label28.TabIndex = 76;
@@ -1013,13 +1014,13 @@ namespace Test_COM
             this.DurComboBoxCh6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh6.FormattingEnabled = true;
             this.DurComboBoxCh6.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh6.Location = new System.Drawing.Point(381, 362);
             this.DurComboBoxCh6.Name = "DurComboBoxCh6";
-            this.DurComboBoxCh6.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh6.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh6.TabIndex = 74;
             this.DurComboBoxCh6.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh6_SelectedIndexChanged);
             // 
@@ -1056,13 +1057,13 @@ namespace Test_COM
             this.DelComboBoxCh5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh5.FormattingEnabled = true;
             this.DelComboBoxCh5.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh5.Location = new System.Drawing.Point(64, 396);
             this.DelComboBoxCh5.Name = "DelComboBoxCh5";
-            this.DelComboBoxCh5.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh5.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh5.TabIndex = 70;
             this.DelComboBoxCh5.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh5_SelectedIndexChanged);
             // 
@@ -1080,7 +1081,7 @@ namespace Test_COM
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label30.Location = new System.Drawing.Point(116, 396);
+            this.label30.Location = new System.Drawing.Point(155, 396);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(86, 20);
             this.label30.TabIndex = 68;
@@ -1100,7 +1101,7 @@ namespace Test_COM
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label32.Location = new System.Drawing.Point(115, 360);
+            this.label32.Location = new System.Drawing.Point(155, 360);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(121, 20);
             this.label32.TabIndex = 66;
@@ -1124,13 +1125,13 @@ namespace Test_COM
             this.DurComboBoxCh5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh5.FormattingEnabled = true;
             this.DurComboBoxCh5.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh5.Location = new System.Drawing.Point(64, 362);
             this.DurComboBoxCh5.Name = "DurComboBoxCh5";
-            this.DurComboBoxCh5.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh5.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh5.TabIndex = 64;
             this.DurComboBoxCh5.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh5_SelectedIndexChanged);
             // 
@@ -1167,13 +1168,13 @@ namespace Test_COM
             this.DelComboBoxCh16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh16.FormattingEnabled = true;
             this.DelComboBoxCh16.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh16.Location = new System.Drawing.Point(1010, 842);
             this.DelComboBoxCh16.Name = "DelComboBoxCh16";
-            this.DelComboBoxCh16.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh16.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh16.TabIndex = 180;
             this.DelComboBoxCh16.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh16_SelectedIndexChanged);
             // 
@@ -1191,7 +1192,7 @@ namespace Test_COM
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label34.Location = new System.Drawing.Point(1062, 842);
+            this.label34.Location = new System.Drawing.Point(1101, 842);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(86, 20);
             this.label34.TabIndex = 178;
@@ -1211,7 +1212,7 @@ namespace Test_COM
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label36.Location = new System.Drawing.Point(1061, 806);
+            this.label36.Location = new System.Drawing.Point(1101, 806);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(121, 20);
             this.label36.TabIndex = 176;
@@ -1235,13 +1236,13 @@ namespace Test_COM
             this.DurComboBoxCh16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh16.FormattingEnabled = true;
             this.DurComboBoxCh16.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh16.Location = new System.Drawing.Point(1010, 808);
             this.DurComboBoxCh16.Name = "DurComboBoxCh16";
-            this.DurComboBoxCh16.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh16.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh16.TabIndex = 174;
             this.DurComboBoxCh16.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh16_SelectedIndexChanged);
             // 
@@ -1278,13 +1279,13 @@ namespace Test_COM
             this.DelComboBoxCh15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh15.FormattingEnabled = true;
             this.DelComboBoxCh15.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh15.Location = new System.Drawing.Point(694, 842);
             this.DelComboBoxCh15.Name = "DelComboBoxCh15";
-            this.DelComboBoxCh15.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh15.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh15.TabIndex = 170;
             this.DelComboBoxCh15.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh15_SelectedIndexChanged);
             // 
@@ -1302,7 +1303,7 @@ namespace Test_COM
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label38.Location = new System.Drawing.Point(746, 842);
+            this.label38.Location = new System.Drawing.Point(785, 842);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(86, 20);
             this.label38.TabIndex = 168;
@@ -1322,7 +1323,7 @@ namespace Test_COM
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label40.Location = new System.Drawing.Point(745, 806);
+            this.label40.Location = new System.Drawing.Point(785, 806);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(121, 20);
             this.label40.TabIndex = 166;
@@ -1346,13 +1347,13 @@ namespace Test_COM
             this.DurComboBoxCh15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh15.FormattingEnabled = true;
             this.DurComboBoxCh15.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh15.Location = new System.Drawing.Point(694, 808);
             this.DurComboBoxCh15.Name = "DurComboBoxCh15";
-            this.DurComboBoxCh15.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh15.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh15.TabIndex = 164;
             this.DurComboBoxCh15.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh15_SelectedIndexChanged);
             // 
@@ -1389,13 +1390,13 @@ namespace Test_COM
             this.DelComboBoxCh14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh14.FormattingEnabled = true;
             this.DelComboBoxCh14.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh14.Location = new System.Drawing.Point(381, 842);
             this.DelComboBoxCh14.Name = "DelComboBoxCh14";
-            this.DelComboBoxCh14.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh14.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh14.TabIndex = 160;
             this.DelComboBoxCh14.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh14_SelectedIndexChanged);
             // 
@@ -1413,7 +1414,7 @@ namespace Test_COM
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label42.Location = new System.Drawing.Point(433, 842);
+            this.label42.Location = new System.Drawing.Point(472, 842);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(86, 20);
             this.label42.TabIndex = 158;
@@ -1433,7 +1434,7 @@ namespace Test_COM
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label44.Location = new System.Drawing.Point(432, 806);
+            this.label44.Location = new System.Drawing.Point(472, 806);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(121, 20);
             this.label44.TabIndex = 156;
@@ -1457,13 +1458,13 @@ namespace Test_COM
             this.DurComboBoxCh14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh14.FormattingEnabled = true;
             this.DurComboBoxCh14.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh14.Location = new System.Drawing.Point(381, 808);
             this.DurComboBoxCh14.Name = "DurComboBoxCh14";
-            this.DurComboBoxCh14.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh14.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh14.TabIndex = 154;
             this.DurComboBoxCh14.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh14_SelectedIndexChanged);
             // 
@@ -1500,13 +1501,13 @@ namespace Test_COM
             this.DelComboBoxCh13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh13.FormattingEnabled = true;
             this.DelComboBoxCh13.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh13.Location = new System.Drawing.Point(64, 842);
             this.DelComboBoxCh13.Name = "DelComboBoxCh13";
-            this.DelComboBoxCh13.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh13.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh13.TabIndex = 150;
             this.DelComboBoxCh13.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh13_SelectedIndexChanged);
             // 
@@ -1524,7 +1525,7 @@ namespace Test_COM
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label46.Location = new System.Drawing.Point(116, 842);
+            this.label46.Location = new System.Drawing.Point(155, 842);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(86, 20);
             this.label46.TabIndex = 148;
@@ -1544,7 +1545,7 @@ namespace Test_COM
             // 
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label48.Location = new System.Drawing.Point(115, 806);
+            this.label48.Location = new System.Drawing.Point(155, 806);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(121, 20);
             this.label48.TabIndex = 146;
@@ -1568,13 +1569,13 @@ namespace Test_COM
             this.DurComboBoxCh13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh13.FormattingEnabled = true;
             this.DurComboBoxCh13.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh13.Location = new System.Drawing.Point(64, 808);
             this.DurComboBoxCh13.Name = "DurComboBoxCh13";
-            this.DurComboBoxCh13.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh13.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh13.TabIndex = 144;
             this.DurComboBoxCh13.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh13_SelectedIndexChanged);
             // 
@@ -1611,13 +1612,13 @@ namespace Test_COM
             this.DelComboBoxCh12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh12.FormattingEnabled = true;
             this.DelComboBoxCh12.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh12.Location = new System.Drawing.Point(1010, 618);
             this.DelComboBoxCh12.Name = "DelComboBoxCh12";
-            this.DelComboBoxCh12.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh12.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh12.TabIndex = 140;
             this.DelComboBoxCh12.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh12_SelectedIndexChanged);
             // 
@@ -1635,7 +1636,7 @@ namespace Test_COM
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label50.Location = new System.Drawing.Point(1062, 618);
+            this.label50.Location = new System.Drawing.Point(1101, 618);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(86, 20);
             this.label50.TabIndex = 138;
@@ -1655,7 +1656,7 @@ namespace Test_COM
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label52.Location = new System.Drawing.Point(1061, 582);
+            this.label52.Location = new System.Drawing.Point(1101, 582);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(121, 20);
             this.label52.TabIndex = 136;
@@ -1679,13 +1680,13 @@ namespace Test_COM
             this.DurComboBoxCh12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh12.FormattingEnabled = true;
             this.DurComboBoxCh12.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh12.Location = new System.Drawing.Point(1010, 584);
             this.DurComboBoxCh12.Name = "DurComboBoxCh12";
-            this.DurComboBoxCh12.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh12.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh12.TabIndex = 134;
             this.DurComboBoxCh12.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh12_SelectedIndexChanged);
             // 
@@ -1722,13 +1723,13 @@ namespace Test_COM
             this.DelComboBoxCh11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh11.FormattingEnabled = true;
             this.DelComboBoxCh11.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh11.Location = new System.Drawing.Point(694, 618);
             this.DelComboBoxCh11.Name = "DelComboBoxCh11";
-            this.DelComboBoxCh11.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh11.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh11.TabIndex = 130;
             this.DelComboBoxCh11.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh11_SelectedIndexChanged);
             // 
@@ -1746,7 +1747,7 @@ namespace Test_COM
             // 
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label54.Location = new System.Drawing.Point(746, 618);
+            this.label54.Location = new System.Drawing.Point(785, 618);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(86, 20);
             this.label54.TabIndex = 128;
@@ -1766,7 +1767,7 @@ namespace Test_COM
             // 
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label56.Location = new System.Drawing.Point(745, 582);
+            this.label56.Location = new System.Drawing.Point(785, 582);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(121, 20);
             this.label56.TabIndex = 126;
@@ -1790,13 +1791,13 @@ namespace Test_COM
             this.DurComboBoxCh11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh11.FormattingEnabled = true;
             this.DurComboBoxCh11.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh11.Location = new System.Drawing.Point(694, 584);
             this.DurComboBoxCh11.Name = "DurComboBoxCh11";
-            this.DurComboBoxCh11.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh11.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh11.TabIndex = 124;
             this.DurComboBoxCh11.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh11_SelectedIndexChanged);
             // 
@@ -1833,13 +1834,13 @@ namespace Test_COM
             this.DelComboBoxCh10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh10.FormattingEnabled = true;
             this.DelComboBoxCh10.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh10.Location = new System.Drawing.Point(381, 618);
             this.DelComboBoxCh10.Name = "DelComboBoxCh10";
-            this.DelComboBoxCh10.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh10.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh10.TabIndex = 120;
             this.DelComboBoxCh10.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh10_SelectedIndexChanged);
             // 
@@ -1857,7 +1858,7 @@ namespace Test_COM
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label58.Location = new System.Drawing.Point(433, 618);
+            this.label58.Location = new System.Drawing.Point(472, 618);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(86, 20);
             this.label58.TabIndex = 118;
@@ -1877,7 +1878,7 @@ namespace Test_COM
             // 
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label60.Location = new System.Drawing.Point(432, 582);
+            this.label60.Location = new System.Drawing.Point(472, 582);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(121, 20);
             this.label60.TabIndex = 116;
@@ -1901,13 +1902,13 @@ namespace Test_COM
             this.DurComboBoxCh10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh10.FormattingEnabled = true;
             this.DurComboBoxCh10.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh10.Location = new System.Drawing.Point(381, 584);
             this.DurComboBoxCh10.Name = "DurComboBoxCh10";
-            this.DurComboBoxCh10.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh10.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh10.TabIndex = 114;
             this.DurComboBoxCh10.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh10_SelectedIndexChanged);
             // 
@@ -1944,13 +1945,13 @@ namespace Test_COM
             this.DelComboBoxCh9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DelComboBoxCh9.FormattingEnabled = true;
             this.DelComboBoxCh9.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DelComboBoxCh9.Location = new System.Drawing.Point(64, 618);
             this.DelComboBoxCh9.Name = "DelComboBoxCh9";
-            this.DelComboBoxCh9.Size = new System.Drawing.Size(46, 28);
+            this.DelComboBoxCh9.Size = new System.Drawing.Size(85, 28);
             this.DelComboBoxCh9.TabIndex = 110;
             this.DelComboBoxCh9.SelectedIndexChanged += new System.EventHandler(this.DelComboBoxCh9_SelectedIndexChanged);
             // 
@@ -1968,7 +1969,7 @@ namespace Test_COM
             // 
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label62.Location = new System.Drawing.Point(116, 618);
+            this.label62.Location = new System.Drawing.Point(155, 618);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(86, 20);
             this.label62.TabIndex = 108;
@@ -1988,7 +1989,7 @@ namespace Test_COM
             // 
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label64.Location = new System.Drawing.Point(115, 582);
+            this.label64.Location = new System.Drawing.Point(155, 582);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(121, 20);
             this.label64.TabIndex = 106;
@@ -2012,13 +2013,13 @@ namespace Test_COM
             this.DurComboBoxCh9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DurComboBoxCh9.FormattingEnabled = true;
             this.DurComboBoxCh9.Items.AddRange(new object[] {
-            "нс",
+            "*10 нс",
             "мкс",
             "мс",
             "с"});
             this.DurComboBoxCh9.Location = new System.Drawing.Point(64, 584);
             this.DurComboBoxCh9.Name = "DurComboBoxCh9";
-            this.DurComboBoxCh9.Size = new System.Drawing.Size(46, 28);
+            this.DurComboBoxCh9.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh9.TabIndex = 104;
             this.DurComboBoxCh9.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh9_SelectedIndexChanged);
             // 
@@ -2045,7 +2046,7 @@ namespace Test_COM
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1196, 125);
+            this.pictureBox2.Location = new System.Drawing.Point(1207, 125);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(644, 331);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -2055,7 +2056,7 @@ namespace Test_COM
             // ButtonOneInAll
             // 
             this.ButtonOneInAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonOneInAll.Location = new System.Drawing.Point(1327, 481);
+            this.ButtonOneInAll.Location = new System.Drawing.Point(1312, 481);
             this.ButtonOneInAll.Name = "ButtonOneInAll";
             this.ButtonOneInAll.Size = new System.Drawing.Size(180, 94);
             this.ButtonOneInAll.TabIndex = 183;
@@ -2066,7 +2067,7 @@ namespace Test_COM
             // CearAllCh
             // 
             this.CearAllCh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CearAllCh.Location = new System.Drawing.Point(1555, 481);
+            this.CearAllCh.Location = new System.Drawing.Point(1624, 481);
             this.CearAllCh.Name = "CearAllCh";
             this.CearAllCh.Size = new System.Drawing.Size(180, 94);
             this.CearAllCh.TabIndex = 184;
