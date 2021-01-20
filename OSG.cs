@@ -180,7 +180,9 @@ namespace Test_COM
 
         public OSG()
         {
-            InitializeComponent();              
+            InitializeComponent();
+
+            StartButton.Enabled = false;                 ////////////////////////!!!!!!!!!!!!!!!! ВЫКЛЮЧЕНА КНОПКА  !!!!!!!!!!!!!!/////////////// 
 
             string[] ports;                       // Массив строковых переменных для хранения имен подключеннх СОМ портов
             ports = SerialPort.GetPortNames();    // Получение имен подключеннх СОМ портов
@@ -235,7 +237,10 @@ namespace Test_COM
             DurTextBoxCh16.Text = "0";
             DelTextBoxch16.Text = "0";
 
-            
+           
+                        
+
+
         }
 
 
@@ -273,87 +278,105 @@ namespace Test_COM
 
         public void SerialSendButton_Click(object sender, EventArgs e)                          // При нажатии на кнопку отправки в СОМ порт:
         {
-            int count = 112;              ///// ВНИМАНИЕ                                          // Количество байтов массива для отправки в СОМ 
+            int count = 112;              ///// ВНИМАНИЕ                                        // Количество байтов массива для отправки в СОМ 
             int offset = 0;                                                                     // Смещение не нужно = 0
             byte[] buffer = new byte[] {DurationMassiveDataCH1[0], DurationMassiveDataCH1[1],   // Массив байтов для отправки в СОМ порт
+                                        DurMultiplierCH1,
                                         DelayMassiveDataCH1[0],    DelayMassiveDataCH1[1],
-                                        DurMultiplierCH1,          DelMultiplierCH1,
+                                        DelMultiplierCH1,
                                         TypeStartCH1,
 
                                         DurationMassiveDataCH2[0], DurationMassiveDataCH2[1],   
+                                        DurMultiplierCH2,
                                         DelayMassiveDataCH2[0],    DelayMassiveDataCH2[1],
-                                        DurMultiplierCH2,          DelMultiplierCH2,
+                                        DelMultiplierCH2,
                                         TypeStartCH2,
 
                                         DurationMassiveDataCH3[0], DurationMassiveDataCH3[1],
+                                        DurMultiplierCH3,
                                         DelayMassiveDataCH3[0],    DelayMassiveDataCH3[1],
-                                        DurMultiplierCH3,          DelMultiplierCH3,
+                                        DelMultiplierCH3,
                                         TypeStartCH3,
-
+                                        
                                         DurationMassiveDataCH4[0], DurationMassiveDataCH4[1],
+                                        DurMultiplierCH4,
                                         DelayMassiveDataCH4[0],    DelayMassiveDataCH4[1],
-                                        DurMultiplierCH4,          DelMultiplierCH4,
+                                        DelMultiplierCH4,
                                         TypeStartCH4,
 
                                         DurationMassiveDataCH5[0], DurationMassiveDataCH5[1],
+                                        DurMultiplierCH5,
                                         DelayMassiveDataCH5[0],    DelayMassiveDataCH5[1],
-                                        DurMultiplierCH5,          DelMultiplierCH5,
+                                        DelMultiplierCH5,
                                         TypeStartCH5,
 
                                         DurationMassiveDataCH6[0], DurationMassiveDataCH6[1],
+                                        DurMultiplierCH6,
                                         DelayMassiveDataCH6[0],    DelayMassiveDataCH6[1],
-                                        DurMultiplierCH6,          DelMultiplierCH6,
+                                        DelMultiplierCH6,
                                         TypeStartCH6,
 
                                         DurationMassiveDataCH7[0], DurationMassiveDataCH7[1],
+                                        DurMultiplierCH7,
                                         DelayMassiveDataCH7[0],    DelayMassiveDataCH7[1],
-                                        DurMultiplierCH7,          DelMultiplierCH7,
+                                        DelMultiplierCH7,
                                         TypeStartCH7,
 
                                         DurationMassiveDataCH8[0], DurationMassiveDataCH8[1],
+                                        DurMultiplierCH8,
                                         DelayMassiveDataCH8[0],    DelayMassiveDataCH8[1],
-                                        DurMultiplierCH8,          DelMultiplierCH8,
+                                        DelMultiplierCH8,
                                         TypeStartCH8,
 
-                                        DurationMassiveDataCH9[0], DurationMassiveDataCH9[1],   
+                                        DurationMassiveDataCH9[0], DurationMassiveDataCH9[1],
+                                        DurMultiplierCH9,
                                         DelayMassiveDataCH9[0],    DelayMassiveDataCH9[1],
-                                        DurMultiplierCH9,          DelMultiplierCH9,
+                                        DelMultiplierCH9,
                                         TypeStartCH9,
 
                                         DurationMassiveDataCH10[0], DurationMassiveDataCH10[1],
+                                        DurMultiplierCH10,
                                         DelayMassiveDataCH10[0],    DelayMassiveDataCH10[1],
-                                        DurMultiplierCH10,          DelMultiplierCH10,
+                                        DelMultiplierCH10,
                                         TypeStartCH10,
 
-                                        DurationMassiveDataCH11[0], DurationMassiveDataCH11[1],
+                                        DurationMassiveDataCH11[0], DurationMassiveDataCH1[1],
+                                        DurMultiplierCH11,
                                         DelayMassiveDataCH11[0],    DelayMassiveDataCH11[1],
-                                        DurMultiplierCH11,          DelMultiplierCH11,
+                                        DelMultiplierCH11,
                                         TypeStartCH11,
 
                                         DurationMassiveDataCH12[0], DurationMassiveDataCH12[1],
+                                        DurMultiplierCH12,
                                         DelayMassiveDataCH12[0],    DelayMassiveDataCH12[1],
-                                        DurMultiplierCH12,          DelMultiplierCH12,
+                                        DelMultiplierCH12,
                                         TypeStartCH12,
 
                                         DurationMassiveDataCH13[0], DurationMassiveDataCH13[1],
+                                        DurMultiplierCH13,
                                         DelayMassiveDataCH13[0],    DelayMassiveDataCH13[1],
-                                        DurMultiplierCH13,          DelMultiplierCH13,
+                                        DelMultiplierCH13,
                                         TypeStartCH13,
 
                                         DurationMassiveDataCH14[0], DurationMassiveDataCH14[1],
+                                        DurMultiplierCH14,
                                         DelayMassiveDataCH14[0],    DelayMassiveDataCH14[1],
-                                        DurMultiplierCH14,          DelMultiplierCH14,
+                                        DelMultiplierCH14,
                                         TypeStartCH14,
 
                                         DurationMassiveDataCH15[0], DurationMassiveDataCH15[1],
+                                        DurMultiplierCH15,
                                         DelayMassiveDataCH15[0],    DelayMassiveDataCH15[1],
-                                        DurMultiplierCH15,          DelMultiplierCH15,
+                                        DelMultiplierCH15,
                                         TypeStartCH15,
 
                                         DurationMassiveDataCH16[0], DurationMassiveDataCH16[1],
+                                        DurMultiplierCH16,
                                         DelayMassiveDataCH16[0],    DelayMassiveDataCH16[1],
-                                        DurMultiplierCH16,          DelMultiplierCH16,
+                                        DelMultiplierCH16,
                                         TypeStartCH16
+
+
                                                                                      };
 
             if (Port.IsOpen == true)                                                            // Если порт открыт 
@@ -490,7 +513,7 @@ namespace Test_COM
                         {
                             Port.Write(BufStart, offset, count);
                             //StartButton.Click -= new System.EventHandler(this.StartButton_Click);
-                            ///StartButton.Enabled = false;
+                            //StartButton.Enabled = false;
                             //Thread.Sleep(500);
                             //StartButton.Enabled = true;
                            // StartButton.Click += new System.EventHandler(StartButton_Click);
@@ -525,6 +548,7 @@ namespace Test_COM
         Checking_text_for_a_number(DurTextBoxCh1.Text, out bool res);
             if (res == true)
             {
+
             }
             else 
             {
@@ -535,6 +559,14 @@ namespace Test_COM
             {
                 DurTextBoxCh1.Text = "0";
             }
+
+            //if (DurComboBoxCh1.Text != "*10 нс" & DurComboBoxCh1.Text != "мкс" & DurComboBoxCh1.Text != "мс")
+            //{
+            //    if (Convert.ToInt32(DurTextBoxCh1.Text) >= 9)                                                                     Для секунд
+            //    {
+            //        DurTextBoxCh1.Text = "9";
+            //    }
+            //}
              
             string buf = DurTextBoxCh1.Text;
             DurationPulseCH1 = Convert.ToInt16(buf);
@@ -568,18 +600,22 @@ namespace Test_COM
             {
                 DurMultiplierCH1 = 1;
             }
-            if (DurComboBoxCh1.Text == "мкс")
+            else if (DurComboBoxCh1.Text == "мкс")
             {
                 DurMultiplierCH1 = 2;
             }
-            if (DurComboBoxCh1.Text == "мс")
+            else if (DurComboBoxCh1.Text == "мс")
             {
                 DurMultiplierCH1 = 3;
             }
-            if (DurComboBoxCh1.Text == "c")
-            {
-                DurMultiplierCH1 = 4;
-            }
+            //else 
+            //{
+            //    if (Convert.ToInt32(DurTextBoxCh1.Text) >= 9)
+            //    {
+            //        DurTextBoxCh1.Text = "9";                                                                                        Для секунд
+            //    }
+            //    DurMultiplierCH1 = 4;
+            //}
         }
 
         public void DelComboBoxCh1_SelectedIndexChanged(object sender, EventArgs e)
@@ -588,18 +624,18 @@ namespace Test_COM
             {
                 DelMultiplierCH1 = 1;
             }
-            if (DelComboBoxCh1.Text == "мкс")
+            else if (DelComboBoxCh1.Text == "мкс")
             {
-                DelMultiplierCH1 = 2;
+                DelMultiplierCH1 = 2;                                                   
             }
-            if (DelComboBoxCh1.Text == "мс")
+            else if (DelComboBoxCh1.Text == "мс")
             {
                 DelMultiplierCH1 = 3;
             }
-            if (DelComboBoxCh1.Text == "c")
-            {
-                DelMultiplierCH1 = 4;
-            }
+            //else
+            //{
+            //     DelMultiplierCH1 = 4;                                                                                               Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh1_SelectedIndexChanged(object sender, EventArgs e)
@@ -610,7 +646,7 @@ namespace Test_COM
             }
             if (ComboBoxTypeStartCh1.Text == "От предыдущего")
             {
-                TypeStartCH1 = 2;
+                TypeStartCH1 = 1;
             }
         }
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -665,18 +701,18 @@ namespace Test_COM
             {
                 DurMultiplierCH2 = 1;
             }
-            if (DurComboBoxCh2.Text == "мкс")
+            else if (DurComboBoxCh2.Text == "мкс")
             {
                 DurMultiplierCH2 = 2;
             }
-            if (DurComboBoxCh2.Text == "мс")
+            else if (DurComboBoxCh2.Text == "мс")
             {
                 DurMultiplierCH2 = 3;
             }
-            if (DurComboBoxCh2.Text == "c")
-            {
-                DurMultiplierCH2 = 4;
-            }
+            //else 
+            //{
+            //    DurMultiplierCH2 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh2_SelectedIndexChanged(object sender, EventArgs e)
@@ -685,18 +721,18 @@ namespace Test_COM
             {
                 DelMultiplierCH2 = 1;
             }
-            if (DelComboBoxCh2.Text == "мкс")
+            else if(DelComboBoxCh2.Text == "мкс")
             {
                 DelMultiplierCH2 = 2;
             }
-            if (DelComboBoxCh2.Text == "мс")
+            else if(DelComboBoxCh2.Text == "мс")
             {
                 DelMultiplierCH2 = 3;
             }
-            if (DelComboBoxCh2.Text == "c")
-            {
-                DelMultiplierCH2 = 4;
-            }
+            //else 
+            //{
+            //    DelMultiplierCH2 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh2_SelectedIndexChanged(object sender, EventArgs e)
@@ -762,18 +798,18 @@ namespace Test_COM
             {
                 DurMultiplierCH3 = 1;
             }
-            if (DurComboBoxCh3.Text == "мкс")
+            else if(DurComboBoxCh3.Text == "мкс")
             {
                 DurMultiplierCH3 = 2;
             }
-            if (DurComboBoxCh3.Text == "мс")
+            else if(DurComboBoxCh3.Text == "мс")
             {
                 DurMultiplierCH3 = 3;
             }
-            if (DurComboBoxCh3.Text == "c")
-            {
-                DurMultiplierCH3 = 4;
-            }
+            //else 
+            //{
+            //    DurMultiplierCH3 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh3_SelectedIndexChanged(object sender, EventArgs e)
@@ -782,18 +818,18 @@ namespace Test_COM
             {
                 DelMultiplierCH3 = 1;
             }
-            if (DelComboBoxCh3.Text == "мкс")
+            else if(DelComboBoxCh3.Text == "мкс")
             {
                 DelMultiplierCH3 = 2;
             }
-            if (DelComboBoxCh3.Text == "мс")
+            else if(DelComboBoxCh3.Text == "мс")
             {
                 DelMultiplierCH3 = 3;
             }
-            if (DelComboBoxCh3.Text == "c")
-            {
-                DelMultiplierCH3 = 4;
-            }
+            //else 
+            //{
+            //    DelMultiplierCH3 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh3_SelectedIndexChanged(object sender, EventArgs e)
@@ -859,18 +895,18 @@ namespace Test_COM
             {
                 DurMultiplierCH4 = 1;
             }
-            if (DurComboBoxCh4.Text == "мкс")
+            else if(DurComboBoxCh4.Text == "мкс")
             {
                 DurMultiplierCH4 = 2;
             }
-            if (DurComboBoxCh4.Text == "мс")
+            else if(DurComboBoxCh4.Text == "мс")
             {
                 DurMultiplierCH4 = 3;
             }
-            if (DurComboBoxCh4.Text == "c")
-            {
-                DurMultiplierCH4 = 4;
-            }
+            //else 
+            //{
+            //    DurMultiplierCH4 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh4_SelectedIndexChanged(object sender, EventArgs e)
@@ -879,18 +915,18 @@ namespace Test_COM
             {
                 DelMultiplierCH4 = 1;
             }
-            if (DelComboBoxCh4.Text == "мкс")
+            else if(DelComboBoxCh4.Text == "мкс")
             {
                 DelMultiplierCH4 = 2;
             }
-            if (DelComboBoxCh4.Text == "мс")
+            else if(DelComboBoxCh4.Text == "мс")
             {
                 DelMultiplierCH4 = 3;
             }
-            if (DelComboBoxCh4.Text == "c")
-            {
-                DelMultiplierCH4 = 4;
-            }
+            //else 
+            //{
+            //    DelMultiplierCH4 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh4_SelectedIndexChanged(object sender, EventArgs e)
@@ -956,18 +992,18 @@ namespace Test_COM
             {
                 DurMultiplierCH5 = 1;
             }
-            if (DurComboBoxCh5.Text == "мкс")
+            else if(DurComboBoxCh5.Text == "мкс")
             {
                 DurMultiplierCH5 = 2;
             }
-            if (DurComboBoxCh5.Text == "мс")
+            else if(DurComboBoxCh5.Text == "мс")
             {
                 DurMultiplierCH5 = 3;
             }
-            if (DurComboBoxCh5.Text == "c")
-            {
-                DurMultiplierCH5 = 4;
-            }
+            //else 
+            //{
+            //    DurMultiplierCH5 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh5_SelectedIndexChanged(object sender, EventArgs e)
@@ -976,18 +1012,18 @@ namespace Test_COM
             {
                 DelMultiplierCH5 = 1;
             }
-            if (DelComboBoxCh5.Text == "мкс")
+            else if(DelComboBoxCh5.Text == "мкс")
             {
                 DelMultiplierCH5 = 2;
             }
-            if (DelComboBoxCh5.Text == "мс")
+            else if(DelComboBoxCh5.Text == "мс")
             {
                 DelMultiplierCH5 = 3;
             }
-            if (DelComboBoxCh5.Text == "c")
-            {
-                DelMultiplierCH5 = 4;
-            }
+            //else 
+            //{
+            //    DelMultiplierCH5 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh5_SelectedIndexChanged(object sender, EventArgs e)
@@ -1053,18 +1089,18 @@ namespace Test_COM
             {
                 DurMultiplierCH6 = 1;
             }
-            if (DurComboBoxCh6.Text == "мкс")
+            else if(DurComboBoxCh6.Text == "мкс")
             {
                 DurMultiplierCH6 = 2;
             }
-            if (DurComboBoxCh6.Text == "мс")
+            else if(DurComboBoxCh6.Text == "мс")
             {
                 DurMultiplierCH6 = 3;
             }
-            if (DurComboBoxCh6.Text == "c")
-            {
-                DurMultiplierCH6 = 4;
-            }
+            //else 
+            //{
+            //    DurMultiplierCH6 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh6_SelectedIndexChanged(object sender, EventArgs e)
@@ -1073,18 +1109,18 @@ namespace Test_COM
             {
                 DelMultiplierCH6 = 1;
             }
-            if (DelComboBoxCh6.Text == "мкс")
+            else if(DelComboBoxCh6.Text == "мкс")
             {
                 DelMultiplierCH6 = 2;
             }
-            if (DelComboBoxCh6.Text == "мс")
+            else if(DelComboBoxCh6.Text == "мс")
             {
                 DelMultiplierCH6 = 3;
             }
-            if (DelComboBoxCh6.Text == "c")
-            {
-                DelMultiplierCH6 = 4;
-            }
+            //else 
+            //{
+            //    DelMultiplierCH6 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh6_SelectedIndexChanged(object sender, EventArgs e)
@@ -1150,18 +1186,18 @@ namespace Test_COM
             {
                 DurMultiplierCH7 = 1;
             }
-            if (DurComboBoxCh7.Text == "мкс")
+            else if(DurComboBoxCh7.Text == "мкс")
             {
                 DurMultiplierCH7 = 2;
             }
-            if (DurComboBoxCh7.Text == "мс")
+            else if(DurComboBoxCh7.Text == "мс")
             {
                 DurMultiplierCH7 = 3;
             }
-            if (DurComboBoxCh7.Text == "c")
-            {
-                DurMultiplierCH7 = 4;
-            }
+            //else 
+            //{
+            //    DurMultiplierCH7 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh7_SelectedIndexChanged(object sender, EventArgs e)
@@ -1170,18 +1206,18 @@ namespace Test_COM
             {
                 DelMultiplierCH7 = 1;
             }
-            if (DelComboBoxCh7.Text == "мкс")
+            else if(DelComboBoxCh7.Text == "мкс")
             {
                 DelMultiplierCH7 = 2;
             }
-            if (DelComboBoxCh7.Text == "мс")
+            else if(DelComboBoxCh7.Text == "мс")
             {
                 DelMultiplierCH7 = 3;
             }
-            if (DelComboBoxCh7.Text == "c")
-            {
-                DelMultiplierCH7 = 4;
-            }
+            //else
+            //{
+            //    DelMultiplierCH7 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh7_SelectedIndexChanged(object sender, EventArgs e)
@@ -1247,18 +1283,18 @@ namespace Test_COM
             {
                 DurMultiplierCH8 = 1;
             }
-            if (DurComboBoxCh8.Text == "мкс")
+            else if(DurComboBoxCh8.Text == "мкс")
             {
                 DurMultiplierCH8 = 2;
             }
-            if (DurComboBoxCh8.Text == "мс")
+            else if(DurComboBoxCh8.Text == "мс")
             {
                 DurMultiplierCH8 = 3;
             }
-            if (DurComboBoxCh8.Text == "c")
-            {
-                DurMultiplierCH8 = 4;
-            }
+            //else
+            //{
+            //    DurMultiplierCH8 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh8_SelectedIndexChanged(object sender, EventArgs e)
@@ -1267,18 +1303,18 @@ namespace Test_COM
             {
                 DelMultiplierCH8 = 1;
             }
-            if (DelComboBoxCh8.Text == "мкс")
+            else if(DelComboBoxCh8.Text == "мкс")
             {
                 DelMultiplierCH8 = 2;
             }
-            if (DelComboBoxCh8.Text == "мс")
+            else if(DelComboBoxCh8.Text == "мс")
             {
                 DelMultiplierCH8 = 3;
             }
-            if (DelComboBoxCh8.Text == "c")
-            {
-                DelMultiplierCH8 = 4;
-            }
+            //else
+            //{
+            //    DelMultiplierCH8 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh8_SelectedIndexChanged(object sender, EventArgs e)
@@ -1345,18 +1381,18 @@ namespace Test_COM
             {
                 DurMultiplierCH9 = 1;
             }
-            if (DurComboBoxCh9.Text == "мкс")
+            else if(DurComboBoxCh9.Text == "мкс")
             {
                 DurMultiplierCH9 = 2;
             }
-            if (DurComboBoxCh9.Text == "мс")
+            else if(DurComboBoxCh9.Text == "мс")
             {
                 DurMultiplierCH9 = 3;
             }
-            if (DurComboBoxCh9.Text == "c")
-            {
-                DurMultiplierCH9 = 4;
-            }
+            //else
+            //{
+            //    DurMultiplierCH9 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh9_SelectedIndexChanged(object sender, EventArgs e)
@@ -1365,18 +1401,18 @@ namespace Test_COM
             {
                 DelMultiplierCH9 = 1;
             }
-            if (DelComboBoxCh9.Text == "мкс")
+            else if(DelComboBoxCh9.Text == "мкс")
             {
                 DelMultiplierCH9 = 2;
             }
-            if (DelComboBoxCh9.Text == "мс")
+            else if(DelComboBoxCh9.Text == "мс")
             {
                 DelMultiplierCH9 = 3;
             }
-            if (DelComboBoxCh9.Text == "c")
-            {
-                DelMultiplierCH9 = 4;
-            }
+            //else
+            //{
+            //    DelMultiplierCH9 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh9_SelectedIndexChanged(object sender, EventArgs e)
@@ -1442,18 +1478,18 @@ namespace Test_COM
             {
                 DurMultiplierCH10 = 1;
             }
-            if (DurComboBoxCh10.Text == "мкс")
+            else if(DurComboBoxCh10.Text == "мкс")
             {
                 DurMultiplierCH10 = 2;
             }
-            if (DurComboBoxCh10.Text == "мс")
+            else if(DurComboBoxCh10.Text == "мс")
             {
                 DurMultiplierCH10 = 3;
             }
-            if (DurComboBoxCh10.Text == "c")
-            {
-                DurMultiplierCH10 = 4;
-            }
+            //else
+            //{
+            //    DurMultiplierCH10 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh10_SelectedIndexChanged(object sender, EventArgs e)
@@ -1462,18 +1498,18 @@ namespace Test_COM
             {
                 DelMultiplierCH10 = 1;
             }
-            if (DelComboBoxCh10.Text == "мкс")
+            else if(DelComboBoxCh10.Text == "мкс")
             {
                 DelMultiplierCH10 = 2;
             }
-            if (DelComboBoxCh10.Text == "мс")
+            else if(DelComboBoxCh10.Text == "мс")
             {
                 DelMultiplierCH10 = 3;
             }
-            if (DelComboBoxCh10.Text == "c")
-            {
-                DelMultiplierCH10 = 4;
-            }
+            //else
+            //{
+            //    DelMultiplierCH10 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh10_SelectedIndexChanged(object sender, EventArgs e)
@@ -1539,18 +1575,18 @@ namespace Test_COM
             {
                 DurMultiplierCH11 = 1;
             }
-            if (DurComboBoxCh11.Text == "мкс")
+            else if(DurComboBoxCh11.Text == "мкс")
             {
                 DurMultiplierCH11 = 2;
             }
-            if (DurComboBoxCh11.Text == "мс")
+            else if(DurComboBoxCh11.Text == "мс")
             {
                 DurMultiplierCH11 = 3;
             }
-            if (DurComboBoxCh11.Text == "c")
-            {
-                DurMultiplierCH11 = 4;
-            }
+            //else
+            //{
+            //    DurMultiplierCH11 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh11_SelectedIndexChanged(object sender, EventArgs e)
@@ -1559,18 +1595,18 @@ namespace Test_COM
             {
                 DelMultiplierCH11 = 1;
             }
-            if (DelComboBoxCh11.Text == "мкс")
+            else if(DelComboBoxCh11.Text == "мкс")
             {
                 DelMultiplierCH11 = 2;
             }
-            if (DelComboBoxCh11.Text == "мс")
+            else if(DelComboBoxCh11.Text == "мс")
             {
                 DelMultiplierCH11 = 3;
             }
-            if (DelComboBoxCh11.Text == "c")
-            {
-                DelMultiplierCH11 = 4;
-            }
+            //else
+            //{
+            //    DelMultiplierCH11 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh11_SelectedIndexChanged(object sender, EventArgs e)
@@ -1636,18 +1672,18 @@ namespace Test_COM
             {
                 DurMultiplierCH12 = 1;
             }
-            if (DurComboBoxCh12.Text == "мкс")
+            else if(DurComboBoxCh12.Text == "мкс")
             {
                 DurMultiplierCH12 = 2;
             }
-            if (DurComboBoxCh12.Text == "мс")
+            else if(DurComboBoxCh12.Text == "мс")
             {
                 DurMultiplierCH12 = 3;
             }
-            if (DurComboBoxCh12.Text == "c")
-            {
-                DurMultiplierCH12 = 4;
-            }
+            //else
+            //{
+            //    DurMultiplierCH12 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh12_SelectedIndexChanged(object sender, EventArgs e)
@@ -1656,18 +1692,18 @@ namespace Test_COM
             {
                 DelMultiplierCH12 = 1;
             }
-            if (DelComboBoxCh12.Text == "мкс")
+            else if(DelComboBoxCh12.Text == "мкс")
             {
                 DelMultiplierCH12 = 2;
             }
-            if (DelComboBoxCh12.Text == "мс")
+            else if(DelComboBoxCh12.Text == "мс")
             {
                 DelMultiplierCH12 = 3;
             }
-            if (DelComboBoxCh12.Text == "c")
-            {
-                DelMultiplierCH12 = 4;
-            }
+            //else
+            //{
+            //    DelMultiplierCH12 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh12_SelectedIndexChanged(object sender, EventArgs e)
@@ -1733,18 +1769,18 @@ namespace Test_COM
             {
                 DurMultiplierCH13 = 1;
             }
-            if (DurComboBoxCh13.Text == "мкс")
+            else if(DurComboBoxCh13.Text == "мкс")
             {
                 DurMultiplierCH13 = 2;
             }
-            if (DurComboBoxCh13.Text == "мс")
+            else if(DurComboBoxCh13.Text == "мс")
             {
                 DurMultiplierCH13 = 3;
             }
-            if (DurComboBoxCh13.Text == "c")
-            {
-                DurMultiplierCH13 = 4;
-            }
+            //else
+            //{
+            //    DurMultiplierCH13 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh13_SelectedIndexChanged(object sender, EventArgs e)
@@ -1753,18 +1789,18 @@ namespace Test_COM
             {
                 DelMultiplierCH13 = 1;
             }
-            if (DelComboBoxCh13.Text == "мкс")
+            else if(DelComboBoxCh13.Text == "мкс")
             {
                 DelMultiplierCH13 = 2;
             }
-            if (DelComboBoxCh13.Text == "мс")
+            else if(DelComboBoxCh13.Text == "мс")
             {
                 DelMultiplierCH13 = 3;
             }
-            if (DelComboBoxCh13.Text == "c")
-            {
-                DelMultiplierCH13 = 4;
-            }
+            //else
+            //{
+            //    DelMultiplierCH13 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh13_SelectedIndexChanged(object sender, EventArgs e)
@@ -1830,18 +1866,18 @@ namespace Test_COM
             {
                 DurMultiplierCH14 = 1;
             }
-            if (DurComboBoxCh14.Text == "мкс")
+            else if(DurComboBoxCh14.Text == "мкс")
             {
                 DurMultiplierCH14 = 2;
             }
-            if (DurComboBoxCh14.Text == "мс")
+            else if(DurComboBoxCh14.Text == "мс")
             {
                 DurMultiplierCH14 = 3;
             }
-            if (DurComboBoxCh14.Text == "c")
-            {
-                DurMultiplierCH14 = 4;
-            }
+            //else
+            //{
+            //    DurMultiplierCH14 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh14_SelectedIndexChanged(object sender, EventArgs e)
@@ -1850,18 +1886,18 @@ namespace Test_COM
             {
                 DelMultiplierCH14 = 1;
             }
-            if (DelComboBoxCh14.Text == "мкс")
+            else if(DelComboBoxCh14.Text == "мкс")
             {
                 DelMultiplierCH14 = 2;
             }
-            if (DelComboBoxCh14.Text == "мс")
+            else if(DelComboBoxCh14.Text == "мс")
             {
                 DelMultiplierCH14 = 3;
             }
-            if (DelComboBoxCh14.Text == "c")
-            {
-                DelMultiplierCH14 = 4;
-            }
+            //else
+            //{
+            //    DelMultiplierCH14 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh14_SelectedIndexChanged(object sender, EventArgs e)
@@ -1927,18 +1963,18 @@ namespace Test_COM
             {
                 DurMultiplierCH15 = 1;
             }
-            if (DurComboBoxCh15.Text == "мкс")
+            else if(DurComboBoxCh15.Text == "мкс")
             {
                 DurMultiplierCH15 = 2;
             }
-            if (DurComboBoxCh15.Text == "мс")
+            else if(DurComboBoxCh15.Text == "мс")
             {
                 DurMultiplierCH15 = 3;
             }
-            if (DurComboBoxCh15.Text == "c")
-            {
-                DurMultiplierCH15 = 4;
-            }
+            //else
+            //{
+            //    DurMultiplierCH15 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh15_SelectedIndexChanged(object sender, EventArgs e)
@@ -1947,18 +1983,18 @@ namespace Test_COM
             {
                 DelMultiplierCH15 = 1;
             }
-            if (DelComboBoxCh15.Text == "мкс")
+            else if(DelComboBoxCh15.Text == "мкс")
             {
                 DelMultiplierCH15 = 2;
             }
-            if (DelComboBoxCh15.Text == "мс")
+            else if(DelComboBoxCh15.Text == "мс")
             {
                 DelMultiplierCH15 = 3;
             }
-            if (DelComboBoxCh15.Text == "c")
-            {
-                DelMultiplierCH15 = 4;
-            }
+            //else
+            //{
+            //    DelMultiplierCH15 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh15_SelectedIndexChanged(object sender, EventArgs e)
@@ -2024,18 +2060,18 @@ namespace Test_COM
             {
                 DurMultiplierCH16 = 1;
             }
-            if (DurComboBoxCh16.Text == "мкс")
+            else if(DurComboBoxCh16.Text == "мкс")
             {
                 DurMultiplierCH16 = 2;
             }
-            if (DurComboBoxCh16.Text == "мс")
+            else if(DurComboBoxCh16.Text == "мс")
             {
                 DurMultiplierCH16 = 3;
             }
-            if (DurComboBoxCh16.Text == "c")
-            {
-                DurMultiplierCH16 = 4;
-            }
+            //else
+            //{
+            //    DurMultiplierCH16 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void DelComboBoxCh16_SelectedIndexChanged(object sender, EventArgs e)
@@ -2044,18 +2080,18 @@ namespace Test_COM
             {
                 DelMultiplierCH16 = 1;
             }
-            if (DelComboBoxCh16.Text == "мкс")
+            else if(DelComboBoxCh16.Text == "мкс")
             {
                 DelMultiplierCH16 = 2;
             }
-            if (DelComboBoxCh16.Text == "мс")
+            else if(DelComboBoxCh16.Text == "мс")
             {
                 DelMultiplierCH16 = 3;
             }
-            if (DelComboBoxCh16.Text == "c")
-            {
-                DelMultiplierCH16 = 4;
-            }
+            //else
+            //{
+            //    DelMultiplierCH16 = 4;                                                                                                Для секунд
+            //}
         }
 
         public void ComboBoxTypeStartCh16_SelectedIndexChanged(object sender, EventArgs e)

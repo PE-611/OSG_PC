@@ -274,7 +274,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh1.Location = new System.Drawing.Point(64, 154);
             this.DurComboBoxCh1.Name = "DurComboBoxCh1";
             this.DurComboBoxCh1.Size = new System.Drawing.Size(85, 28);
@@ -343,7 +343,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh1.Location = new System.Drawing.Point(64, 188);
             this.DelComboBoxCh1.Name = "DelComboBoxCh1";
             this.DelComboBoxCh1.Size = new System.Drawing.Size(85, 28);
@@ -393,7 +393,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh2.Location = new System.Drawing.Point(381, 188);
             this.DelComboBoxCh2.Name = "DelComboBoxCh2";
             this.DelComboBoxCh2.Size = new System.Drawing.Size(85, 28);
@@ -461,7 +461,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+           /* "с"*/});
             this.DurComboBoxCh2.Location = new System.Drawing.Point(381, 154);
             this.DurComboBoxCh2.Name = "DurComboBoxCh2";
             this.DurComboBoxCh2.Size = new System.Drawing.Size(85, 28);
@@ -504,7 +504,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh4.Location = new System.Drawing.Point(1010, 188);
             this.DelComboBoxCh4.Name = "DelComboBoxCh4";
             this.DelComboBoxCh4.Size = new System.Drawing.Size(85, 28);
@@ -572,7 +572,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh4.Location = new System.Drawing.Point(1010, 154);
             this.DurComboBoxCh4.Name = "DurComboBoxCh4";
             this.DurComboBoxCh4.Size = new System.Drawing.Size(85, 28);
@@ -616,7 +616,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh3.Location = new System.Drawing.Point(694, 188);
             this.DelComboBoxCh3.Name = "DelComboBoxCh3";
             this.DelComboBoxCh3.Size = new System.Drawing.Size(85, 28);
@@ -684,7 +684,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh3.Location = new System.Drawing.Point(694, 154);
             this.DurComboBoxCh3.Name = "DurComboBoxCh3";
             this.DurComboBoxCh3.Size = new System.Drawing.Size(85, 28);
@@ -727,7 +727,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh8.Location = new System.Drawing.Point(1010, 396);
             this.DelComboBoxCh8.Name = "DelComboBoxCh8";
             this.DelComboBoxCh8.Size = new System.Drawing.Size(85, 28);
@@ -795,7 +795,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh8.Location = new System.Drawing.Point(1010, 362);
             this.DurComboBoxCh8.Name = "DurComboBoxCh8";
             this.DurComboBoxCh8.Size = new System.Drawing.Size(85, 28);
@@ -838,7 +838,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh7.Location = new System.Drawing.Point(694, 396);
             this.DelComboBoxCh7.Name = "DelComboBoxCh7";
             this.DelComboBoxCh7.Size = new System.Drawing.Size(85, 28);
@@ -906,7 +906,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh7.Location = new System.Drawing.Point(694, 362);
             this.DurComboBoxCh7.Name = "DurComboBoxCh7";
             this.DurComboBoxCh7.Size = new System.Drawing.Size(85, 28);
@@ -949,7 +949,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh6.Location = new System.Drawing.Point(381, 396);
             this.DelComboBoxCh6.Name = "DelComboBoxCh6";
             this.DelComboBoxCh6.Size = new System.Drawing.Size(85, 28);
@@ -1017,7 +1017,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+           /* "с"*/});
             this.DurComboBoxCh6.Location = new System.Drawing.Point(381, 362);
             this.DurComboBoxCh6.Name = "DurComboBoxCh6";
             this.DurComboBoxCh6.Size = new System.Drawing.Size(85, 28);
@@ -1060,7 +1060,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+           /* "с"*/});
             this.DelComboBoxCh5.Location = new System.Drawing.Point(64, 396);
             this.DelComboBoxCh5.Name = "DelComboBoxCh5";
             this.DelComboBoxCh5.Size = new System.Drawing.Size(85, 28);
@@ -1128,7 +1128,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh5.Location = new System.Drawing.Point(64, 362);
             this.DurComboBoxCh5.Name = "DurComboBoxCh5";
             this.DurComboBoxCh5.Size = new System.Drawing.Size(85, 28);
@@ -1171,7 +1171,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh16.Location = new System.Drawing.Point(1010, 842);
             this.DelComboBoxCh16.Name = "DelComboBoxCh16";
             this.DelComboBoxCh16.Size = new System.Drawing.Size(85, 28);
@@ -1239,7 +1239,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh16.Location = new System.Drawing.Point(1010, 808);
             this.DurComboBoxCh16.Name = "DurComboBoxCh16";
             this.DurComboBoxCh16.Size = new System.Drawing.Size(85, 28);
@@ -1282,7 +1282,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh15.Location = new System.Drawing.Point(694, 842);
             this.DelComboBoxCh15.Name = "DelComboBoxCh15";
             this.DelComboBoxCh15.Size = new System.Drawing.Size(85, 28);
@@ -1350,7 +1350,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh15.Location = new System.Drawing.Point(694, 808);
             this.DurComboBoxCh15.Name = "DurComboBoxCh15";
             this.DurComboBoxCh15.Size = new System.Drawing.Size(85, 28);
@@ -1393,7 +1393,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh14.Location = new System.Drawing.Point(381, 842);
             this.DelComboBoxCh14.Name = "DelComboBoxCh14";
             this.DelComboBoxCh14.Size = new System.Drawing.Size(85, 28);
@@ -1461,7 +1461,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+           /* "с"*/});
             this.DurComboBoxCh14.Location = new System.Drawing.Point(381, 808);
             this.DurComboBoxCh14.Name = "DurComboBoxCh14";
             this.DurComboBoxCh14.Size = new System.Drawing.Size(85, 28);
@@ -1504,7 +1504,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh13.Location = new System.Drawing.Point(64, 842);
             this.DelComboBoxCh13.Name = "DelComboBoxCh13";
             this.DelComboBoxCh13.Size = new System.Drawing.Size(85, 28);
@@ -1572,7 +1572,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh13.Location = new System.Drawing.Point(64, 808);
             this.DurComboBoxCh13.Name = "DurComboBoxCh13";
             this.DurComboBoxCh13.Size = new System.Drawing.Size(85, 28);
@@ -1615,7 +1615,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh12.Location = new System.Drawing.Point(1010, 618);
             this.DelComboBoxCh12.Name = "DelComboBoxCh12";
             this.DelComboBoxCh12.Size = new System.Drawing.Size(85, 28);
@@ -1683,7 +1683,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh12.Location = new System.Drawing.Point(1010, 584);
             this.DurComboBoxCh12.Name = "DurComboBoxCh12";
             this.DurComboBoxCh12.Size = new System.Drawing.Size(85, 28);
@@ -1726,7 +1726,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh11.Location = new System.Drawing.Point(694, 618);
             this.DelComboBoxCh11.Name = "DelComboBoxCh11";
             this.DelComboBoxCh11.Size = new System.Drawing.Size(85, 28);
@@ -1794,7 +1794,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh11.Location = new System.Drawing.Point(694, 584);
             this.DurComboBoxCh11.Name = "DurComboBoxCh11";
             this.DurComboBoxCh11.Size = new System.Drawing.Size(85, 28);
@@ -1837,7 +1837,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh10.Location = new System.Drawing.Point(381, 618);
             this.DelComboBoxCh10.Name = "DelComboBoxCh10";
             this.DelComboBoxCh10.Size = new System.Drawing.Size(85, 28);
@@ -1905,7 +1905,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh10.Location = new System.Drawing.Point(381, 584);
             this.DurComboBoxCh10.Name = "DurComboBoxCh10";
             this.DurComboBoxCh10.Size = new System.Drawing.Size(85, 28);
@@ -1948,7 +1948,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DelComboBoxCh9.Location = new System.Drawing.Point(64, 618);
             this.DelComboBoxCh9.Name = "DelComboBoxCh9";
             this.DelComboBoxCh9.Size = new System.Drawing.Size(85, 28);
@@ -2016,7 +2016,7 @@ namespace Test_COM
             "*10 нс",
             "мкс",
             "мс",
-            "с"});
+            /*"с"*/});
             this.DurComboBoxCh9.Location = new System.Drawing.Point(64, 584);
             this.DurComboBoxCh9.Name = "DurComboBoxCh9";
             this.DurComboBoxCh9.Size = new System.Drawing.Size(85, 28);
