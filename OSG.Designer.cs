@@ -37,7 +37,6 @@ namespace Test_COM
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DurComboBoxCh1 = new System.Windows.Forms.ComboBox();
-            this.StartButton = new System.Windows.Forms.Button();
             this.ComboBoxTypeStartCh1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -215,12 +214,12 @@ namespace Test_COM
             // 
             // SerialSendButton
             // 
-            this.SerialSendButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SerialSendButton.Location = new System.Drawing.Point(1312, 902);
+            this.SerialSendButton.Font = new System.Drawing.Font("ISOCPEUR", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SerialSendButton.Location = new System.Drawing.Point(1358, 705);
             this.SerialSendButton.Name = "SerialSendButton";
-            this.SerialSendButton.Size = new System.Drawing.Size(180, 34);
+            this.SerialSendButton.Size = new System.Drawing.Size(381, 94);
             this.SerialSendButton.TabIndex = 1;
-            this.SerialSendButton.Text = "Сохранить";
+            this.SerialSendButton.Text = "ПУСК";
             this.SerialSendButton.UseVisualStyleBackColor = true;
             this.SerialSendButton.Click += new System.EventHandler(this.SerialSendButton_Click);
             // 
@@ -273,24 +272,12 @@ namespace Test_COM
             this.DurComboBoxCh1.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh1.Location = new System.Drawing.Point(64, 154);
             this.DurComboBoxCh1.Name = "DurComboBoxCh1";
             this.DurComboBoxCh1.Size = new System.Drawing.Size(85, 28);
             this.DurComboBoxCh1.TabIndex = 7;
             this.DurComboBoxCh1.SelectedIndexChanged += new System.EventHandler(this.DurComboBoxCh1_SelectedIndexChanged);
-            // 
-            // StartButton
-            // 
-            this.StartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.StartButton.Location = new System.Drawing.Point(1624, 902);
-            this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(180, 34);
-            this.StartButton.TabIndex = 21;
-            this.StartButton.Text = "Пуск";
-            this.StartButton.UseVisualStyleBackColor = true;
-            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
             // ComboBoxTypeStartCh1
             // 
@@ -342,8 +329,7 @@ namespace Test_COM
             this.DelComboBoxCh1.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh1.Location = new System.Drawing.Point(64, 188);
             this.DelComboBoxCh1.Name = "DelComboBoxCh1";
             this.DelComboBoxCh1.Size = new System.Drawing.Size(85, 28);
@@ -392,8 +378,7 @@ namespace Test_COM
             this.DelComboBoxCh2.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh2.Location = new System.Drawing.Point(381, 188);
             this.DelComboBoxCh2.Name = "DelComboBoxCh2";
             this.DelComboBoxCh2.Size = new System.Drawing.Size(85, 28);
@@ -460,8 +445,7 @@ namespace Test_COM
             this.DurComboBoxCh2.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-           /* "с"*/});
+            "мс"});
             this.DurComboBoxCh2.Location = new System.Drawing.Point(381, 154);
             this.DurComboBoxCh2.Name = "DurComboBoxCh2";
             this.DurComboBoxCh2.Size = new System.Drawing.Size(85, 28);
@@ -503,8 +487,7 @@ namespace Test_COM
             this.DelComboBoxCh4.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh4.Location = new System.Drawing.Point(1010, 188);
             this.DelComboBoxCh4.Name = "DelComboBoxCh4";
             this.DelComboBoxCh4.Size = new System.Drawing.Size(85, 28);
@@ -571,8 +554,7 @@ namespace Test_COM
             this.DurComboBoxCh4.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh4.Location = new System.Drawing.Point(1010, 154);
             this.DurComboBoxCh4.Name = "DurComboBoxCh4";
             this.DurComboBoxCh4.Size = new System.Drawing.Size(85, 28);
@@ -615,8 +597,7 @@ namespace Test_COM
             this.DelComboBoxCh3.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh3.Location = new System.Drawing.Point(694, 188);
             this.DelComboBoxCh3.Name = "DelComboBoxCh3";
             this.DelComboBoxCh3.Size = new System.Drawing.Size(85, 28);
@@ -683,8 +664,7 @@ namespace Test_COM
             this.DurComboBoxCh3.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh3.Location = new System.Drawing.Point(694, 154);
             this.DurComboBoxCh3.Name = "DurComboBoxCh3";
             this.DurComboBoxCh3.Size = new System.Drawing.Size(85, 28);
@@ -726,8 +706,7 @@ namespace Test_COM
             this.DelComboBoxCh8.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh8.Location = new System.Drawing.Point(1010, 396);
             this.DelComboBoxCh8.Name = "DelComboBoxCh8";
             this.DelComboBoxCh8.Size = new System.Drawing.Size(85, 28);
@@ -794,8 +773,7 @@ namespace Test_COM
             this.DurComboBoxCh8.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh8.Location = new System.Drawing.Point(1010, 362);
             this.DurComboBoxCh8.Name = "DurComboBoxCh8";
             this.DurComboBoxCh8.Size = new System.Drawing.Size(85, 28);
@@ -837,8 +815,7 @@ namespace Test_COM
             this.DelComboBoxCh7.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh7.Location = new System.Drawing.Point(694, 396);
             this.DelComboBoxCh7.Name = "DelComboBoxCh7";
             this.DelComboBoxCh7.Size = new System.Drawing.Size(85, 28);
@@ -905,8 +882,7 @@ namespace Test_COM
             this.DurComboBoxCh7.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh7.Location = new System.Drawing.Point(694, 362);
             this.DurComboBoxCh7.Name = "DurComboBoxCh7";
             this.DurComboBoxCh7.Size = new System.Drawing.Size(85, 28);
@@ -948,8 +924,7 @@ namespace Test_COM
             this.DelComboBoxCh6.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh6.Location = new System.Drawing.Point(381, 396);
             this.DelComboBoxCh6.Name = "DelComboBoxCh6";
             this.DelComboBoxCh6.Size = new System.Drawing.Size(85, 28);
@@ -1016,8 +991,7 @@ namespace Test_COM
             this.DurComboBoxCh6.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-           /* "с"*/});
+            "мс"});
             this.DurComboBoxCh6.Location = new System.Drawing.Point(381, 362);
             this.DurComboBoxCh6.Name = "DurComboBoxCh6";
             this.DurComboBoxCh6.Size = new System.Drawing.Size(85, 28);
@@ -1059,8 +1033,7 @@ namespace Test_COM
             this.DelComboBoxCh5.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-           /* "с"*/});
+            "мс"});
             this.DelComboBoxCh5.Location = new System.Drawing.Point(64, 396);
             this.DelComboBoxCh5.Name = "DelComboBoxCh5";
             this.DelComboBoxCh5.Size = new System.Drawing.Size(85, 28);
@@ -1127,8 +1100,7 @@ namespace Test_COM
             this.DurComboBoxCh5.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh5.Location = new System.Drawing.Point(64, 362);
             this.DurComboBoxCh5.Name = "DurComboBoxCh5";
             this.DurComboBoxCh5.Size = new System.Drawing.Size(85, 28);
@@ -1170,8 +1142,7 @@ namespace Test_COM
             this.DelComboBoxCh16.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh16.Location = new System.Drawing.Point(1010, 842);
             this.DelComboBoxCh16.Name = "DelComboBoxCh16";
             this.DelComboBoxCh16.Size = new System.Drawing.Size(85, 28);
@@ -1238,8 +1209,7 @@ namespace Test_COM
             this.DurComboBoxCh16.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh16.Location = new System.Drawing.Point(1010, 808);
             this.DurComboBoxCh16.Name = "DurComboBoxCh16";
             this.DurComboBoxCh16.Size = new System.Drawing.Size(85, 28);
@@ -1281,8 +1251,7 @@ namespace Test_COM
             this.DelComboBoxCh15.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh15.Location = new System.Drawing.Point(694, 842);
             this.DelComboBoxCh15.Name = "DelComboBoxCh15";
             this.DelComboBoxCh15.Size = new System.Drawing.Size(85, 28);
@@ -1349,8 +1318,7 @@ namespace Test_COM
             this.DurComboBoxCh15.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh15.Location = new System.Drawing.Point(694, 808);
             this.DurComboBoxCh15.Name = "DurComboBoxCh15";
             this.DurComboBoxCh15.Size = new System.Drawing.Size(85, 28);
@@ -1392,8 +1360,7 @@ namespace Test_COM
             this.DelComboBoxCh14.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh14.Location = new System.Drawing.Point(381, 842);
             this.DelComboBoxCh14.Name = "DelComboBoxCh14";
             this.DelComboBoxCh14.Size = new System.Drawing.Size(85, 28);
@@ -1460,8 +1427,7 @@ namespace Test_COM
             this.DurComboBoxCh14.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-           /* "с"*/});
+            "мс"});
             this.DurComboBoxCh14.Location = new System.Drawing.Point(381, 808);
             this.DurComboBoxCh14.Name = "DurComboBoxCh14";
             this.DurComboBoxCh14.Size = new System.Drawing.Size(85, 28);
@@ -1503,8 +1469,7 @@ namespace Test_COM
             this.DelComboBoxCh13.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh13.Location = new System.Drawing.Point(64, 842);
             this.DelComboBoxCh13.Name = "DelComboBoxCh13";
             this.DelComboBoxCh13.Size = new System.Drawing.Size(85, 28);
@@ -1571,8 +1536,7 @@ namespace Test_COM
             this.DurComboBoxCh13.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh13.Location = new System.Drawing.Point(64, 808);
             this.DurComboBoxCh13.Name = "DurComboBoxCh13";
             this.DurComboBoxCh13.Size = new System.Drawing.Size(85, 28);
@@ -1614,8 +1578,7 @@ namespace Test_COM
             this.DelComboBoxCh12.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh12.Location = new System.Drawing.Point(1010, 618);
             this.DelComboBoxCh12.Name = "DelComboBoxCh12";
             this.DelComboBoxCh12.Size = new System.Drawing.Size(85, 28);
@@ -1682,8 +1645,7 @@ namespace Test_COM
             this.DurComboBoxCh12.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh12.Location = new System.Drawing.Point(1010, 584);
             this.DurComboBoxCh12.Name = "DurComboBoxCh12";
             this.DurComboBoxCh12.Size = new System.Drawing.Size(85, 28);
@@ -1725,8 +1687,7 @@ namespace Test_COM
             this.DelComboBoxCh11.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh11.Location = new System.Drawing.Point(694, 618);
             this.DelComboBoxCh11.Name = "DelComboBoxCh11";
             this.DelComboBoxCh11.Size = new System.Drawing.Size(85, 28);
@@ -1793,8 +1754,7 @@ namespace Test_COM
             this.DurComboBoxCh11.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh11.Location = new System.Drawing.Point(694, 584);
             this.DurComboBoxCh11.Name = "DurComboBoxCh11";
             this.DurComboBoxCh11.Size = new System.Drawing.Size(85, 28);
@@ -1836,8 +1796,7 @@ namespace Test_COM
             this.DelComboBoxCh10.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh10.Location = new System.Drawing.Point(381, 618);
             this.DelComboBoxCh10.Name = "DelComboBoxCh10";
             this.DelComboBoxCh10.Size = new System.Drawing.Size(85, 28);
@@ -1904,8 +1863,7 @@ namespace Test_COM
             this.DurComboBoxCh10.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh10.Location = new System.Drawing.Point(381, 584);
             this.DurComboBoxCh10.Name = "DurComboBoxCh10";
             this.DurComboBoxCh10.Size = new System.Drawing.Size(85, 28);
@@ -1947,8 +1905,7 @@ namespace Test_COM
             this.DelComboBoxCh9.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DelComboBoxCh9.Location = new System.Drawing.Point(64, 618);
             this.DelComboBoxCh9.Name = "DelComboBoxCh9";
             this.DelComboBoxCh9.Size = new System.Drawing.Size(85, 28);
@@ -2015,8 +1972,7 @@ namespace Test_COM
             this.DurComboBoxCh9.Items.AddRange(new object[] {
             "*10 нс",
             "мкс",
-            "мс",
-            /*"с"*/});
+            "мс"});
             this.DurComboBoxCh9.Location = new System.Drawing.Point(64, 584);
             this.DurComboBoxCh9.Name = "DurComboBoxCh9";
             this.DurComboBoxCh9.Size = new System.Drawing.Size(85, 28);
@@ -2241,7 +2197,6 @@ namespace Test_COM
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ComboBoxTypeStartCh1);
-            this.Controls.Add(this.StartButton);
             this.Controls.Add(this.DurComboBoxCh1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -2267,7 +2222,6 @@ namespace Test_COM
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox DurComboBoxCh1;
-        private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.ComboBox ComboBoxTypeStartCh1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;

@@ -14,7 +14,9 @@ using System.Threading;
 namespace Test_COM
 {
     public partial class OSG : Form
-    {   
+    {
+        byte START = 255;
+
  //////////////////////////////////////////////////// ПЕРЕМЕННЫЕ ДЛЯ КАНАЛА №1 /////////////////////////////////////////////////////////////////////////////////////////// 
        
         int DurationPulseCH1;                        // Переменная для хранения числового значения длительности импульса
@@ -182,8 +184,6 @@ namespace Test_COM
         {
             InitializeComponent();
 
-            StartButton.Enabled = false;                 ////////////////////////!!!!!!!!!!!!!!!! ВЫКЛЮЧЕНА КНОПКА  !!!!!!!!!!!!!!/////////////// 
-
             string[] ports;                       // Массив строковых переменных для хранения имен подключеннх СОМ портов
             ports = SerialPort.GetPortNames();    // Получение имен подключеннх СОМ портов
             ComComboBox.Items.AddRange(ports);    // Добавление полученных имен СОМ портов в  СОМ комбобокс
@@ -245,7 +245,7 @@ namespace Test_COM
 
 
 
-        SerialPort Port = new SerialPort("COM", 115200, Parity.None, 8, StopBits.One);            // Инициализация последовательного порта 
+        SerialPort Port = new SerialPort("COM", 100000, Parity.None, 8, StopBits.One);            // Инициализация последовательного порта 
         // _serialPort.Handshake = Handshake.None;
 
         public void ComComboBox_SelectedIndexChanged(object sender, EventArgs e)                // При выборе СОМ порта осуществляем:
@@ -254,7 +254,7 @@ namespace Test_COM
             {
                 Port.PortName = ComComboBox.Text.ToString();                                    // Изменение имени Комбобокса
                 Port.Open();                                                                    // Открываем порт
-                Port.BaudRate = 115200;
+                Port.BaudRate = 100000;
                 //Port.WriteTimeout = 1000;                                                       // Эти тайм ауты можно не ставить
                 //Port.ReadTimeout = 1000;                                                        // Эти тайм ауты можно не ставить
                 OffComButton.Text = "Отключить " + Port.PortName;                               // Изменяем текст на кнопке отключения порта на "Отключить СОМ порт"
@@ -374,49 +374,17 @@ namespace Test_COM
                                         DurMultiplierCH16,
                                         DelayMassiveDataCH16[0],    DelayMassiveDataCH16[1],
                                         DelMultiplierCH16,
-                                        TypeStartCH16
+                                        TypeStartCH16,
+                                        
+                                        START
 
 
                                                                                      };
 
             if (Port.IsOpen == true)                                                            // Если порт открыт 
             {
-                if (DurTextBoxCh1.Text == "255" | DelTextBoxch1.Text == "255" | DurTextBoxCh2.Text == "255" | DelTextBoxch2.Text == "255"
-                  | DurTextBoxCh3.Text == "255" | DelTextBoxch3.Text == "255" | DurTextBoxCh4.Text == "255" | DelTextBoxch4.Text == "255"
-                  | DurTextBoxCh5.Text == "255" | DelTextBoxch5.Text == "255" | DurTextBoxCh6.Text == "255" | DelTextBoxch6.Text == "255"
-                  | DurTextBoxCh7.Text == "255" | DelTextBoxch7.Text == "255" | DurTextBoxCh8.Text == "255" | DelTextBoxch8.Text == "255"
-                  | DurTextBoxCh9.Text == "255" | DelTextBoxch9.Text == "255" | DurTextBoxCh10.Text == "255" | DelTextBoxch10.Text == "255"
-                  | DurTextBoxCh11.Text == "255" | DelTextBoxch11.Text == "255" | DurTextBoxCh12.Text == "255" | DelTextBoxch12.Text == "255"
-                  | DurTextBoxCh13.Text == "255" | DelTextBoxch13.Text == "255" | DurTextBoxCh14.Text == "255" | DelTextBoxch14.Text == "255"
-                  | DurTextBoxCh15.Text == "255" | DelTextBoxch15.Text == "255" | DurTextBoxCh16.Text == "255" | DelTextBoxch16.Text == "255"
-                  
-                  | DurTextBoxCh1.Text == "511" | DelTextBoxch1.Text == "511" | DurTextBoxCh2.Text == "511" | DelTextBoxch2.Text == "511"
-                  | DurTextBoxCh3.Text == "511" | DelTextBoxch3.Text == "511" | DurTextBoxCh4.Text == "511" | DelTextBoxch4.Text == "511"
-                  | DurTextBoxCh5.Text == "511" | DelTextBoxch5.Text == "511" | DurTextBoxCh6.Text == "511" | DelTextBoxch6.Text == "511"
-                  | DurTextBoxCh7.Text == "511" | DelTextBoxch7.Text == "511" | DurTextBoxCh8.Text == "511" | DelTextBoxch8.Text == "511"
-                  | DurTextBoxCh9.Text == "511" | DelTextBoxch9.Text == "511" | DurTextBoxCh10.Text == "511" | DelTextBoxch10.Text == "511"
-                  | DurTextBoxCh11.Text == "511" | DelTextBoxch11.Text == "511" | DurTextBoxCh12.Text == "511" | DelTextBoxch12.Text == "511"  ////////// КОСТЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЛь
-                  | DurTextBoxCh13.Text == "511" | DelTextBoxch13.Text == "511" | DurTextBoxCh14.Text == "511" | DelTextBoxch14.Text == "511"
-                  | DurTextBoxCh15.Text == "511" | DelTextBoxch15.Text == "511" | DurTextBoxCh16.Text == "511" | DelTextBoxch16.Text == "511"
-
-                  | DurTextBoxCh1.Text == "767" | DelTextBoxch1.Text == "767" | DurTextBoxCh2.Text == "767" | DelTextBoxch2.Text == "767"
-                  | DurTextBoxCh3.Text == "767" | DelTextBoxch3.Text == "767" | DurTextBoxCh4.Text == "767" | DelTextBoxch4.Text == "767"
-                  | DurTextBoxCh5.Text == "767" | DelTextBoxch5.Text == "767" | DurTextBoxCh6.Text == "767" | DelTextBoxch6.Text == "767"
-                  | DurTextBoxCh7.Text == "767" | DelTextBoxch7.Text == "767" | DurTextBoxCh8.Text == "767" | DelTextBoxch8.Text == "767"
-                  | DurTextBoxCh9.Text == "767" | DelTextBoxch9.Text == "767" | DurTextBoxCh10.Text == "767" | DelTextBoxch10.Text == "767"
-                  | DurTextBoxCh11.Text == "767" | DelTextBoxch11.Text == "767" | DurTextBoxCh12.Text == "767" | DelTextBoxch12.Text == "767"
-                  | DurTextBoxCh13.Text == "767" | DelTextBoxch13.Text == "767" | DurTextBoxCh14.Text == "767" | DelTextBoxch14.Text == "767"
-                  | DurTextBoxCh15.Text == "767" | DelTextBoxch15.Text == "767" | DurTextBoxCh16.Text == "767" | DelTextBoxch16.Text == "767")
                 
-                {
-                        MessageBox.Show("Введите значение отличающееся от 255", "Сообщение",               // Выводим сообщение призывающее выбрать СОМ порт
-                        MessageBoxButtons.OKCancel,
-                        MessageBoxIcon.Warning,
-                        MessageBoxDefaultButton.Button1);
-                     // MessageBoxOptions.ServiceNotification);
-                }
-                else                                                                            // Теперь проверяем выбор типа пуска
-                {                                                                               // Если хоть один из пусков не выбран то 
+                                                                                        // Если хоть один из пусков не выбран то 
                     if (ComboBoxTypeStartCh1.Text == "" | ComboBoxTypeStartCh2.Text == "" | ComboBoxTypeStartCh3.Text == "" | ComboBoxTypeStartCh4.Text == "" 
                       | ComboBoxTypeStartCh5.Text == "" | ComboBoxTypeStartCh6.Text == "" | ComboBoxTypeStartCh7.Text == "" | ComboBoxTypeStartCh8.Text == ""
                       | ComboBoxTypeStartCh9.Text == "" | ComboBoxTypeStartCh10.Text == "" | ComboBoxTypeStartCh11.Text == "" | ComboBoxTypeStartCh12.Text == ""
@@ -449,17 +417,18 @@ namespace Test_COM
                         {
                             
                             Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
-                            //SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
-                            //SerialSendButton.Enabled = false;
-                            //Thread.Sleep(500);
-                            //SerialSendButton.Enabled = true;
-                            //SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
+                            Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
+                            SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
+                            SerialSendButton.Enabled = false;
+                            Thread.Sleep(1000);
+                            SerialSendButton.Enabled = true;
+                            SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
 
 
 
                         }
                     }
-                }
+                
                 
             }
             if (Port.IsOpen == false)                                                           // Если порт закрыт (а закрыт он может быть только потому что мы его не выбрали в СОМ комбобоксе)
@@ -472,72 +441,7 @@ namespace Test_COM
             }
         }
 
-        public void StartButton_Click(object sender, EventArgs e)
-        {
-            int count = 1;
-            int offset = 0;
-            byte[] BufStart = new byte[] { 255 };                                                             // Какое число отправлять в качестве сигнала на ПУСК???  !!!ответ 255!!!
-
-            if (Port.IsOpen == true)                                                            // Если порт открыт 
-            {
-                
-                if (DurTextBoxCh1.Text == "0" | DelTextBoxch1.Text == "0")                                  
-                {
-                    MessageBox.Show("Введите значение больше 0", "Сообщение",                   // Выводим сообщение призывающее ввести значение больше 0
-                    MessageBoxButtons.OKCancel,
-                    MessageBoxIcon.Warning,
-                    MessageBoxDefaultButton.Button1);
-                    // MessageBoxOptions.ServiceNotification);
-                }
-                else
-                {
-                    if (ComboBoxTypeStartCh1.Text == "")
-                    {
-                        MessageBox.Show("Выберите тип пуска", "Сообщение",                      // Выводим сообщение призывающее выбрать тип пуска
-                        MessageBoxButtons.OKCancel,
-                        MessageBoxIcon.Warning,
-                        MessageBoxDefaultButton.Button1);
-                        // MessageBoxOptions.ServiceNotification);
-
-                    }
-                    else
-                    {
-                        if (DurComboBoxCh1.Text == "" | DelComboBoxCh1.Text == "")
-                        {
-                            MessageBox.Show("Выберите диапазон длительности и задержки 'нс','мкс','мс','с'", "Сообщение",    // Выводим сообщение призывающее выбрать тип пуска
-                            MessageBoxButtons.OKCancel,
-                            MessageBoxIcon.Warning,
-                            MessageBoxDefaultButton.Button1);
-                        }
-                        else
-                        {
-                            Port.Write(BufStart, offset, count);
-                            //StartButton.Click -= new System.EventHandler(this.StartButton_Click);
-                            //StartButton.Enabled = false;
-                            //Thread.Sleep(500);
-                            //StartButton.Enabled = true;
-                           // StartButton.Click += new System.EventHandler(StartButton_Click);
-
-
-
-
-                        }
-
-                    }
-
-                }
-            }
-
-            if (Port.IsOpen == false)
-            {
-                MessageBox.Show("Выберите СОМ порт", "Сообщение",
-                    MessageBoxButtons.OKCancel,
-                    MessageBoxIcon.Warning,
-                    MessageBoxDefaultButton.Button1);
-                 // MessageBoxOptions.ServiceNotification);
-            }
-
-        }
+        
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////     КАНАЛ №1      //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -604,7 +508,7 @@ namespace Test_COM
             {
                 DurMultiplierCH1 = 2;
             }
-            else if (DurComboBoxCh1.Text == "мс")
+            else //if (DurComboBoxCh1.Text == "мс")
             {
                 DurMultiplierCH1 = 3;
             }
@@ -628,7 +532,7 @@ namespace Test_COM
             {
                 DelMultiplierCH1 = 2;                                                   
             }
-            else if (DelComboBoxCh1.Text == "мс")
+            else // if (DelComboBoxCh1.Text == "мс")
             {
                 DelMultiplierCH1 = 3;
             }
@@ -644,7 +548,7 @@ namespace Test_COM
             {
                 TypeStartCH1 = 1;
             }
-            if (ComboBoxTypeStartCh1.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh1.Text == "От предыдущего")
             {
                 TypeStartCH1 = 1;
             }
@@ -705,7 +609,7 @@ namespace Test_COM
             {
                 DurMultiplierCH2 = 2;
             }
-            else if (DurComboBoxCh2.Text == "мс")
+            else //if (DurComboBoxCh2.Text == "мс")
             {
                 DurMultiplierCH2 = 3;
             }
@@ -725,7 +629,7 @@ namespace Test_COM
             {
                 DelMultiplierCH2 = 2;
             }
-            else if(DelComboBoxCh2.Text == "мс")
+            else //if(DelComboBoxCh2.Text == "мс")
             {
                 DelMultiplierCH2 = 3;
             }
@@ -741,7 +645,7 @@ namespace Test_COM
             {
                 TypeStartCH2 = 1;
             }
-            if (ComboBoxTypeStartCh2.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh2.Text == "От предыдущего")
             {
                 TypeStartCH2 = 2;
             }
@@ -838,7 +742,7 @@ namespace Test_COM
             {
                 TypeStartCH3 = 1;
             }
-            if (ComboBoxTypeStartCh3.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh3.Text == "От предыдущего")
             {
                 TypeStartCH3 = 2;
             }
@@ -899,7 +803,7 @@ namespace Test_COM
             {
                 DurMultiplierCH4 = 2;
             }
-            else if(DurComboBoxCh4.Text == "мс")
+            else //if(DurComboBoxCh4.Text == "мс")
             {
                 DurMultiplierCH4 = 3;
             }
@@ -919,7 +823,7 @@ namespace Test_COM
             {
                 DelMultiplierCH4 = 2;
             }
-            else if(DelComboBoxCh4.Text == "мс")
+            else //if(DelComboBoxCh4.Text == "мс")
             {
                 DelMultiplierCH4 = 3;
             }
@@ -935,7 +839,7 @@ namespace Test_COM
             {
                 TypeStartCH4 = 1;
             }
-            if (ComboBoxTypeStartCh4.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh4.Text == "От предыдущего")
             {
                 TypeStartCH4 = 2;
             }
@@ -996,7 +900,7 @@ namespace Test_COM
             {
                 DurMultiplierCH5 = 2;
             }
-            else if(DurComboBoxCh5.Text == "мс")
+            else //if(DurComboBoxCh5.Text == "мс")
             {
                 DurMultiplierCH5 = 3;
             }
@@ -1016,7 +920,7 @@ namespace Test_COM
             {
                 DelMultiplierCH5 = 2;
             }
-            else if(DelComboBoxCh5.Text == "мс")
+            else //if(DelComboBoxCh5.Text == "мс")
             {
                 DelMultiplierCH5 = 3;
             }
@@ -1032,7 +936,7 @@ namespace Test_COM
             {
                 TypeStartCH5 = 1;
             }
-            if (ComboBoxTypeStartCh5.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh5.Text == "От предыдущего")
             {
                 TypeStartCH5 = 2;
             }
@@ -1093,7 +997,7 @@ namespace Test_COM
             {
                 DurMultiplierCH6 = 2;
             }
-            else if(DurComboBoxCh6.Text == "мс")
+            else //if(DurComboBoxCh6.Text == "мс")
             {
                 DurMultiplierCH6 = 3;
             }
@@ -1113,7 +1017,7 @@ namespace Test_COM
             {
                 DelMultiplierCH6 = 2;
             }
-            else if(DelComboBoxCh6.Text == "мс")
+            else //if(DelComboBoxCh6.Text == "мс")
             {
                 DelMultiplierCH6 = 3;
             }
@@ -1129,7 +1033,7 @@ namespace Test_COM
             {
                 TypeStartCH6 = 1;
             }
-            if (ComboBoxTypeStartCh6.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh6.Text == "От предыдущего")
             {
                 TypeStartCH6 = 2;
             }
@@ -1190,7 +1094,7 @@ namespace Test_COM
             {
                 DurMultiplierCH7 = 2;
             }
-            else if(DurComboBoxCh7.Text == "мс")
+            else //if(DurComboBoxCh7.Text == "мс")
             {
                 DurMultiplierCH7 = 3;
             }
@@ -1210,7 +1114,7 @@ namespace Test_COM
             {
                 DelMultiplierCH7 = 2;
             }
-            else if(DelComboBoxCh7.Text == "мс")
+            else //if(DelComboBoxCh7.Text == "мс")
             {
                 DelMultiplierCH7 = 3;
             }
@@ -1226,7 +1130,7 @@ namespace Test_COM
             {
                 TypeStartCH7 = 1;
             }
-            if (ComboBoxTypeStartCh7.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh7.Text == "От предыдущего")
             {
                 TypeStartCH7 = 2;
             }
@@ -1287,7 +1191,7 @@ namespace Test_COM
             {
                 DurMultiplierCH8 = 2;
             }
-            else if(DurComboBoxCh8.Text == "мс")
+            else //if(DurComboBoxCh8.Text == "мс")
             {
                 DurMultiplierCH8 = 3;
             }
@@ -1307,7 +1211,7 @@ namespace Test_COM
             {
                 DelMultiplierCH8 = 2;
             }
-            else if(DelComboBoxCh8.Text == "мс")
+            else //if(DelComboBoxCh8.Text == "мс")
             {
                 DelMultiplierCH8 = 3;
             }
@@ -1323,7 +1227,7 @@ namespace Test_COM
             {
                 TypeStartCH8 = 1;
             }
-            if (ComboBoxTypeStartCh8.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh8.Text == "От предыдущего")
             {
                 TypeStartCH8 = 2;
             }
@@ -1385,7 +1289,7 @@ namespace Test_COM
             {
                 DurMultiplierCH9 = 2;
             }
-            else if(DurComboBoxCh9.Text == "мс")
+            else //if(DurComboBoxCh9.Text == "мс")
             {
                 DurMultiplierCH9 = 3;
             }
@@ -1405,7 +1309,7 @@ namespace Test_COM
             {
                 DelMultiplierCH9 = 2;
             }
-            else if(DelComboBoxCh9.Text == "мс")
+            else //if(DelComboBoxCh9.Text == "мс")
             {
                 DelMultiplierCH9 = 3;
             }
@@ -1421,7 +1325,7 @@ namespace Test_COM
             {
                 TypeStartCH9 = 1;
             }
-            if (ComboBoxTypeStartCh9.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh9.Text == "От предыдущего")
             {
                 TypeStartCH9 = 2;
             }
@@ -1482,7 +1386,7 @@ namespace Test_COM
             {
                 DurMultiplierCH10 = 2;
             }
-            else if(DurComboBoxCh10.Text == "мс")
+            else //if(DurComboBoxCh10.Text == "мс")
             {
                 DurMultiplierCH10 = 3;
             }
@@ -1502,7 +1406,7 @@ namespace Test_COM
             {
                 DelMultiplierCH10 = 2;
             }
-            else if(DelComboBoxCh10.Text == "мс")
+            else //if(DelComboBoxCh10.Text == "мс")
             {
                 DelMultiplierCH10 = 3;
             }
@@ -1518,7 +1422,7 @@ namespace Test_COM
             {
                 TypeStartCH10 = 1;
             }
-            if (ComboBoxTypeStartCh10.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh10.Text == "От предыдущего")
             {
                 TypeStartCH10 = 2;
             }
@@ -1579,7 +1483,7 @@ namespace Test_COM
             {
                 DurMultiplierCH11 = 2;
             }
-            else if(DurComboBoxCh11.Text == "мс")
+            else //if(DurComboBoxCh11.Text == "мс")
             {
                 DurMultiplierCH11 = 3;
             }
@@ -1599,7 +1503,7 @@ namespace Test_COM
             {
                 DelMultiplierCH11 = 2;
             }
-            else if(DelComboBoxCh11.Text == "мс")
+            else //if(DelComboBoxCh11.Text == "мс")
             {
                 DelMultiplierCH11 = 3;
             }
@@ -1615,7 +1519,7 @@ namespace Test_COM
             {
                 TypeStartCH11 = 1;
             }
-            if (ComboBoxTypeStartCh11.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh11.Text == "От предыдущего")
             {
                 TypeStartCH11 = 2;
             }
@@ -1676,7 +1580,7 @@ namespace Test_COM
             {
                 DurMultiplierCH12 = 2;
             }
-            else if(DurComboBoxCh12.Text == "мс")
+            else //if(DurComboBoxCh12.Text == "мс")
             {
                 DurMultiplierCH12 = 3;
             }
@@ -1696,7 +1600,7 @@ namespace Test_COM
             {
                 DelMultiplierCH12 = 2;
             }
-            else if(DelComboBoxCh12.Text == "мс")
+            else //if(DelComboBoxCh12.Text == "мс")
             {
                 DelMultiplierCH12 = 3;
             }
@@ -1712,7 +1616,7 @@ namespace Test_COM
             {
                 TypeStartCH12 = 1;
             }
-            if (ComboBoxTypeStartCh12.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh12.Text == "От предыдущего")
             {
                 TypeStartCH12 = 2;
             }
@@ -1773,7 +1677,7 @@ namespace Test_COM
             {
                 DurMultiplierCH13 = 2;
             }
-            else if(DurComboBoxCh13.Text == "мс")
+            else //if(DurComboBoxCh13.Text == "мс")
             {
                 DurMultiplierCH13 = 3;
             }
@@ -1793,7 +1697,7 @@ namespace Test_COM
             {
                 DelMultiplierCH13 = 2;
             }
-            else if(DelComboBoxCh13.Text == "мс")
+            else //if(DelComboBoxCh13.Text == "мс")
             {
                 DelMultiplierCH13 = 3;
             }
@@ -1809,7 +1713,7 @@ namespace Test_COM
             {
                 TypeStartCH13 = 1;
             }
-            if (ComboBoxTypeStartCh13.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh13.Text == "От предыдущего")
             {
                 TypeStartCH13 = 2;
             }
@@ -1870,7 +1774,7 @@ namespace Test_COM
             {
                 DurMultiplierCH14 = 2;
             }
-            else if(DurComboBoxCh14.Text == "мс")
+            else //if(DurComboBoxCh14.Text == "мс")
             {
                 DurMultiplierCH14 = 3;
             }
@@ -1890,7 +1794,7 @@ namespace Test_COM
             {
                 DelMultiplierCH14 = 2;
             }
-            else if(DelComboBoxCh14.Text == "мс")
+            else //if(DelComboBoxCh14.Text == "мс")
             {
                 DelMultiplierCH14 = 3;
             }
@@ -1906,7 +1810,7 @@ namespace Test_COM
             {
                 TypeStartCH14 = 1;
             }
-            if (ComboBoxTypeStartCh14.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh14.Text == "От предыдущего")
             {
                 TypeStartCH14 = 2;
             }
@@ -1967,7 +1871,7 @@ namespace Test_COM
             {
                 DurMultiplierCH15 = 2;
             }
-            else if(DurComboBoxCh15.Text == "мс")
+            else //if(DurComboBoxCh15.Text == "мс")
             {
                 DurMultiplierCH15 = 3;
             }
@@ -1987,7 +1891,7 @@ namespace Test_COM
             {
                 DelMultiplierCH15 = 2;
             }
-            else if(DelComboBoxCh15.Text == "мс")
+            else //if(DelComboBoxCh15.Text == "мс")
             {
                 DelMultiplierCH15 = 3;
             }
@@ -2003,7 +1907,7 @@ namespace Test_COM
             {
                 TypeStartCH15 = 1;
             }
-            if (ComboBoxTypeStartCh15.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh15.Text == "От предыдущего")
             {
                 TypeStartCH15 = 2;
             }
@@ -2064,7 +1968,7 @@ namespace Test_COM
             {
                 DurMultiplierCH16 = 2;
             }
-            else if(DurComboBoxCh16.Text == "мс")
+            else //if(DurComboBoxCh16.Text == "мс")
             {
                 DurMultiplierCH16 = 3;
             }
@@ -2084,7 +1988,7 @@ namespace Test_COM
             {
                 DelMultiplierCH16 = 2;
             }
-            else if(DelComboBoxCh16.Text == "мс")
+            else //if(DelComboBoxCh16.Text == "мс")
             {
                 DelMultiplierCH16 = 3;
             }
@@ -2100,7 +2004,7 @@ namespace Test_COM
             {
                 TypeStartCH16 = 1;
             }
-            if (ComboBoxTypeStartCh16.Text == "От предыдущего")
+            else if (ComboBoxTypeStartCh16.Text == "От предыдущего")
             {
                 TypeStartCH16 = 2;
             }
@@ -2144,6 +2048,7 @@ namespace Test_COM
 
             DurComboBoxCh2.Text = DurComboBoxCh3.Text = DurComboBoxCh4.Text = DurComboBoxCh5.Text = DurComboBoxCh6.Text = DurComboBoxCh7.Text = DurComboBoxCh8.Text = DurComboBoxCh9.Text =
             DurComboBoxCh10.Text = DurComboBoxCh11.Text = DurComboBoxCh12.Text = DurComboBoxCh13.Text = DurComboBoxCh14.Text = DurComboBoxCh15.Text = DurComboBoxCh16.Text = DurComboBoxCh1.Text;
+            
         }
 
         public void CearAllCh_Click(object sender, EventArgs e)                                // По нажатию данной кнопки происходит очистка конфигурации всех каналов
