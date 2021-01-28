@@ -29,7 +29,6 @@ namespace Test_COM
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OSG));
             this.DurTextBoxCh1 = new System.Windows.Forms.TextBox();
             this.SerialSendButton = new System.Windows.Forms.Button();
             this.ComComboBox = new System.Windows.Forms.ComboBox();
@@ -195,11 +194,9 @@ namespace Test_COM
             this.DurComboBoxCh9 = new System.Windows.Forms.ComboBox();
             this.label65 = new System.Windows.Forms.Label();
             this.DurTextBoxCh9 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ButtonOneInAll = new System.Windows.Forms.Button();
             this.CearAllCh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // DurTextBoxCh1
@@ -261,9 +258,9 @@ namespace Test_COM
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(12, 125);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
+            this.label2.Size = new System.Drawing.Size(187, 20);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Канал 1";
+            this.label2.Text = "Канал 1 (Стартовый)";
             // 
             // DurComboBoxCh1
             // 
@@ -1999,16 +1996,6 @@ namespace Test_COM
             this.DurTextBoxCh9.TabIndex = 102;
             this.DurTextBoxCh9.TextChanged += new System.EventHandler(this.DurTextBoxCh9_TextChanged);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1207, 125);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(644, 331);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 182;
-            this.pictureBox2.TabStop = false;
-            // 
             // ButtonOneInAll
             // 
             this.ButtonOneInAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -2038,7 +2025,6 @@ namespace Test_COM
             this.ClientSize = new System.Drawing.Size(1852, 992);
             this.Controls.Add(this.CearAllCh);
             this.Controls.Add(this.ButtonOneInAll);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.CommentCh16);
             this.Controls.Add(this.DelComboBoxCh16);
             this.Controls.Add(this.DelTextBoxch16);
@@ -2207,7 +2193,6 @@ namespace Test_COM
             this.Name = "OSG";
             this.Text = "OSG";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2380,7 +2365,6 @@ namespace Test_COM
         private System.Windows.Forms.ComboBox DurComboBoxCh9;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.TextBox DurTextBoxCh9;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button ButtonOneInAll;
         private System.Windows.Forms.Button CearAllCh;
     }

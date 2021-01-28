@@ -16,7 +16,7 @@ namespace Test_COM
     public partial class OSG : Form
     {
         byte START = 255;
-
+        
  //////////////////////////////////////////////////// ПЕРЕМЕННЫЕ ДЛЯ КАНАЛА №1 /////////////////////////////////////////////////////////////////////////////////////////// 
        
         int DurationPulseCH1;                        // Переменная для хранения числового значения длительности импульса
@@ -176,9 +176,12 @@ namespace Test_COM
         byte DelMultiplierCH16;
         byte TypeStartCH16;
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////// Инициализация GUI и СОМ ПОРТА ///////////////////////////////////////////////////////////////////////////////////////
+
+        int ranger;
+
+        ////////////////////////////////////////////////////// Инициализация GUI и СОМ ПОРТА ///////////////////////////////////////////////////////////////////////////////////////
 
         public OSG()
         {
@@ -237,9 +240,40 @@ namespace Test_COM
             DurTextBoxCh16.Text = "0";
             DelTextBoxch16.Text = "0";
 
-           
-                        
 
+            DurTextBoxCh1.MaxLength = 5;
+            DurTextBoxCh2.MaxLength = 5;
+            DurTextBoxCh3.MaxLength = 5;
+            DurTextBoxCh4.MaxLength = 5;
+            DurTextBoxCh5.MaxLength = 5;
+            DurTextBoxCh6.MaxLength = 5;
+            DurTextBoxCh7.MaxLength = 5;
+            DurTextBoxCh8.MaxLength = 5;
+            DurTextBoxCh9.MaxLength = 5;
+            DurTextBoxCh10.MaxLength = 5;
+            DurTextBoxCh11.MaxLength = 5;
+            DurTextBoxCh12.MaxLength = 5;
+            DurTextBoxCh13.MaxLength = 5;
+            DurTextBoxCh14.MaxLength = 5;
+            DurTextBoxCh15.MaxLength = 5;
+            DurTextBoxCh16.MaxLength = 5;
+
+            DelTextBoxch1.MaxLength = 5;
+            DelTextBoxch2.MaxLength = 5;
+            DelTextBoxch3.MaxLength = 5;
+            DelTextBoxch4.MaxLength = 5;
+            DelTextBoxch5.MaxLength = 5;
+            DelTextBoxch6.MaxLength = 5;
+            DelTextBoxch7.MaxLength = 5;
+            DelTextBoxch8.MaxLength = 5;
+            DelTextBoxch9.MaxLength = 5;
+            DelTextBoxch10.MaxLength = 5;
+            DelTextBoxch11.MaxLength = 5;
+            DelTextBoxch12.MaxLength = 5;
+            DelTextBoxch13.MaxLength = 5;
+            DelTextBoxch14.MaxLength = 5;
+            DelTextBoxch15.MaxLength = 5;
+            DelTextBoxch16.MaxLength = 5;
 
         }
 
@@ -417,7 +451,6 @@ namespace Test_COM
                         {
                             
                             Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
-                            Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
                             SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
                             SerialSendButton.Enabled = false;
                             Thread.Sleep(1000);
@@ -448,8 +481,18 @@ namespace Test_COM
 
         public void DurTextBoxCh1_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh1.Text == "")
+            {
+                DurTextBoxCh1.Text = "0";
+            }
 
-        Checking_text_for_a_number(DurTextBoxCh1.Text, out bool res);
+            ranger = Convert.ToInt32(DurTextBoxCh1.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh1.Text = "65534";
+            }
+
+            Checking_text_for_a_number(DurTextBoxCh1.Text, out bool res);
             if (res == true)
             {
 
@@ -459,27 +502,39 @@ namespace Test_COM
                 DurTextBoxCh1.Clear();
             }
 
-            if (DurTextBoxCh1.Text == "")
-            {
-                DurTextBoxCh1.Text = "0";
-            }
+            
 
-            //if (DurComboBoxCh1.Text != "*10 нс" & DurComboBoxCh1.Text != "мкс" & DurComboBoxCh1.Text != "мс")
-            //{
-            //    if (Convert.ToInt32(DurTextBoxCh1.Text) >= 9)                                                                     Для секунд
-            //    {
-            //        DurTextBoxCh1.Text = "9";
-            //    }
-            //}
-             
+            
+
+
+                //if (DurComboBoxCh1.Text != "*10 нс" & DurComboBoxCh1.Text != "мкс" & DurComboBoxCh1.Text != "мс")
+                //{
+                //    if (Convert.ToInt32(DurTextBoxCh1.Text) >= 9)                                                                     Для секунд
+                //    {
+                //        DurTextBoxCh1.Text = "9";
+                //    }
+                //}
+
             string buf = DurTextBoxCh1.Text;
-            DurationPulseCH1 = Convert.ToInt16(buf);
+            
+            DurationPulseCH1 = Convert.ToUInt16(buf);
             DurationMassiveDataCH1 = BitConverter.GetBytes(DurationPulseCH1);
         }
 
         public void DelTextBoxch1_TextChanged(object sender, EventArgs e)                       
         {
-        Checking_text_for_a_number(DelTextBoxch1.Text, out bool res);                           
+            if (DelTextBoxch1.Text == "")
+            {
+                DelTextBoxch1.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch1.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch1.Text = "65534";
+            }
+
+            Checking_text_for_a_number(DelTextBoxch1.Text, out bool res);                           
             if (res == true)
             {
             }
@@ -494,7 +549,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch1.Text;
-            DelBetweenPulseCH1 = Convert.ToInt16(buf);
+            DelBetweenPulseCH1 = Convert.ToUInt16(buf);
             DelayMassiveDataCH1 = BitConverter.GetBytes(DelBetweenPulseCH1);
         }
  
@@ -558,6 +613,16 @@ namespace Test_COM
 
         public void DurTextBoxCh2_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh2.Text == "")
+            {
+                DurTextBoxCh2.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DurTextBoxCh2.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh2.Text = "65534";
+            }
 
             Checking_text_for_a_number(DurTextBoxCh2.Text, out bool res);
             if (res == true)
@@ -574,12 +639,23 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh2.Text;
-            DurationPulseCH2 = Convert.ToInt16(buf);
+            DurationPulseCH2 = Convert.ToUInt16(buf);
             DurationMassiveDataCH2 = BitConverter.GetBytes(DurationPulseCH2);
         }
 
         public void DelTextBoxch2_TextChanged(object sender, EventArgs e)  
         {
+            if (DelTextBoxch2.Text == "")
+            {
+                DelTextBoxch2.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch2.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch2.Text = "65534";
+            }
+
             Checking_text_for_a_number(DelTextBoxch2.Text, out bool res);
             if (res == true)
             {
@@ -595,7 +671,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch2.Text;
-            DelBetweenPulseCH2 = Convert.ToInt16(buf);
+            DelBetweenPulseCH2 = Convert.ToUInt16(buf);
             DelayMassiveDataCH2 = BitConverter.GetBytes(DelBetweenPulseCH2);
         }
 
@@ -655,7 +731,16 @@ namespace Test_COM
 
         public void DurTextBoxCh3_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh3.Text == "")
+            {
+                DurTextBoxCh3.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh3.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh3.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh3.Text, out bool res);
             if (res == true)
             {
@@ -671,12 +756,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh3.Text;
-            DurationPulseCH3 = Convert.ToInt16(buf);
+            DurationPulseCH3 = Convert.ToUInt16(buf);
             DurationMassiveDataCH3 = BitConverter.GetBytes(DurationPulseCH3);
         }
 
         public void DelTextBoxch3_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch3.Text == "")
+            {
+                DelTextBoxch3.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch3.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch3.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch3.Text, out bool res);
             if (res == true)
             {
@@ -692,7 +787,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch3.Text;
-            DelBetweenPulseCH3 = Convert.ToInt16(buf);
+            DelBetweenPulseCH3 = Convert.ToUInt16(buf);
             DelayMassiveDataCH3 = BitConverter.GetBytes(DelBetweenPulseCH3);
         }
 
@@ -752,7 +847,16 @@ namespace Test_COM
 
         public void DurTextBoxCh4_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh4.Text == "")
+            {
+                DurTextBoxCh4.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh4.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh4.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh4.Text, out bool res);
             if (res == true)
             {
@@ -768,12 +872,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh4.Text;
-            DurationPulseCH4 = Convert.ToInt16(buf);
+            DurationPulseCH4 = Convert.ToUInt16(buf);
             DurationMassiveDataCH4 = BitConverter.GetBytes(DurationPulseCH4);
         }
 
         public void DelTextBoxch4_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch4.Text == "")
+            {
+                DelTextBoxch4.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch4.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch4.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch4.Text, out bool res);
             if (res == true)
             {
@@ -789,7 +903,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch4.Text;
-            DelBetweenPulseCH4 = Convert.ToInt16(buf);
+            DelBetweenPulseCH4 = Convert.ToUInt16(buf);
             DelayMassiveDataCH4 = BitConverter.GetBytes(DelBetweenPulseCH4);
         }
 
@@ -849,7 +963,16 @@ namespace Test_COM
 
         public void DurTextBoxCh5_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh5.Text == "")
+            {
+                DurTextBoxCh5.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh5.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh5.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh5.Text, out bool res);
             if (res == true)
             {
@@ -865,12 +988,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh5.Text;
-            DurationPulseCH5 = Convert.ToInt16(buf);
+            DurationPulseCH5 = Convert.ToUInt16(buf);
             DurationMassiveDataCH5 = BitConverter.GetBytes(DurationPulseCH5);
         }
 
         public void DelTextBoxch5_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch5.Text == "")
+            {
+                DelTextBoxch5.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch5.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch5.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch5.Text, out bool res);
             if (res == true)
             {
@@ -886,7 +1019,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch5.Text;
-            DelBetweenPulseCH5 = Convert.ToInt16(buf);
+            DelBetweenPulseCH5 = Convert.ToUInt16(buf);
             DelayMassiveDataCH5 = BitConverter.GetBytes(DelBetweenPulseCH5);
         }
 
@@ -946,7 +1079,16 @@ namespace Test_COM
 
         public void DurTextBoxCh6_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh6.Text == "")
+            {
+                DurTextBoxCh6.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh6.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh6.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh6.Text, out bool res);
             if (res == true)
             {
@@ -962,12 +1104,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh6.Text;
-            DurationPulseCH6 = Convert.ToInt16(buf);
+            DurationPulseCH6 = Convert.ToUInt16(buf);
             DurationMassiveDataCH6 = BitConverter.GetBytes(DurationPulseCH6);
         }
 
         public void DelTextBoxch6_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch6.Text == "")
+            {
+                DelTextBoxch6.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch6.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch6.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch6.Text, out bool res);
             if (res == true)
             {
@@ -983,7 +1135,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch6.Text;
-            DelBetweenPulseCH6 = Convert.ToInt16(buf);
+            DelBetweenPulseCH6 = Convert.ToUInt16(buf);
             DelayMassiveDataCH6 = BitConverter.GetBytes(DelBetweenPulseCH6);
         }
 
@@ -1043,7 +1195,16 @@ namespace Test_COM
 
         public void DurTextBoxCh7_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh7.Text == "")
+            {
+                DurTextBoxCh7.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh7.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh7.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh7.Text, out bool res);
             if (res == true)
             {
@@ -1059,12 +1220,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh7.Text;
-            DurationPulseCH7 = Convert.ToInt16(buf);
+            DurationPulseCH7 = Convert.ToUInt16(buf);
             DurationMassiveDataCH7 = BitConverter.GetBytes(DurationPulseCH7);
         }
 
         public void DelTextBoxch7_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch7.Text == "")
+            {
+                DelTextBoxch7.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch7.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch7.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch7.Text, out bool res);
             if (res == true)
             {
@@ -1080,7 +1251,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch7.Text;
-            DelBetweenPulseCH7 = Convert.ToInt16(buf);
+            DelBetweenPulseCH7 = Convert.ToUInt16(buf);
             DelayMassiveDataCH7 = BitConverter.GetBytes(DelBetweenPulseCH7);
         }
 
@@ -1140,7 +1311,16 @@ namespace Test_COM
 
         public void DurTextBoxCh8_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh8.Text == "")
+            {
+                DurTextBoxCh8.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh8.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh8.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh8.Text, out bool res);
             if (res == true)
             {
@@ -1156,12 +1336,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh8.Text;
-            DurationPulseCH8 = Convert.ToInt16(buf);
+            DurationPulseCH8 = Convert.ToUInt16(buf);
             DurationMassiveDataCH8 = BitConverter.GetBytes(DurationPulseCH8);
         }
 
         public void DelTextBoxch8_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch8.Text == "")
+            {
+                DelTextBoxch8.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch8.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch8.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch8.Text, out bool res);
             if (res == true)
             {
@@ -1177,7 +1367,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch8.Text;
-            DelBetweenPulseCH8 = Convert.ToInt16(buf);
+            DelBetweenPulseCH8 = Convert.ToUInt16(buf);
             DelayMassiveDataCH8 = BitConverter.GetBytes(DelBetweenPulseCH8);
         }
 
@@ -1238,7 +1428,16 @@ namespace Test_COM
         public void DurTextBoxCh9_TextChanged(object sender, EventArgs e)
         {
 
+            if (DurTextBoxCh9.Text == "")
+            {
+                DurTextBoxCh9.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh9.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh9.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh9.Text, out bool res);
             if (res == true)
             {
@@ -1254,12 +1453,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh9.Text;
-            DurationPulseCH9 = Convert.ToInt16(buf);
+            DurationPulseCH9 = Convert.ToUInt16(buf);
             DurationMassiveDataCH9 = BitConverter.GetBytes(DurationPulseCH9);
         }
 
         public void DelTextBoxch9_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch9.Text == "")
+            {
+                DelTextBoxch9.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch9.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch9.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch9.Text, out bool res);
             if (res == true)
             {
@@ -1275,7 +1484,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch9.Text;
-            DelBetweenPulseCH9 = Convert.ToInt16(buf);
+            DelBetweenPulseCH9 = Convert.ToUInt16(buf);
             DelayMassiveDataCH9 = BitConverter.GetBytes(DelBetweenPulseCH9);
         }
 
@@ -1335,7 +1544,16 @@ namespace Test_COM
 
         public void DurTextBoxCh10_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh10.Text == "")
+            {
+                DurTextBoxCh10.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh10.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh10.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh10.Text, out bool res);
             if (res == true)
             {
@@ -1351,12 +1569,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh10.Text;
-            DurationPulseCH10 = Convert.ToInt16(buf);
+            DurationPulseCH10 = Convert.ToUInt16(buf);
             DurationMassiveDataCH10 = BitConverter.GetBytes(DurationPulseCH10);
         }
 
         public void DelTextBoxch10_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch10.Text == "")
+            {
+                DelTextBoxch10.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch10.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch10.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch10.Text, out bool res);
             if (res == true)
             {
@@ -1372,7 +1600,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch10.Text;
-            DelBetweenPulseCH10 = Convert.ToInt16(buf);
+            DelBetweenPulseCH10 = Convert.ToUInt16(buf);
             DelayMassiveDataCH10 = BitConverter.GetBytes(DelBetweenPulseCH10);
         }
 
@@ -1432,7 +1660,16 @@ namespace Test_COM
 
         public void DurTextBoxCh11_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh11.Text == "")
+            {
+                DurTextBoxCh11.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh11.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh11.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh11.Text, out bool res);
             if (res == true)
             {
@@ -1448,12 +1685,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh11.Text;
-            DurationPulseCH11 = Convert.ToInt16(buf);
+            DurationPulseCH11 = Convert.ToUInt16(buf);
             DurationMassiveDataCH11 = BitConverter.GetBytes(DurationPulseCH11);
         }
 
         public void DelTextBoxch11_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch11.Text == "")
+            {
+                DelTextBoxch11.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch11.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch11.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch11.Text, out bool res);
             if (res == true)
             {
@@ -1469,7 +1716,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch11.Text;
-            DelBetweenPulseCH11 = Convert.ToInt16(buf);
+            DelBetweenPulseCH11 = Convert.ToUInt16(buf);
             DelayMassiveDataCH11 = BitConverter.GetBytes(DelBetweenPulseCH11);
         }
 
@@ -1529,7 +1776,16 @@ namespace Test_COM
 
         public void DurTextBoxCh12_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh12.Text == "")
+            {
+                DurTextBoxCh12.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh12.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh12.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh12.Text, out bool res);
             if (res == true)
             {
@@ -1545,12 +1801,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh12.Text;
-            DurationPulseCH12 = Convert.ToInt16(buf);
+            DurationPulseCH12 = Convert.ToUInt16(buf);
             DurationMassiveDataCH12 = BitConverter.GetBytes(DurationPulseCH12);
         }
 
         public void DelTextBoxch12_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch12.Text == "")
+            {
+                DelTextBoxch12.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch12.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch12.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch12.Text, out bool res);
             if (res == true)
             {
@@ -1566,7 +1832,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch12.Text;
-            DelBetweenPulseCH12 = Convert.ToInt16(buf);
+            DelBetweenPulseCH12 = Convert.ToUInt16(buf);
             DelayMassiveDataCH12 = BitConverter.GetBytes(DelBetweenPulseCH12);
         }
 
@@ -1626,7 +1892,16 @@ namespace Test_COM
 
         public void DurTextBoxCh13_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh13.Text == "")
+            {
+                DurTextBoxCh13.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh13.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh13.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh13.Text, out bool res);
             if (res == true)
             {
@@ -1642,12 +1917,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh13.Text;
-            DurationPulseCH13 = Convert.ToInt16(buf);
+            DurationPulseCH13 = Convert.ToUInt16(buf);
             DurationMassiveDataCH13 = BitConverter.GetBytes(DurationPulseCH13);
         }
 
         public void DelTextBoxch13_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch13.Text == "")
+            {
+                DelTextBoxch13.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch13.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch13.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch13.Text, out bool res);
             if (res == true)
             {
@@ -1663,7 +1948,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch13.Text;
-            DelBetweenPulseCH13 = Convert.ToInt16(buf);
+            DelBetweenPulseCH13 = Convert.ToUInt16(buf);
             DelayMassiveDataCH13 = BitConverter.GetBytes(DelBetweenPulseCH13);
         }
 
@@ -1723,7 +2008,16 @@ namespace Test_COM
 
         public void DurTextBoxCh14_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh14.Text == "")
+            {
+                DurTextBoxCh14.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh14.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh14.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh14.Text, out bool res);
             if (res == true)
             {
@@ -1739,12 +2033,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh14.Text;
-            DurationPulseCH14 = Convert.ToInt16(buf);
+            DurationPulseCH14 = Convert.ToUInt16(buf);
             DurationMassiveDataCH14 = BitConverter.GetBytes(DurationPulseCH14);
         }
 
         public void DelTextBoxch14_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch14.Text == "")
+            {
+                DelTextBoxch14.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch14.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch14.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch14.Text, out bool res);
             if (res == true)
             {
@@ -1760,7 +2064,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch14.Text;
-            DelBetweenPulseCH14 = Convert.ToInt16(buf);
+            DelBetweenPulseCH14 = Convert.ToUInt16(buf);
             DelayMassiveDataCH14 = BitConverter.GetBytes(DelBetweenPulseCH14);
         }
 
@@ -1820,7 +2124,16 @@ namespace Test_COM
 
         public void DurTextBoxCh15_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh15.Text == "")
+            {
+                DurTextBoxCh15.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh15.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh15.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh15.Text, out bool res);
             if (res == true)
             {
@@ -1836,12 +2149,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh15.Text;
-            DurationPulseCH15 = Convert.ToInt16(buf);
+            DurationPulseCH15 = Convert.ToUInt16(buf);
             DurationMassiveDataCH15 = BitConverter.GetBytes(DurationPulseCH15);
         }
 
         public void DelTextBoxch15_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch15.Text == "")
+            {
+                DelTextBoxch15.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch15.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch15.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch15.Text, out bool res);
             if (res == true)
             {
@@ -1857,7 +2180,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch15.Text;
-            DelBetweenPulseCH15 = Convert.ToInt16(buf);
+            DelBetweenPulseCH15 = Convert.ToUInt16(buf);
             DelayMassiveDataCH15 = BitConverter.GetBytes(DelBetweenPulseCH15);
         }
 
@@ -1917,7 +2240,16 @@ namespace Test_COM
 
         public void DurTextBoxCh16_TextChanged(object sender, EventArgs e)
         {
+            if (DurTextBoxCh16.Text == "")
+            {
+                DurTextBoxCh16.Text = "0";
+            }
 
+            ranger = Convert.ToInt32(DurTextBoxCh16.Text);
+            if (ranger > 65534)
+            {
+                DurTextBoxCh16.Text = "65534";
+            }
             Checking_text_for_a_number(DurTextBoxCh16.Text, out bool res);
             if (res == true)
             {
@@ -1933,12 +2265,22 @@ namespace Test_COM
             }
 
             string buf = DurTextBoxCh16.Text;
-            DurationPulseCH16 = Convert.ToInt16(buf);
+            DurationPulseCH16 = Convert.ToUInt16(buf);
             DurationMassiveDataCH16 = BitConverter.GetBytes(DurationPulseCH16);
         }
 
         public void DelTextBoxch16_TextChanged(object sender, EventArgs e)
         {
+            if (DelTextBoxch16.Text == "")
+            {
+                DelTextBoxch16.Text = "0";
+            }
+
+            ranger = Convert.ToInt32(DelTextBoxch16.Text);
+            if (ranger > 65534)
+            {
+                DelTextBoxch16.Text = "65534";
+            }
             Checking_text_for_a_number(DelTextBoxch16.Text, out bool res);
             if (res == true)
             {
@@ -1954,7 +2296,7 @@ namespace Test_COM
             }
 
             string buf = DelTextBoxch16.Text;
-            DelBetweenPulseCH16 = Convert.ToInt16(buf);
+            DelBetweenPulseCH16 = Convert.ToUInt16(buf);
             DelayMassiveDataCH16 = BitConverter.GetBytes(DelBetweenPulseCH16);
         }
 
