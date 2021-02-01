@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.IO;
 using System.Threading;
 
 
@@ -15,7 +16,7 @@ namespace Test_COM
 {
     public partial class OSG : Form
     {
-        byte START = 255;
+        byte START = 0;
         
  //////////////////////////////////////////////////// ПЕРЕМЕННЫЕ ДЛЯ КАНАЛА №1 /////////////////////////////////////////////////////////////////////////////////////////// 
        
@@ -179,12 +180,14 @@ namespace Test_COM
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-        int ranger;
+        int ranger;   // Переменная для преобразования текста в 32 бит число, нужна для проверки выхода за 65535
 
+        string filePath; // Переменная для хранения пути к файлу для записи и загрузки файла конфигурации каналов
+        
         ////////////////////////////////////////////////////// Инициализация GUI и СОМ ПОРТА ///////////////////////////////////////////////////////////////////////////////////////
 
         public OSG()
-        {
+        {   
             InitializeComponent();
 
             string[] ports;                       // Массив строковых переменных для хранения имен подключеннх СОМ портов
@@ -241,7 +244,7 @@ namespace Test_COM
             DelTextBoxch16.Text = "0";
 
 
-            DurTextBoxCh1.MaxLength = 5;
+            DurTextBoxCh1.MaxLength = 5;  
             DurTextBoxCh2.MaxLength = 5;
             DurTextBoxCh3.MaxLength = 5;
             DurTextBoxCh4.MaxLength = 5;
@@ -274,6 +277,8 @@ namespace Test_COM
             DelTextBoxch14.MaxLength = 5;
             DelTextBoxch15.MaxLength = 5;
             DelTextBoxch16.MaxLength = 5;
+
+            TypeLaunchComboBox.SelectedItem = "Внешний ПУСК";
 
         }
 
@@ -312,7 +317,7 @@ namespace Test_COM
 
         public void SerialSendButton_Click(object sender, EventArgs e)                          // При нажатии на кнопку отправки в СОМ порт:
         {
-            int count = 112;              ///// ВНИМАНИЕ                                        // Количество байтов массива для отправки в СОМ 
+            int count = 113;              ///// ВНИМАНИЕ                                        // Количество байтов массива для отправки в СОМ 
             int offset = 0;                                                                     // Смещение не нужно = 0
             byte[] buffer = new byte[] {DurationMassiveDataCH1[0], DurationMassiveDataCH1[1],   // Массив байтов для отправки в СОМ порт
                                         DurMultiplierCH1,
@@ -409,8 +414,10 @@ namespace Test_COM
                                         DelayMassiveDataCH16[0],    DelayMassiveDataCH16[1],
                                         DelMultiplierCH16,
                                         TypeStartCH16,
-                                        
+
                                         START
+                                        
+                                        
 
 
                                                                                      };
@@ -453,7 +460,7 @@ namespace Test_COM
                             Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
                             SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
                             SerialSendButton.Enabled = false;
-                            Thread.Sleep(1000);
+                            Thread.Sleep(2500);
                             SerialSendButton.Enabled = true;
                             SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
 
@@ -486,16 +493,14 @@ namespace Test_COM
                 DurTextBoxCh1.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh1.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh1.Text = "65534";
-            }
-
             Checking_text_for_a_number(DurTextBoxCh1.Text, out bool res);
             if (res == true)
             {
-
+                ranger = Convert.ToInt32(DurTextBoxCh1.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh1.Text = "65534";
+                }
             }
             else 
             {
@@ -528,15 +533,16 @@ namespace Test_COM
                 DelTextBoxch1.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch1.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch1.Text = "65534";
-            }
+            
 
             Checking_text_for_a_number(DelTextBoxch1.Text, out bool res);                           
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch1.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch1.Text = "65534";
+                }
             }
             else                                                                                
             {
@@ -618,15 +624,16 @@ namespace Test_COM
                 DurTextBoxCh2.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh2.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh2.Text = "65534";
-            }
+            
 
             Checking_text_for_a_number(DurTextBoxCh2.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh2.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh2.Text = "65534";
+                }
             }
             else
             {
@@ -650,15 +657,16 @@ namespace Test_COM
                 DelTextBoxch2.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch2.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch2.Text = "65534";
-            }
+            
 
             Checking_text_for_a_number(DelTextBoxch2.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch2.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch2.Text = "65534";
+                }
             }
             else
             {
@@ -736,14 +744,15 @@ namespace Test_COM
                 DurTextBoxCh3.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh3.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh3.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh3.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh3.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh3.Text = "65534";
+                }
             }
             else
             {
@@ -767,14 +776,15 @@ namespace Test_COM
                 DelTextBoxch3.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch3.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch3.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch3.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch3.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch3.Text = "65534";
+                }
             }
             else
             {
@@ -852,14 +862,15 @@ namespace Test_COM
                 DurTextBoxCh4.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh4.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh4.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh4.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh4.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh4.Text = "65534";
+                }
             }
             else
             {
@@ -883,14 +894,15 @@ namespace Test_COM
                 DelTextBoxch4.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch4.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch4.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch4.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch4.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch4.Text = "65534";
+                }
             }
             else
             {
@@ -968,14 +980,15 @@ namespace Test_COM
                 DurTextBoxCh5.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh5.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh5.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh5.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh5.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh5.Text = "65534";
+                }
             }
             else
             {
@@ -999,14 +1012,15 @@ namespace Test_COM
                 DelTextBoxch5.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch5.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch5.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch5.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch5.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch5.Text = "65534";
+                }
             }
             else
             {
@@ -1084,14 +1098,15 @@ namespace Test_COM
                 DurTextBoxCh6.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh6.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh6.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh6.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh6.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh6.Text = "65534";
+                }
             }
             else
             {
@@ -1115,14 +1130,15 @@ namespace Test_COM
                 DelTextBoxch6.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch6.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch6.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch6.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch6.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch6.Text = "65534";
+                }
             }
             else
             {
@@ -1200,14 +1216,15 @@ namespace Test_COM
                 DurTextBoxCh7.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh7.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh7.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh7.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh7.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh7.Text = "65534";
+                }
             }
             else
             {
@@ -1231,14 +1248,15 @@ namespace Test_COM
                 DelTextBoxch7.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch7.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch7.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch7.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch7.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch7.Text = "65534";
+                }
             }
             else
             {
@@ -1316,14 +1334,15 @@ namespace Test_COM
                 DurTextBoxCh8.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh8.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh8.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh8.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh8.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh8.Text = "65534";
+                }
             }
             else
             {
@@ -1347,14 +1366,15 @@ namespace Test_COM
                 DelTextBoxch8.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch8.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch8.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch8.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch8.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch8.Text = "65534";
+                }
             }
             else
             {
@@ -1433,14 +1453,15 @@ namespace Test_COM
                 DurTextBoxCh9.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh9.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh9.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh9.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh9.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh9.Text = "65534";
+                }
             }
             else
             {
@@ -1464,14 +1485,15 @@ namespace Test_COM
                 DelTextBoxch9.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch9.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch9.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch9.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch9.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch9.Text = "65534";
+                }
             }
             else
             {
@@ -1549,14 +1571,15 @@ namespace Test_COM
                 DurTextBoxCh10.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh10.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh10.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh10.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh10.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh10.Text = "65534";
+                }
             }
             else
             {
@@ -1580,14 +1603,15 @@ namespace Test_COM
                 DelTextBoxch10.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch10.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch10.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch10.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch10.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch10.Text = "65534";
+                }
             }
             else
             {
@@ -1665,14 +1689,15 @@ namespace Test_COM
                 DurTextBoxCh11.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh11.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh11.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh11.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh11.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh11.Text = "65534";
+                }
             }
             else
             {
@@ -1696,14 +1721,15 @@ namespace Test_COM
                 DelTextBoxch11.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch11.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch11.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch11.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch11.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch11.Text = "65534";
+                }
             }
             else
             {
@@ -1781,14 +1807,15 @@ namespace Test_COM
                 DurTextBoxCh12.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh12.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh12.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh12.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh12.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh12.Text = "65534";
+                }
             }
             else
             {
@@ -1812,14 +1839,15 @@ namespace Test_COM
                 DelTextBoxch12.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch12.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch12.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch12.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch12.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch12.Text = "65534";
+                }
             }
             else
             {
@@ -1897,14 +1925,15 @@ namespace Test_COM
                 DurTextBoxCh13.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh13.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh13.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh13.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh13.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh13.Text = "65534";
+                }
             }
             else
             {
@@ -1928,14 +1957,15 @@ namespace Test_COM
                 DelTextBoxch13.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch13.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch13.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch13.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch13.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch13.Text = "65534";
+                }
             }
             else
             {
@@ -2013,14 +2043,15 @@ namespace Test_COM
                 DurTextBoxCh14.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh14.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh14.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh14.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh14.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh14.Text = "65534";
+                }
             }
             else
             {
@@ -2044,14 +2075,15 @@ namespace Test_COM
                 DelTextBoxch14.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch14.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch14.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch14.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch14.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch14.Text = "65534";
+                }
             }
             else
             {
@@ -2129,14 +2161,15 @@ namespace Test_COM
                 DurTextBoxCh15.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh15.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh15.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh15.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh15.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh15.Text = "65534";
+                }
             }
             else
             {
@@ -2160,14 +2193,15 @@ namespace Test_COM
                 DelTextBoxch15.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch15.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch15.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch15.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch15.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch15.Text = "65534";
+                }
             }
             else
             {
@@ -2245,14 +2279,15 @@ namespace Test_COM
                 DurTextBoxCh16.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DurTextBoxCh16.Text);
-            if (ranger > 65534)
-            {
-                DurTextBoxCh16.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DurTextBoxCh16.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DurTextBoxCh16.Text);
+                if (ranger > 65534)
+                {
+                    DurTextBoxCh16.Text = "65534";
+                }
             }
             else
             {
@@ -2276,14 +2311,15 @@ namespace Test_COM
                 DelTextBoxch16.Text = "0";
             }
 
-            ranger = Convert.ToInt32(DelTextBoxch16.Text);
-            if (ranger > 65534)
-            {
-                DelTextBoxch16.Text = "65534";
-            }
+            
             Checking_text_for_a_number(DelTextBoxch16.Text, out bool res);
             if (res == true)
             {
+                ranger = Convert.ToInt32(DelTextBoxch16.Text);
+                if (ranger > 65534)
+                {
+                    DelTextBoxch16.Text = "65534";
+                }
             }
             else
             {
@@ -2364,7 +2400,7 @@ namespace Test_COM
             }
             else
             {
-                MessageBox.Show("Введите число от 1 до 999", "Сообщение",
+                MessageBox.Show("Введите число от 0 до 65534", "Сообщение",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning,
                 MessageBoxDefaultButton.Button1);
@@ -2374,7 +2410,7 @@ namespace Test_COM
         }
 
        public void ButtonOneInAll_Click(object sender, EventArgs e)                           // По нажатию данной кнопки происходит запись конфигурации 1-го канала во все другие каналы
-        {
+       {
             DurTextBoxCh2.Text = DurTextBoxCh3.Text = DurTextBoxCh4.Text = DurTextBoxCh5.Text = DurTextBoxCh6.Text = DurTextBoxCh7.Text = DurTextBoxCh8.Text = DurTextBoxCh9.Text =
             DurTextBoxCh10.Text = DurTextBoxCh11.Text = DurTextBoxCh12.Text = DurTextBoxCh13.Text = DurTextBoxCh14.Text = DurTextBoxCh15.Text = DurTextBoxCh16.Text = DurTextBoxCh1.Text;
 
@@ -2391,7 +2427,7 @@ namespace Test_COM
             DurComboBoxCh2.Text = DurComboBoxCh3.Text = DurComboBoxCh4.Text = DurComboBoxCh5.Text = DurComboBoxCh6.Text = DurComboBoxCh7.Text = DurComboBoxCh8.Text = DurComboBoxCh9.Text =
             DurComboBoxCh10.Text = DurComboBoxCh11.Text = DurComboBoxCh12.Text = DurComboBoxCh13.Text = DurComboBoxCh14.Text = DurComboBoxCh15.Text = DurComboBoxCh16.Text = DurComboBoxCh1.Text;
             
-        }
+       }
 
         public void CearAllCh_Click(object sender, EventArgs e)                                // По нажатию данной кнопки происходит очистка конфигурации всех каналов
         {
@@ -2439,14 +2475,281 @@ namespace Test_COM
 
             }
 
+            
+                // Thread.Sleep(1000);
 
-            // Thread.Sleep(1000);
+            }
+
+        public void LoadConfFile_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "txt files (*.txt)|*.txt";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                   
+                    filePath = openFileDialog.FileName;
+
+                    using (StreamReader sr = new StreamReader(filePath, System.Text.Encoding.Default))
+                    {
+
+                        DurTextBoxCh1.Text = sr.ReadLine();
+                        DurTextBoxCh2.Text = sr.ReadLine();
+                        DurTextBoxCh3.Text = sr.ReadLine();
+                        DurTextBoxCh4.Text = sr.ReadLine();
+                        DurTextBoxCh5.Text = sr.ReadLine();
+                        DurTextBoxCh6.Text = sr.ReadLine();
+                        DurTextBoxCh7.Text = sr.ReadLine();
+                        DurTextBoxCh8.Text = sr.ReadLine();
+                        DurTextBoxCh9.Text = sr.ReadLine();
+                        DurTextBoxCh10.Text = sr.ReadLine();
+                        DurTextBoxCh11.Text = sr.ReadLine();
+                        DurTextBoxCh12.Text = sr.ReadLine();
+                        DurTextBoxCh13.Text = sr.ReadLine();
+                        DurTextBoxCh14.Text = sr.ReadLine();
+                        DurTextBoxCh15.Text = sr.ReadLine();
+                        DurTextBoxCh16.Text = sr.ReadLine();
+
+                        DelTextBoxch1.Text = sr.ReadLine();
+                        DelTextBoxch2.Text = sr.ReadLine();
+                        DelTextBoxch3.Text = sr.ReadLine();
+                        DelTextBoxch4.Text = sr.ReadLine();
+                        DelTextBoxch5.Text = sr.ReadLine();
+                        DelTextBoxch6.Text = sr.ReadLine();
+                        DelTextBoxch7.Text = sr.ReadLine();
+                        DelTextBoxch8.Text = sr.ReadLine();
+                        DelTextBoxch9.Text = sr.ReadLine();
+                        DelTextBoxch10.Text = sr.ReadLine();
+                        DelTextBoxch11.Text = sr.ReadLine();
+                        DelTextBoxch12.Text = sr.ReadLine();
+                        DelTextBoxch13.Text = sr.ReadLine();
+                        DelTextBoxch14.Text = sr.ReadLine();
+                        DelTextBoxch15.Text = sr.ReadLine();
+                        DelTextBoxch16.Text = sr.ReadLine();
+
+                        DurComboBoxCh1.Text = sr.ReadLine();
+                        DurComboBoxCh2.Text = sr.ReadLine();
+                        DurComboBoxCh3.Text = sr.ReadLine();
+                        DurComboBoxCh4.Text = sr.ReadLine();
+                        DurComboBoxCh5.Text = sr.ReadLine();
+                        DurComboBoxCh6.Text = sr.ReadLine();
+                        DurComboBoxCh7.Text = sr.ReadLine();
+                        DurComboBoxCh8.Text = sr.ReadLine();
+                        DurComboBoxCh9.Text = sr.ReadLine();
+                        DurComboBoxCh10.Text = sr.ReadLine();
+                        DurComboBoxCh11.Text = sr.ReadLine();
+                        DurComboBoxCh12.Text = sr.ReadLine();
+                        DurComboBoxCh13.Text = sr.ReadLine();
+                        DurComboBoxCh14.Text = sr.ReadLine();
+                        DurComboBoxCh15.Text = sr.ReadLine();
+                        DurComboBoxCh16.Text = sr.ReadLine();
+
+                        DelComboBoxCh1.Text = sr.ReadLine();
+                        DelComboBoxCh2.Text = sr.ReadLine();
+                        DelComboBoxCh3.Text = sr.ReadLine();
+                        DelComboBoxCh4.Text = sr.ReadLine();
+                        DelComboBoxCh5.Text = sr.ReadLine();
+                        DelComboBoxCh6.Text = sr.ReadLine();
+                        DelComboBoxCh7.Text = sr.ReadLine();
+                        DelComboBoxCh8.Text = sr.ReadLine();
+                        DelComboBoxCh9.Text = sr.ReadLine();
+                        DelComboBoxCh10.Text = sr.ReadLine();
+                        DelComboBoxCh11.Text = sr.ReadLine();
+                        DelComboBoxCh12.Text = sr.ReadLine();
+                        DelComboBoxCh13.Text = sr.ReadLine();
+                        DelComboBoxCh14.Text = sr.ReadLine();
+                        DelComboBoxCh15.Text = sr.ReadLine();
+                        DelComboBoxCh16.Text = sr.ReadLine();
+
+                        ComboBoxTypeStartCh1.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh2.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh3.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh4.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh5.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh6.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh7.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh8.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh9.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh10.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh11.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh12.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh13.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh14.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh15.Text = sr.ReadLine();
+                        ComboBoxTypeStartCh16.Text = sr.ReadLine();
+
+                        CommentCh1.Text = sr.ReadLine();
+                        CommentCh2.Text = sr.ReadLine();
+                        CommentCh3.Text = sr.ReadLine();
+                        CommentCh4.Text = sr.ReadLine();
+                        CommentCh5.Text = sr.ReadLine();
+                        CommentCh6.Text = sr.ReadLine();
+                        CommentCh7.Text = sr.ReadLine();
+                        CommentCh8.Text = sr.ReadLine();
+                        CommentCh9.Text = sr.ReadLine();
+                        CommentCh10.Text = sr.ReadLine();
+                        CommentCh11.Text = sr.ReadLine();
+                        CommentCh12.Text = sr.ReadLine();
+                        CommentCh13.Text = sr.ReadLine();
+                        CommentCh14.Text = sr.ReadLine();
+                        CommentCh15.Text = sr.ReadLine();
+                        CommentCh16.Text = sr.ReadLine();
+                    }
+                }
+            }
+        }
+
+        public void SaveFIleConfig_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = "c:\\";
+                saveFileDialog.Filter = "txt files (*.txt)|*.txt";
+                saveFileDialog.FilterIndex = 2;
+                saveFileDialog.RestoreDirectory = true;
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = saveFileDialog.FileName;
+
+                    
+                    using (StreamWriter sw = new StreamWriter(filePath, false, System.Text.Encoding.Default))
+                    {
+                        sw.WriteLine(DurTextBoxCh1.Text);
+                        sw.WriteLine(DurTextBoxCh2.Text);
+                        sw.WriteLine(DurTextBoxCh3.Text);
+                        sw.WriteLine(DurTextBoxCh4.Text);
+                        sw.WriteLine(DurTextBoxCh5.Text);
+                        sw.WriteLine(DurTextBoxCh6.Text);
+                        sw.WriteLine(DurTextBoxCh7.Text);
+                        sw.WriteLine(DurTextBoxCh8.Text);
+                        sw.WriteLine(DurTextBoxCh9.Text);
+                        sw.WriteLine(DurTextBoxCh10.Text);
+                        sw.WriteLine(DurTextBoxCh11.Text);
+                        sw.WriteLine(DurTextBoxCh12.Text);
+                        sw.WriteLine(DurTextBoxCh13.Text);
+                        sw.WriteLine(DurTextBoxCh14.Text);
+                        sw.WriteLine(DurTextBoxCh15.Text);
+                        sw.WriteLine(DurTextBoxCh16.Text);
+
+                        sw.WriteLine(DelTextBoxch1.Text);
+                        sw.WriteLine(DelTextBoxch2.Text);
+                        sw.WriteLine(DelTextBoxch3.Text);
+                        sw.WriteLine(DelTextBoxch4.Text);
+                        sw.WriteLine(DelTextBoxch5.Text);
+                        sw.WriteLine(DelTextBoxch6.Text);
+                        sw.WriteLine(DelTextBoxch7.Text);
+                        sw.WriteLine(DelTextBoxch8.Text);
+                        sw.WriteLine(DelTextBoxch9.Text);
+                        sw.WriteLine(DelTextBoxch10.Text);
+                        sw.WriteLine(DelTextBoxch11.Text);
+                        sw.WriteLine(DelTextBoxch12.Text);
+                        sw.WriteLine(DelTextBoxch13.Text);
+                        sw.WriteLine(DelTextBoxch14.Text);
+                        sw.WriteLine(DelTextBoxch15.Text);
+                        sw.WriteLine(DelTextBoxch16.Text);
+
+                        sw.WriteLine(DurComboBoxCh1.Text);
+                        sw.WriteLine(DurComboBoxCh2.Text);
+                        sw.WriteLine(DurComboBoxCh3.Text);
+                        sw.WriteLine(DurComboBoxCh4.Text);
+                        sw.WriteLine(DurComboBoxCh5.Text);
+                        sw.WriteLine(DurComboBoxCh6.Text);
+                        sw.WriteLine(DurComboBoxCh7.Text);
+                        sw.WriteLine(DurComboBoxCh8.Text);
+                        sw.WriteLine(DurComboBoxCh9.Text);
+                        sw.WriteLine(DurComboBoxCh10.Text);
+                        sw.WriteLine(DurComboBoxCh11.Text);
+                        sw.WriteLine(DurComboBoxCh12.Text);
+                        sw.WriteLine(DurComboBoxCh13.Text);
+                        sw.WriteLine(DurComboBoxCh14.Text);
+                        sw.WriteLine(DurComboBoxCh15.Text);
+                        sw.WriteLine(DurComboBoxCh16.Text);
+
+                        sw.WriteLine(DelComboBoxCh1.Text);
+                        sw.WriteLine(DelComboBoxCh2.Text);
+                        sw.WriteLine(DelComboBoxCh3.Text);
+                        sw.WriteLine(DelComboBoxCh4.Text);
+                        sw.WriteLine(DelComboBoxCh5.Text);
+                        sw.WriteLine(DelComboBoxCh6.Text);
+                        sw.WriteLine(DelComboBoxCh7.Text);
+                        sw.WriteLine(DelComboBoxCh8.Text);
+                        sw.WriteLine(DelComboBoxCh9.Text);
+                        sw.WriteLine(DelComboBoxCh10.Text);
+                        sw.WriteLine(DelComboBoxCh11.Text);
+                        sw.WriteLine(DelComboBoxCh12.Text);
+                        sw.WriteLine(DelComboBoxCh13.Text);
+                        sw.WriteLine(DelComboBoxCh14.Text);
+                        sw.WriteLine(DelComboBoxCh15.Text);
+                        sw.WriteLine(DelComboBoxCh16.Text);
+
+                        sw.WriteLine(ComboBoxTypeStartCh1.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh2.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh3.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh4.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh5.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh6.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh7.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh8.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh9.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh10.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh11.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh12.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh13.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh14.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh15.Text);
+                        sw.WriteLine(ComboBoxTypeStartCh16.Text);
+
+                        sw.WriteLine(CommentCh1.Text);
+                        sw.WriteLine(CommentCh2.Text);
+                        sw.WriteLine(CommentCh3.Text);
+                        sw.WriteLine(CommentCh4.Text);
+                        sw.WriteLine(CommentCh5.Text);
+                        sw.WriteLine(CommentCh6.Text);
+                        sw.WriteLine(CommentCh7.Text);
+                        sw.WriteLine(CommentCh8.Text);
+                        sw.WriteLine(CommentCh9.Text);
+                        sw.WriteLine(CommentCh10.Text);
+                        sw.WriteLine(CommentCh11.Text);
+                        sw.WriteLine(CommentCh12.Text);
+                        sw.WriteLine(CommentCh13.Text);
+                        sw.WriteLine(CommentCh14.Text);
+                        sw.WriteLine(CommentCh15.Text);
+                        sw.WriteLine(CommentCh16.Text);
+
+
+
+
+                    }
+
+
+                }
+
+                
+
+            }
 
         }
 
-
-
-
+        public void TypeLaunchComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {   
+            
+            if (TypeLaunchComboBox.Text == "Внешний ПУСК")
+            {
+                START = 0;
+                SerialSendButton.Text = "СОХРАНИТЬ";
+            }
+            else if (TypeLaunchComboBox.Text == "ПУСК с ПК")
+            {
+                START = 255;
+                SerialSendButton.Text = "ПУСК";
+            }
+        }
     }
 
 

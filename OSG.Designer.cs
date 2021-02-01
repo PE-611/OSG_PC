@@ -196,6 +196,9 @@ namespace Test_COM
             this.DurTextBoxCh9 = new System.Windows.Forms.TextBox();
             this.ButtonOneInAll = new System.Windows.Forms.Button();
             this.CearAllCh = new System.Windows.Forms.Button();
+            this.LoadConfFile = new System.Windows.Forms.Button();
+            this.SaveFIleConfig = new System.Windows.Forms.Button();
+            this.TypeLaunchComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -212,9 +215,9 @@ namespace Test_COM
             // SerialSendButton
             // 
             this.SerialSendButton.Font = new System.Drawing.Font("ISOCPEUR", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SerialSendButton.Location = new System.Drawing.Point(1358, 705);
+            this.SerialSendButton.Location = new System.Drawing.Point(1312, 705);
             this.SerialSendButton.Name = "SerialSendButton";
-            this.SerialSendButton.Size = new System.Drawing.Size(381, 94);
+            this.SerialSendButton.Size = new System.Drawing.Size(501, 94);
             this.SerialSendButton.TabIndex = 1;
             this.SerialSendButton.Text = "ПУСК";
             this.SerialSendButton.UseVisualStyleBackColor = true;
@@ -2001,7 +2004,7 @@ namespace Test_COM
             this.ButtonOneInAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ButtonOneInAll.Location = new System.Drawing.Point(1312, 481);
             this.ButtonOneInAll.Name = "ButtonOneInAll";
-            this.ButtonOneInAll.Size = new System.Drawing.Size(180, 94);
+            this.ButtonOneInAll.Size = new System.Drawing.Size(216, 94);
             this.ButtonOneInAll.TabIndex = 183;
             this.ButtonOneInAll.Text = "Запись конфигурации канала №1 во все каналы";
             this.ButtonOneInAll.UseVisualStyleBackColor = true;
@@ -2010,19 +2013,57 @@ namespace Test_COM
             // CearAllCh
             // 
             this.CearAllCh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CearAllCh.Location = new System.Drawing.Point(1624, 481);
+            this.CearAllCh.Location = new System.Drawing.Point(1613, 481);
             this.CearAllCh.Name = "CearAllCh";
-            this.CearAllCh.Size = new System.Drawing.Size(180, 94);
+            this.CearAllCh.Size = new System.Drawing.Size(200, 94);
             this.CearAllCh.TabIndex = 184;
             this.CearAllCh.Text = "Стереть все ";
             this.CearAllCh.UseVisualStyleBackColor = true;
             this.CearAllCh.Click += new System.EventHandler(this.CearAllCh_Click);
+            // 
+            // LoadConfFile
+            // 
+            this.LoadConfFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoadConfFile.Location = new System.Drawing.Point(1312, 146);
+            this.LoadConfFile.Name = "LoadConfFile";
+            this.LoadConfFile.Size = new System.Drawing.Size(501, 94);
+            this.LoadConfFile.TabIndex = 185;
+            this.LoadConfFile.Text = "Загрузить конфигурацию каналов";
+            this.LoadConfFile.UseVisualStyleBackColor = true;
+            this.LoadConfFile.Click += new System.EventHandler(this.LoadConfFile_Click);
+            // 
+            // SaveFIleConfig
+            // 
+            this.SaveFIleConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SaveFIleConfig.Location = new System.Drawing.Point(1312, 295);
+            this.SaveFIleConfig.Name = "SaveFIleConfig";
+            this.SaveFIleConfig.Size = new System.Drawing.Size(501, 94);
+            this.SaveFIleConfig.TabIndex = 186;
+            this.SaveFIleConfig.Text = "Сохранить конфигурацию каналов";
+            this.SaveFIleConfig.UseVisualStyleBackColor = true;
+            this.SaveFIleConfig.Click += new System.EventHandler(this.SaveFIleConfig_Click);
+            // 
+            // TypeLaunchComboBox
+            // 
+            this.TypeLaunchComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TypeLaunchComboBox.FormattingEnabled = true;
+            this.TypeLaunchComboBox.Items.AddRange(new object[] {
+            "Внешний ПУСК",
+            "ПУСК с ПК"});
+            this.TypeLaunchComboBox.Location = new System.Drawing.Point(1451, 642);
+            this.TypeLaunchComboBox.Name = "TypeLaunchComboBox";
+            this.TypeLaunchComboBox.Size = new System.Drawing.Size(245, 28);
+            this.TypeLaunchComboBox.TabIndex = 187;
+            this.TypeLaunchComboBox.SelectedIndexChanged += new System.EventHandler(this.TypeLaunchComboBox_SelectedIndexChanged);
             // 
             // OSG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1852, 992);
+            this.Controls.Add(this.TypeLaunchComboBox);
+            this.Controls.Add(this.SaveFIleConfig);
+            this.Controls.Add(this.LoadConfFile);
             this.Controls.Add(this.CearAllCh);
             this.Controls.Add(this.ButtonOneInAll);
             this.Controls.Add(this.CommentCh16);
@@ -2367,6 +2408,9 @@ namespace Test_COM
         private System.Windows.Forms.TextBox DurTextBoxCh9;
         private System.Windows.Forms.Button ButtonOneInAll;
         private System.Windows.Forms.Button CearAllCh;
+        private System.Windows.Forms.Button LoadConfFile;
+        private System.Windows.Forms.Button SaveFIleConfig;
+        private System.Windows.Forms.ComboBox TypeLaunchComboBox;
     }
 }
 
