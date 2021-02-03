@@ -284,7 +284,7 @@ namespace Test_COM
 
 
 
-        SerialPort Port = new SerialPort("COM", 100000, Parity.None, 8, StopBits.One);            // Инициализация последовательного порта 
+        SerialPort Port = new SerialPort("COM", 115200, Parity.None, 8, StopBits.One);            // Инициализация последовательного порта 
         // _serialPort.Handshake = Handshake.None;
 
         public void ComComboBox_SelectedIndexChanged(object sender, EventArgs e)                // При выборе СОМ порта осуществляем:
@@ -293,7 +293,7 @@ namespace Test_COM
             {
                 Port.PortName = ComComboBox.Text.ToString();                                    // Изменение имени Комбобокса
                 Port.Open();                                                                    // Открываем порт
-                Port.BaudRate = 100000;
+                Port.BaudRate = 115200;
                 //Port.WriteTimeout = 1000;                                                       // Эти тайм ауты можно не ставить
                 //Port.ReadTimeout = 1000;                                                        // Эти тайм ауты можно не ставить
                 OffComButton.Text = "Отключить " + Port.PortName;                               // Изменяем текст на кнопке отключения порта на "Отключить СОМ порт"
@@ -455,14 +455,37 @@ namespace Test_COM
                             MessageBoxDefaultButton.Button1);
                         }
                         else
-                        {
-                            
-                            Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
-                            SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
-                            SerialSendButton.Enabled = false;
-                            Thread.Sleep(2500);
-                            SerialSendButton.Enabled = true;
-                            SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
+                        {   
+                            if (TypeLaunchComboBox.Text == "ПУСК с ПК")
+                            {
+                                DialogResult dialogResult = MessageBox.Show("Подтвердите ПУСК", "Сообщение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                                if (dialogResult == DialogResult.Yes)
+                                {
+                                    Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
+                                    SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
+                                    SerialSendButton.Enabled = false;
+                                    Thread.Sleep(2500);
+                                    SerialSendButton.Enabled = true;
+                                    SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
+                                }
+                                else if (dialogResult == DialogResult.No)
+                                {
+
+                                }
+                            }
+
+                            else if (TypeLaunchComboBox.Text == "Внешний ПУСК")
+                            {
+                                Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
+                                SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
+                                SerialSendButton.Enabled = false;
+                                Thread.Sleep(2500);
+                                SerialSendButton.Enabled = true;
+                                SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
+                            }   
+
+
+
 
 
 
