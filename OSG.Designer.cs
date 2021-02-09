@@ -194,8 +194,6 @@ namespace Test_COM
             this.DurComboBoxCh9 = new System.Windows.Forms.ComboBox();
             this.label65 = new System.Windows.Forms.Label();
             this.DurTextBoxCh9 = new System.Windows.Forms.TextBox();
-            this.ButtonOneInAll = new System.Windows.Forms.Button();
-            this.CearAllCh = new System.Windows.Forms.Button();
             this.LoadConfFile = new System.Windows.Forms.Button();
             this.SaveFIleConfig = new System.Windows.Forms.Button();
             this.TypeLaunchComboBox = new System.Windows.Forms.ComboBox();
@@ -1999,28 +1997,6 @@ namespace Test_COM
             this.DurTextBoxCh9.TabIndex = 102;
             this.DurTextBoxCh9.TextChanged += new System.EventHandler(this.DurTextBoxCh9_TextChanged);
             // 
-            // ButtonOneInAll
-            // 
-            this.ButtonOneInAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonOneInAll.Location = new System.Drawing.Point(1312, 481);
-            this.ButtonOneInAll.Name = "ButtonOneInAll";
-            this.ButtonOneInAll.Size = new System.Drawing.Size(216, 94);
-            this.ButtonOneInAll.TabIndex = 183;
-            this.ButtonOneInAll.Text = "Запись конфигурации канала №1 во все каналы";
-            this.ButtonOneInAll.UseVisualStyleBackColor = true;
-            this.ButtonOneInAll.Click += new System.EventHandler(this.ButtonOneInAll_Click);
-            // 
-            // CearAllCh
-            // 
-            this.CearAllCh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CearAllCh.Location = new System.Drawing.Point(1613, 481);
-            this.CearAllCh.Name = "CearAllCh";
-            this.CearAllCh.Size = new System.Drawing.Size(200, 94);
-            this.CearAllCh.TabIndex = 184;
-            this.CearAllCh.Text = "Стереть все ";
-            this.CearAllCh.UseVisualStyleBackColor = true;
-            this.CearAllCh.Click += new System.EventHandler(this.CearAllCh_Click);
-            // 
             // LoadConfFile
             // 
             this.LoadConfFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -2064,8 +2040,6 @@ namespace Test_COM
             this.Controls.Add(this.TypeLaunchComboBox);
             this.Controls.Add(this.SaveFIleConfig);
             this.Controls.Add(this.LoadConfFile);
-            this.Controls.Add(this.CearAllCh);
-            this.Controls.Add(this.ButtonOneInAll);
             this.Controls.Add(this.CommentCh16);
             this.Controls.Add(this.DelComboBoxCh16);
             this.Controls.Add(this.DelTextBoxch16);
@@ -2406,8 +2380,6 @@ namespace Test_COM
         private System.Windows.Forms.ComboBox DurComboBoxCh9;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.TextBox DurTextBoxCh9;
-        private System.Windows.Forms.Button ButtonOneInAll;
-        private System.Windows.Forms.Button CearAllCh;
         private System.Windows.Forms.Button LoadConfFile;
         private System.Windows.Forms.Button SaveFIleConfig;
         private System.Windows.Forms.ComboBox TypeLaunchComboBox;

@@ -196,52 +196,52 @@ namespace Test_COM
 
 
             DurTextBoxCh1.Text = "0";             // Начальное значение длительности канала №1
-            DelTextBoxch1.Text = "0";             // Начальное значение паузы канала №1
+            DelTextBoxch1.Text = "1";             // Начальное значение паузы канала №1
            
             DurTextBoxCh2.Text = "0";             
-            DelTextBoxch2.Text = "0";
+            DelTextBoxch2.Text = "1";
 
             DurTextBoxCh3.Text = "0";
-            DelTextBoxch3.Text = "0";
+            DelTextBoxch3.Text = "1";
 
             DurTextBoxCh4.Text = "0";
-            DelTextBoxch4.Text = "0";
+            DelTextBoxch4.Text = "1";
 
             DurTextBoxCh5.Text = "0";
-            DelTextBoxch5.Text = "0";
+            DelTextBoxch5.Text = "1";
 
             DurTextBoxCh6.Text = "0";
-            DelTextBoxch6.Text = "0";
+            DelTextBoxch6.Text = "1";
 
             DurTextBoxCh7.Text = "0";
-            DelTextBoxch7.Text = "0";
+            DelTextBoxch7.Text = "1";
 
             DurTextBoxCh8.Text = "0";
-            DelTextBoxch8.Text = "0";
+            DelTextBoxch8.Text = "1";
 
             DurTextBoxCh9.Text = "0";
-            DelTextBoxch9.Text = "0";
+            DelTextBoxch9.Text = "1";
 
             DurTextBoxCh10.Text = "0";
-            DelTextBoxch10.Text = "0";
+            DelTextBoxch10.Text = "1";
 
             DurTextBoxCh11.Text = "0";
-            DelTextBoxch11.Text = "0";
+            DelTextBoxch11.Text = "1";
 
             DurTextBoxCh12.Text = "0";
-            DelTextBoxch12.Text = "0";
+            DelTextBoxch12.Text = "1";
 
             DurTextBoxCh13.Text = "0";
-            DelTextBoxch13.Text = "0";
+            DelTextBoxch13.Text = "1";
 
             DurTextBoxCh14.Text = "0";
-            DelTextBoxch14.Text = "0";
+            DelTextBoxch14.Text = "1";
 
             DurTextBoxCh15.Text = "0";
-            DelTextBoxch15.Text = "0";
+            DelTextBoxch15.Text = "1";
 
-            DurTextBoxCh16.Text = "0";
-            DelTextBoxch16.Text = "0";
+            DurTextBoxCh16.Text = "1";
+            DelTextBoxch16.Text = "2";
 
 
             DurTextBoxCh1.MaxLength = 5;  
@@ -284,7 +284,7 @@ namespace Test_COM
 
 
 
-        SerialPort Port = new SerialPort("COM", 115200, Parity.None, 8, StopBits.One);            // Инициализация последовательного порта 
+        SerialPort Port = new SerialPort("COM", 9600, Parity.None, 8, StopBits.One);            // Инициализация последовательного порта 
         // _serialPort.Handshake = Handshake.None;
 
         public void ComComboBox_SelectedIndexChanged(object sender, EventArgs e)                // При выборе СОМ порта осуществляем:
@@ -464,7 +464,7 @@ namespace Test_COM
                                     Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
                                     SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
                                     SerialSendButton.Enabled = false;
-                                    Thread.Sleep(2500);
+                                    Thread.Sleep(1000);
                                     SerialSendButton.Enabled = true;
                                     SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
                                 }
@@ -479,7 +479,7 @@ namespace Test_COM
                                 Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
                                 SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
                                 SerialSendButton.Enabled = false;
-                                Thread.Sleep(2500);
+                                Thread.Sleep(1000);
                                 SerialSendButton.Enabled = true;
                                 SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
                             }   
@@ -513,7 +513,12 @@ namespace Test_COM
         {
             if (DurTextBoxCh1.Text == "")
             {
-                DurTextBoxCh1.Text = "0";
+                DurTextBoxCh1.Text = "1";
+            }
+
+            if (DurTextBoxCh1.Text == "0")
+            {
+                DurTextBoxCh1.Text = "1";
             }
 
             Checking_text_for_a_number(DurTextBoxCh1.Text, out bool res);
@@ -553,7 +558,7 @@ namespace Test_COM
         {
             if (DelTextBoxch1.Text == "")
             {
-                DelTextBoxch1.Text = "0";
+                DelTextBoxch1.Text = "1";
             }
 
             
@@ -572,9 +577,9 @@ namespace Test_COM
                 DelTextBoxch1.Clear();                                                          
             }
 
-            if (DelTextBoxch1.Text == "")
+            if (DelTextBoxch1.Text == "0")
             {
-                DelTextBoxch1.Text = "0";
+                DelTextBoxch1.Text = "1";
             }
 
             string buf = DelTextBoxch1.Text;
@@ -644,10 +649,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh2.Text == "")
             {
-                DurTextBoxCh2.Text = "0";
+                DurTextBoxCh2.Text = "1";
             }
 
-            
+            if (DurTextBoxCh2.Text == "0")
+            {
+                DurTextBoxCh2.Text = "1";
+            }
+
+
 
             Checking_text_for_a_number(DurTextBoxCh2.Text, out bool res);
             if (res == true)
@@ -677,7 +687,7 @@ namespace Test_COM
         {
             if (DelTextBoxch2.Text == "")
             {
-                DelTextBoxch2.Text = "0";
+                DelTextBoxch2.Text = "1";
             }
 
             
@@ -696,9 +706,9 @@ namespace Test_COM
                 DelTextBoxch2.Clear();
             }
 
-            if (DelTextBoxch2.Text == "")
+            if (DelTextBoxch2.Text == "0")
             {
-                DelTextBoxch2.Text = "0";
+                DelTextBoxch2.Text = "1";
             }
 
             string buf = DelTextBoxch2.Text;
@@ -764,10 +774,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh3.Text == "")
             {
-                DurTextBoxCh3.Text = "0";
+                DurTextBoxCh3.Text = "1";
             }
 
-            
+            if (DurTextBoxCh3.Text == "0")
+            {
+                DurTextBoxCh3.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh3.Text, out bool res);
             if (res == true)
             {
@@ -784,7 +799,7 @@ namespace Test_COM
 
             if (DurTextBoxCh3.Text == "")
             {
-                DurTextBoxCh3.Text = "0";
+                DurTextBoxCh3.Text = "1";
             }
 
             string buf = DurTextBoxCh3.Text;
@@ -796,7 +811,7 @@ namespace Test_COM
         {
             if (DelTextBoxch3.Text == "")
             {
-                DelTextBoxch3.Text = "0";
+                DelTextBoxch3.Text = "1";
             }
 
             
@@ -814,9 +829,9 @@ namespace Test_COM
                 DelTextBoxch3.Clear();
             }
 
-            if (DelTextBoxch3.Text == "")
+            if (DelTextBoxch3.Text == "0")
             {
-                DelTextBoxch3.Text = "0";
+                DelTextBoxch3.Text = "1";
             }
 
             string buf = DelTextBoxch3.Text;
@@ -882,10 +897,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh4.Text == "")
             {
-                DurTextBoxCh4.Text = "0";
+                DurTextBoxCh4.Text = "1";
             }
 
-            
+            if (DurTextBoxCh4.Text == "0")
+            {
+                DurTextBoxCh4.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh4.Text, out bool res);
             if (res == true)
             {
@@ -914,7 +934,7 @@ namespace Test_COM
         {
             if (DelTextBoxch4.Text == "")
             {
-                DelTextBoxch4.Text = "0";
+                DelTextBoxch4.Text = "1";
             }
 
             
@@ -932,9 +952,9 @@ namespace Test_COM
                 DelTextBoxch4.Clear();
             }
 
-            if (DelTextBoxch4.Text == "")
+            if (DelTextBoxch4.Text == "0")
             {
-                DelTextBoxch4.Text = "0";
+                DelTextBoxch4.Text = "1";
             }
 
             string buf = DelTextBoxch4.Text;
@@ -1000,10 +1020,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh5.Text == "")
             {
-                DurTextBoxCh5.Text = "0";
+                DurTextBoxCh5.Text = "1";
             }
 
-            
+            if (DurTextBoxCh5.Text == "0")
+            {
+                DurTextBoxCh5.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh5.Text, out bool res);
             if (res == true)
             {
@@ -1032,7 +1057,7 @@ namespace Test_COM
         {
             if (DelTextBoxch5.Text == "")
             {
-                DelTextBoxch5.Text = "0";
+                DelTextBoxch5.Text = "1";
             }
 
             
@@ -1050,9 +1075,9 @@ namespace Test_COM
                 DelTextBoxch5.Clear();
             }
 
-            if (DelTextBoxch5.Text == "")
+            if (DelTextBoxch5.Text == "0")
             {
-                DelTextBoxch5.Text = "0";
+                DelTextBoxch5.Text = "1";
             }
 
             string buf = DelTextBoxch5.Text;
@@ -1118,10 +1143,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh6.Text == "")
             {
-                DurTextBoxCh6.Text = "0";
+                DurTextBoxCh6.Text = "1";
             }
 
-            
+            if (DurTextBoxCh6.Text == "0")
+            {
+                DurTextBoxCh6.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh6.Text, out bool res);
             if (res == true)
             {
@@ -1150,7 +1180,7 @@ namespace Test_COM
         {
             if (DelTextBoxch6.Text == "")
             {
-                DelTextBoxch6.Text = "0";
+                DelTextBoxch6.Text = "1";
             }
 
             
@@ -1168,9 +1198,9 @@ namespace Test_COM
                 DelTextBoxch6.Clear();
             }
 
-            if (DelTextBoxch6.Text == "")
+            if (DelTextBoxch6.Text == "0")
             {
-                DelTextBoxch6.Text = "0";
+                DelTextBoxch6.Text = "1";
             }
 
             string buf = DelTextBoxch6.Text;
@@ -1236,10 +1266,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh7.Text == "")
             {
-                DurTextBoxCh7.Text = "0";
+                DurTextBoxCh7.Text = "1";
             }
 
-            
+            if (DurTextBoxCh7.Text == "0")
+            {
+                DurTextBoxCh7.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh7.Text, out bool res);
             if (res == true)
             {
@@ -1256,7 +1291,7 @@ namespace Test_COM
 
             if (DurTextBoxCh7.Text == "")
             {
-                DurTextBoxCh7.Text = "0";
+                DurTextBoxCh7.Text = "1";
             }
 
             string buf = DurTextBoxCh7.Text;
@@ -1268,7 +1303,7 @@ namespace Test_COM
         {
             if (DelTextBoxch7.Text == "")
             {
-                DelTextBoxch7.Text = "0";
+                DelTextBoxch7.Text = "1";
             }
 
             
@@ -1286,9 +1321,9 @@ namespace Test_COM
                 DelTextBoxch7.Clear();
             }
 
-            if (DelTextBoxch7.Text == "")
+            if (DelTextBoxch7.Text == "0")
             {
-                DelTextBoxch7.Text = "0";
+                DelTextBoxch7.Text = "1";
             }
 
             string buf = DelTextBoxch7.Text;
@@ -1354,10 +1389,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh8.Text == "")
             {
-                DurTextBoxCh8.Text = "0";
+                DurTextBoxCh8.Text = "1";
             }
 
-            
+            if (DurTextBoxCh8.Text == "0")
+            {
+                DurTextBoxCh8.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh8.Text, out bool res);
             if (res == true)
             {
@@ -1386,7 +1426,7 @@ namespace Test_COM
         {
             if (DelTextBoxch8.Text == "")
             {
-                DelTextBoxch8.Text = "0";
+                DelTextBoxch8.Text = "1";
             }
 
             
@@ -1404,9 +1444,9 @@ namespace Test_COM
                 DelTextBoxch8.Clear();
             }
 
-            if (DelTextBoxch8.Text == "")
+            if (DelTextBoxch8.Text == "0")
             {
-                DelTextBoxch8.Text = "0";
+                DelTextBoxch8.Text = "1";
             }
 
             string buf = DelTextBoxch8.Text;
@@ -1473,10 +1513,15 @@ namespace Test_COM
 
             if (DurTextBoxCh9.Text == "")
             {
-                DurTextBoxCh9.Text = "0";
+                DurTextBoxCh9.Text = "1";
             }
 
-            
+            if (DurTextBoxCh9.Text == "0")
+            {
+                DurTextBoxCh9.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh9.Text, out bool res);
             if (res == true)
             {
@@ -1505,7 +1550,7 @@ namespace Test_COM
         {
             if (DelTextBoxch9.Text == "")
             {
-                DelTextBoxch9.Text = "0";
+                DelTextBoxch9.Text = "1";
             }
 
             
@@ -1523,9 +1568,9 @@ namespace Test_COM
                 DelTextBoxch9.Clear();
             }
 
-            if (DelTextBoxch9.Text == "")
+            if (DelTextBoxch9.Text == "0")
             {
-                DelTextBoxch9.Text = "0";
+                DelTextBoxch9.Text = "1";
             }
 
             string buf = DelTextBoxch9.Text;
@@ -1591,10 +1636,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh10.Text == "")
             {
-                DurTextBoxCh10.Text = "0";
+                DurTextBoxCh10.Text = "1";
             }
 
-            
+            if (DurTextBoxCh10.Text == "0")
+            {
+                DurTextBoxCh10.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh10.Text, out bool res);
             if (res == true)
             {
@@ -1623,7 +1673,7 @@ namespace Test_COM
         {
             if (DelTextBoxch10.Text == "")
             {
-                DelTextBoxch10.Text = "0";
+                DelTextBoxch10.Text = "1";
             }
 
             
@@ -1641,9 +1691,9 @@ namespace Test_COM
                 DelTextBoxch10.Clear();
             }
 
-            if (DelTextBoxch10.Text == "")
+            if (DelTextBoxch10.Text == "0")
             {
-                DelTextBoxch10.Text = "0";
+                DelTextBoxch10.Text = "1";
             }
 
             string buf = DelTextBoxch10.Text;
@@ -1709,10 +1759,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh11.Text == "")
             {
-                DurTextBoxCh11.Text = "0";
+                DurTextBoxCh11.Text = "1";
             }
 
-            
+            if (DurTextBoxCh11.Text == "0")
+            {
+                DurTextBoxCh11.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh11.Text, out bool res);
             if (res == true)
             {
@@ -1741,7 +1796,7 @@ namespace Test_COM
         {
             if (DelTextBoxch11.Text == "")
             {
-                DelTextBoxch11.Text = "0";
+                DelTextBoxch11.Text = "1";
             }
 
             
@@ -1759,9 +1814,9 @@ namespace Test_COM
                 DelTextBoxch11.Clear();
             }
 
-            if (DelTextBoxch11.Text == "")
+            if (DelTextBoxch11.Text == "0")
             {
-                DelTextBoxch11.Text = "0";
+                DelTextBoxch11.Text = "1";
             }
 
             string buf = DelTextBoxch11.Text;
@@ -1827,10 +1882,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh12.Text == "")
             {
-                DurTextBoxCh12.Text = "0";
+                DurTextBoxCh12.Text = "1";
             }
 
-            
+            if (DurTextBoxCh12.Text == "0")
+            {
+                DurTextBoxCh12.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh12.Text, out bool res);
             if (res == true)
             {
@@ -1859,7 +1919,7 @@ namespace Test_COM
         {
             if (DelTextBoxch12.Text == "")
             {
-                DelTextBoxch12.Text = "0";
+                DelTextBoxch12.Text = "1";
             }
 
             
@@ -1877,9 +1937,9 @@ namespace Test_COM
                 DelTextBoxch12.Clear();
             }
 
-            if (DelTextBoxch12.Text == "")
+            if (DelTextBoxch12.Text == "0")
             {
-                DelTextBoxch12.Text = "0";
+                DelTextBoxch12.Text = "1";
             }
 
             string buf = DelTextBoxch12.Text;
@@ -1945,10 +2005,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh13.Text == "")
             {
-                DurTextBoxCh13.Text = "0";
+                DurTextBoxCh13.Text = "1";
             }
 
-            
+            if (DurTextBoxCh13.Text == "0")
+            {
+                DurTextBoxCh13.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh13.Text, out bool res);
             if (res == true)
             {
@@ -1977,7 +2042,7 @@ namespace Test_COM
         {
             if (DelTextBoxch13.Text == "")
             {
-                DelTextBoxch13.Text = "0";
+                DelTextBoxch13.Text = "1";
             }
 
             
@@ -1995,9 +2060,9 @@ namespace Test_COM
                 DelTextBoxch13.Clear();
             }
 
-            if (DelTextBoxch13.Text == "")
+            if (DelTextBoxch13.Text == "0")
             {
-                DelTextBoxch13.Text = "0";
+                DelTextBoxch13.Text = "1";
             }
 
             string buf = DelTextBoxch13.Text;
@@ -2063,10 +2128,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh14.Text == "")
             {
-                DurTextBoxCh14.Text = "0";
+                DurTextBoxCh14.Text = "1";
             }
 
-            
+            if (DurTextBoxCh14.Text == "0")
+            {
+                DurTextBoxCh14.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh14.Text, out bool res);
             if (res == true)
             {
@@ -2095,7 +2165,7 @@ namespace Test_COM
         {
             if (DelTextBoxch14.Text == "")
             {
-                DelTextBoxch14.Text = "0";
+                DelTextBoxch14.Text = "1";
             }
 
             
@@ -2113,9 +2183,9 @@ namespace Test_COM
                 DelTextBoxch14.Clear();
             }
 
-            if (DelTextBoxch14.Text == "")
+            if (DelTextBoxch14.Text == "0")
             {
-                DelTextBoxch14.Text = "0";
+                DelTextBoxch14.Text = "1";
             }
 
             string buf = DelTextBoxch14.Text;
@@ -2181,10 +2251,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh15.Text == "")
             {
-                DurTextBoxCh15.Text = "0";
+                DurTextBoxCh15.Text = "1";
             }
 
-            
+            if (DurTextBoxCh15.Text == "0")
+            {
+                DurTextBoxCh15.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh15.Text, out bool res);
             if (res == true)
             {
@@ -2213,7 +2288,7 @@ namespace Test_COM
         {
             if (DelTextBoxch15.Text == "")
             {
-                DelTextBoxch15.Text = "0";
+                DelTextBoxch15.Text = "1";
             }
 
             
@@ -2231,9 +2306,9 @@ namespace Test_COM
                 DelTextBoxch15.Clear();
             }
 
-            if (DelTextBoxch15.Text == "")
+            if (DelTextBoxch15.Text == "0")
             {
-                DelTextBoxch15.Text = "0";
+                DelTextBoxch15.Text = "1";
             }
 
             string buf = DelTextBoxch15.Text;
@@ -2299,10 +2374,15 @@ namespace Test_COM
         {
             if (DurTextBoxCh16.Text == "")
             {
-                DurTextBoxCh16.Text = "0";
+                DurTextBoxCh16.Text = "1";
             }
 
-            
+            if (DurTextBoxCh16.Text == "0")
+            {
+                DurTextBoxCh16.Text = "1";
+            }
+
+
             Checking_text_for_a_number(DurTextBoxCh16.Text, out bool res);
             if (res == true)
             {
@@ -2317,9 +2397,9 @@ namespace Test_COM
                 DurTextBoxCh16.Clear();
             }
 
-            if (DurTextBoxCh16.Text == "")
+            if (DurTextBoxCh16.Text == "0")
             {
-                DurTextBoxCh16.Text = "0";
+                DurTextBoxCh16.Text = "1";
             }
 
             string buf = DurTextBoxCh16.Text;
@@ -2331,7 +2411,7 @@ namespace Test_COM
         {
             if (DelTextBoxch16.Text == "")
             {
-                DelTextBoxch16.Text = "0";
+                DelTextBoxch16.Text = "2";
             }
 
             
@@ -2349,9 +2429,14 @@ namespace Test_COM
                 DelTextBoxch16.Clear();
             }
 
-            if (DelTextBoxch16.Text == "")
+            if (DelTextBoxch16.Text == "0")
             {
-                DelTextBoxch16.Text = "0";
+                DelTextBoxch16.Text = "2";
+            }
+
+            if (DelTextBoxch16.Text == "1")
+            {
+                DelTextBoxch16.Text = "2";
             }
 
             string buf = DelTextBoxch16.Text;
@@ -2431,77 +2516,6 @@ namespace Test_COM
             }
             return res = IsDigit;
         }
-
-       public void ButtonOneInAll_Click(object sender, EventArgs e)                           // По нажатию данной кнопки происходит запись конфигурации 1-го канала во все другие каналы
-       {
-            DurTextBoxCh2.Text = DurTextBoxCh3.Text = DurTextBoxCh4.Text = DurTextBoxCh5.Text = DurTextBoxCh6.Text = DurTextBoxCh7.Text = DurTextBoxCh8.Text = DurTextBoxCh9.Text =
-            DurTextBoxCh10.Text = DurTextBoxCh11.Text = DurTextBoxCh12.Text = DurTextBoxCh13.Text = DurTextBoxCh14.Text = DurTextBoxCh15.Text = DurTextBoxCh16.Text = DurTextBoxCh1.Text;
-
-            DelTextBoxch2.Text = DelTextBoxch3.Text = DelTextBoxch4.Text = DelTextBoxch5.Text = DelTextBoxch6.Text = DelTextBoxch7.Text = DelTextBoxch8.Text = DelTextBoxch9.Text =
-            DelTextBoxch10.Text = DelTextBoxch11.Text = DelTextBoxch12.Text = DelTextBoxch13.Text = DelTextBoxch14.Text = DelTextBoxch15.Text = DelTextBoxch16.Text = DelTextBoxch1.Text; 
-
-            ComboBoxTypeStartCh2.Text = ComboBoxTypeStartCh3.Text = ComboBoxTypeStartCh4.Text = ComboBoxTypeStartCh5.Text = ComboBoxTypeStartCh6.Text = ComboBoxTypeStartCh7.Text =
-            ComboBoxTypeStartCh8.Text = ComboBoxTypeStartCh9.Text = ComboBoxTypeStartCh10.Text = ComboBoxTypeStartCh11.Text = ComboBoxTypeStartCh12.Text = ComboBoxTypeStartCh13.Text =
-            ComboBoxTypeStartCh14.Text = ComboBoxTypeStartCh15.Text = ComboBoxTypeStartCh16.Text = ComboBoxTypeStartCh1.Text;
-
-            DelComboBoxCh2.Text = DelComboBoxCh3.Text = DelComboBoxCh4.Text = DelComboBoxCh5.Text = DelComboBoxCh6.Text = DelComboBoxCh7.Text = DelComboBoxCh8.Text = DelComboBoxCh9.Text =
-            DelComboBoxCh10.Text = DelComboBoxCh11.Text = DelComboBoxCh12.Text = DelComboBoxCh13.Text = DelComboBoxCh14.Text = DelComboBoxCh15.Text = DelComboBoxCh16.Text = DelComboBoxCh1.Text;
-
-            DurComboBoxCh2.Text = DurComboBoxCh3.Text = DurComboBoxCh4.Text = DurComboBoxCh5.Text = DurComboBoxCh6.Text = DurComboBoxCh7.Text = DurComboBoxCh8.Text = DurComboBoxCh9.Text =
-            DurComboBoxCh10.Text = DurComboBoxCh11.Text = DurComboBoxCh12.Text = DurComboBoxCh13.Text = DurComboBoxCh14.Text = DurComboBoxCh15.Text = DurComboBoxCh16.Text = DurComboBoxCh1.Text;
-            
-       }
-
-        public void CearAllCh_Click(object sender, EventArgs e)                                // По нажатию данной кнопки происходит очистка конфигурации всех каналов
-        {
-            DurTextBoxCh2.Text = DurTextBoxCh3.Text = DurTextBoxCh4.Text = DurTextBoxCh5.Text = DurTextBoxCh6.Text = DurTextBoxCh7.Text = DurTextBoxCh8.Text = DurTextBoxCh9.Text =
-            DurTextBoxCh10.Text = DurTextBoxCh11.Text = DurTextBoxCh12.Text = DurTextBoxCh13.Text = DurTextBoxCh14.Text = DurTextBoxCh15.Text = DurTextBoxCh16.Text = DurTextBoxCh1.Text =
-
-            DelTextBoxch2.Text = DelTextBoxch3.Text = DelTextBoxch4.Text = DelTextBoxch5.Text = DelTextBoxch6.Text = DelTextBoxch7.Text = DelTextBoxch8.Text = DelTextBoxch9.Text =
-            DelTextBoxch10.Text = DelTextBoxch11.Text = DelTextBoxch12.Text = DelTextBoxch13.Text = DelTextBoxch14.Text = DelTextBoxch15.Text = DelTextBoxch16.Text = DelTextBoxch1.Text = "0";
-
-            ComboBoxTypeStartCh2.Text = ComboBoxTypeStartCh3.Text = ComboBoxTypeStartCh4.Text = ComboBoxTypeStartCh5.Text = ComboBoxTypeStartCh6.Text = ComboBoxTypeStartCh7.Text =
-            ComboBoxTypeStartCh8.Text = ComboBoxTypeStartCh9.Text = ComboBoxTypeStartCh10.Text = ComboBoxTypeStartCh11.Text = ComboBoxTypeStartCh12.Text = ComboBoxTypeStartCh13.Text =
-            ComboBoxTypeStartCh14.Text = ComboBoxTypeStartCh15.Text = ComboBoxTypeStartCh16.Text = ComboBoxTypeStartCh1.Text =
-
-            DelComboBoxCh2.Text = DelComboBoxCh3.Text = DelComboBoxCh4.Text = DelComboBoxCh5.Text = DelComboBoxCh6.Text = DelComboBoxCh7.Text = DelComboBoxCh8.Text = DelComboBoxCh9.Text =
-            DelComboBoxCh10.Text = DelComboBoxCh11.Text = DelComboBoxCh12.Text = DelComboBoxCh13.Text = DelComboBoxCh14.Text = DelComboBoxCh15.Text = DelComboBoxCh16.Text = DelComboBoxCh1.Text =
-
-            DurComboBoxCh2.Text = DurComboBoxCh3.Text = DurComboBoxCh4.Text = DurComboBoxCh5.Text = DurComboBoxCh6.Text = DurComboBoxCh7.Text = DurComboBoxCh8.Text = DurComboBoxCh9.Text =
-            DurComboBoxCh10.Text = DurComboBoxCh11.Text = DurComboBoxCh12.Text = DurComboBoxCh13.Text = DurComboBoxCh14.Text = DurComboBoxCh15.Text = DurComboBoxCh16.Text = DurComboBoxCh1.Text = "";
-
-            int count = 112;
-            int offset = 0;
-            byte[] CLBUF = new byte[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,};
-
-            if (Port.IsOpen == false)                                                           // Если порт закрыт (а закрыт он может быть только потому что мы его не выбрали в СОМ комбобоксе)
-            {
-                MessageBox.Show("Выберите СОМ порт", "Сообщение",                               // Выводим сообщение призывающее выбрать СОМ порт
-                    MessageBoxButtons.OKCancel,
-                    MessageBoxIcon.Warning,
-                    MessageBoxDefaultButton.Button1);
-                // MessageBoxOptions.ServiceNotification);
-            }
-            else
-            {
-                Port.Write(CLBUF, offset, count);
-             //   CearAllCh.Click -= new System.EventHandler(this.CearAllCh_Click);
-             //   CearAllCh.Enabled = false;
-            //    Thread.Sleep(500);
-             //   CearAllCh.Enabled = true;
-             //   CearAllCh.Click += new System.EventHandler(CearAllCh_Click);
-
-
-
-            }
-
-            
-                // Thread.Sleep(1000);
-
-            }
 
         public void LoadConfFile_Click(object sender, EventArgs e)
         {
