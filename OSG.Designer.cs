@@ -296,9 +296,9 @@ namespace Test_COM
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(155, 152);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 20);
+            this.label3.Size = new System.Drawing.Size(86, 20);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Длительность";
+            this.label3.Text = "Задержка";
             // 
             // label5
             // 
@@ -316,9 +316,9 @@ namespace Test_COM
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.Location = new System.Drawing.Point(155, 188);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 20);
+            this.label6.Size = new System.Drawing.Size(121, 20);
             this.label6.TabIndex = 27;
-            this.label6.Text = "Задержка";
+            this.label6.Text = "Длительность";
             // 
             // DelComboBoxCh1
             // 
@@ -399,9 +399,9 @@ namespace Test_COM
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(472, 188);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 20);
+            this.label4.Size = new System.Drawing.Size(121, 20);
             this.label4.TabIndex = 38;
-            this.label4.Text = "Задержка";
+            this.label4.Text = "Длительность";
             // 
             // label7
             // 
@@ -419,9 +419,9 @@ namespace Test_COM
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.Location = new System.Drawing.Point(472, 152);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(121, 20);
+            this.label8.Size = new System.Drawing.Size(86, 20);
             this.label8.TabIndex = 36;
-            this.label8.Text = "Длительность";
+            this.label8.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh2
             // 
@@ -508,9 +508,9 @@ namespace Test_COM
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.Location = new System.Drawing.Point(1101, 188);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 20);
+            this.label10.Size = new System.Drawing.Size(121, 20);
             this.label10.TabIndex = 58;
-            this.label10.Text = "Задержка";
+            this.label10.Text = "Длительность";
             // 
             // label11
             // 
@@ -528,9 +528,9 @@ namespace Test_COM
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.Location = new System.Drawing.Point(1101, 152);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(121, 20);
+            this.label12.Size = new System.Drawing.Size(86, 20);
             this.label12.TabIndex = 56;
-            this.label12.Text = "Длительность";
+            this.label12.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh4
             // 
@@ -618,9 +618,9 @@ namespace Test_COM
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.Location = new System.Drawing.Point(785, 188);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(86, 20);
+            this.label14.Size = new System.Drawing.Size(121, 20);
             this.label14.TabIndex = 48;
-            this.label14.Text = "Задержка";
+            this.label14.Text = "Длительность";
             // 
             // label15
             // 
@@ -638,9 +638,9 @@ namespace Test_COM
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label16.Location = new System.Drawing.Point(785, 152);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(121, 20);
+            this.label16.Size = new System.Drawing.Size(86, 20);
             this.label16.TabIndex = 46;
-            this.label16.Text = "Длительность";
+            this.label16.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh3
             // 
@@ -727,9 +727,9 @@ namespace Test_COM
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label18.Location = new System.Drawing.Point(1101, 396);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(86, 20);
+            this.label18.Size = new System.Drawing.Size(121, 20);
             this.label18.TabIndex = 98;
-            this.label18.Text = "Задержка";
+            this.label18.Text = "Длительность";
             // 
             // label19
             // 
@@ -747,9 +747,9 @@ namespace Test_COM
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label20.Location = new System.Drawing.Point(1101, 360);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(121, 20);
+            this.label20.Size = new System.Drawing.Size(86, 20);
             this.label20.TabIndex = 96;
-            this.label20.Text = "Длительность";
+            this.label20.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh8
             // 
@@ -836,9 +836,9 @@ namespace Test_COM
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label22.Location = new System.Drawing.Point(785, 396);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(86, 20);
+            this.label22.Size = new System.Drawing.Size(121, 20);
             this.label22.TabIndex = 88;
-            this.label22.Text = "Задержка";
+            this.label22.Text = "Длительность";
             // 
             // label23
             // 
@@ -856,9 +856,9 @@ namespace Test_COM
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label24.Location = new System.Drawing.Point(785, 360);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(121, 20);
+            this.label24.Size = new System.Drawing.Size(86, 20);
             this.label24.TabIndex = 86;
-            this.label24.Text = "Длительность";
+            this.label24.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh7
             // 
@@ -945,9 +945,9 @@ namespace Test_COM
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label26.Location = new System.Drawing.Point(472, 396);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(86, 20);
+            this.label26.Size = new System.Drawing.Size(121, 20);
             this.label26.TabIndex = 78;
-            this.label26.Text = "Задержка";
+            this.label26.Text = "Длительность";
             // 
             // label27
             // 
@@ -965,9 +965,9 @@ namespace Test_COM
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label28.Location = new System.Drawing.Point(472, 360);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(121, 20);
+            this.label28.Size = new System.Drawing.Size(86, 20);
             this.label28.TabIndex = 76;
-            this.label28.Text = "Длительность";
+            this.label28.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh6
             // 
@@ -1054,9 +1054,9 @@ namespace Test_COM
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label30.Location = new System.Drawing.Point(155, 396);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(86, 20);
+            this.label30.Size = new System.Drawing.Size(121, 20);
             this.label30.TabIndex = 68;
-            this.label30.Text = "Задержка";
+            this.label30.Text = "Длительность";
             // 
             // label31
             // 
@@ -1074,9 +1074,9 @@ namespace Test_COM
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label32.Location = new System.Drawing.Point(155, 360);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(121, 20);
+            this.label32.Size = new System.Drawing.Size(86, 20);
             this.label32.TabIndex = 66;
-            this.label32.Text = "Длительность";
+            this.label32.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh5
             // 
@@ -1163,9 +1163,9 @@ namespace Test_COM
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label34.Location = new System.Drawing.Point(1101, 842);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(86, 20);
+            this.label34.Size = new System.Drawing.Size(121, 20);
             this.label34.TabIndex = 178;
-            this.label34.Text = "Задержка";
+            this.label34.Text = "Длительность";
             // 
             // label35
             // 
@@ -1183,9 +1183,9 @@ namespace Test_COM
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label36.Location = new System.Drawing.Point(1101, 806);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(121, 20);
+            this.label36.Size = new System.Drawing.Size(86, 20);
             this.label36.TabIndex = 176;
-            this.label36.Text = "Длительность";
+            this.label36.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh16
             // 
@@ -1272,9 +1272,9 @@ namespace Test_COM
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label38.Location = new System.Drawing.Point(785, 842);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(86, 20);
+            this.label38.Size = new System.Drawing.Size(121, 20);
             this.label38.TabIndex = 168;
-            this.label38.Text = "Задержка";
+            this.label38.Text = "Длительность";
             // 
             // label39
             // 
@@ -1292,9 +1292,9 @@ namespace Test_COM
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label40.Location = new System.Drawing.Point(785, 806);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(121, 20);
+            this.label40.Size = new System.Drawing.Size(86, 20);
             this.label40.TabIndex = 166;
-            this.label40.Text = "Длительность";
+            this.label40.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh15
             // 
@@ -1381,9 +1381,9 @@ namespace Test_COM
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label42.Location = new System.Drawing.Point(472, 842);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(86, 20);
+            this.label42.Size = new System.Drawing.Size(121, 20);
             this.label42.TabIndex = 158;
-            this.label42.Text = "Задержка";
+            this.label42.Text = "Длительность";
             // 
             // label43
             // 
@@ -1401,9 +1401,9 @@ namespace Test_COM
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label44.Location = new System.Drawing.Point(472, 806);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(121, 20);
+            this.label44.Size = new System.Drawing.Size(86, 20);
             this.label44.TabIndex = 156;
-            this.label44.Text = "Длительность";
+            this.label44.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh14
             // 
@@ -1490,9 +1490,9 @@ namespace Test_COM
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label46.Location = new System.Drawing.Point(155, 842);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(86, 20);
+            this.label46.Size = new System.Drawing.Size(121, 20);
             this.label46.TabIndex = 148;
-            this.label46.Text = "Задержка";
+            this.label46.Text = "Длительность";
             // 
             // label47
             // 
@@ -1510,9 +1510,9 @@ namespace Test_COM
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label48.Location = new System.Drawing.Point(155, 806);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(121, 20);
+            this.label48.Size = new System.Drawing.Size(86, 20);
             this.label48.TabIndex = 146;
-            this.label48.Text = "Длительность";
+            this.label48.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh13
             // 
@@ -1599,9 +1599,9 @@ namespace Test_COM
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label50.Location = new System.Drawing.Point(1101, 618);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(86, 20);
+            this.label50.Size = new System.Drawing.Size(121, 20);
             this.label50.TabIndex = 138;
-            this.label50.Text = "Задержка";
+            this.label50.Text = "Длительность";
             // 
             // label51
             // 
@@ -1619,9 +1619,9 @@ namespace Test_COM
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label52.Location = new System.Drawing.Point(1101, 582);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(121, 20);
+            this.label52.Size = new System.Drawing.Size(86, 20);
             this.label52.TabIndex = 136;
-            this.label52.Text = "Длительность";
+            this.label52.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh12
             // 
@@ -1708,9 +1708,9 @@ namespace Test_COM
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label54.Location = new System.Drawing.Point(785, 618);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(86, 20);
+            this.label54.Size = new System.Drawing.Size(121, 20);
             this.label54.TabIndex = 128;
-            this.label54.Text = "Задержка";
+            this.label54.Text = "Длительность";
             // 
             // label55
             // 
@@ -1728,9 +1728,9 @@ namespace Test_COM
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label56.Location = new System.Drawing.Point(785, 582);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(121, 20);
+            this.label56.Size = new System.Drawing.Size(86, 20);
             this.label56.TabIndex = 126;
-            this.label56.Text = "Длительность";
+            this.label56.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh11
             // 
@@ -1817,9 +1817,9 @@ namespace Test_COM
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label58.Location = new System.Drawing.Point(472, 618);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(86, 20);
+            this.label58.Size = new System.Drawing.Size(121, 20);
             this.label58.TabIndex = 118;
-            this.label58.Text = "Задержка";
+            this.label58.Text = "Длительность";
             // 
             // label59
             // 
@@ -1837,9 +1837,9 @@ namespace Test_COM
             this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label60.Location = new System.Drawing.Point(472, 582);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(121, 20);
+            this.label60.Size = new System.Drawing.Size(86, 20);
             this.label60.TabIndex = 116;
-            this.label60.Text = "Длительность";
+            this.label60.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh10
             // 
@@ -1926,9 +1926,9 @@ namespace Test_COM
             this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label62.Location = new System.Drawing.Point(155, 618);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(86, 20);
+            this.label62.Size = new System.Drawing.Size(121, 20);
             this.label62.TabIndex = 108;
-            this.label62.Text = "Задержка";
+            this.label62.Text = "Длительность";
             // 
             // label63
             // 
@@ -1946,9 +1946,9 @@ namespace Test_COM
             this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label64.Location = new System.Drawing.Point(155, 582);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(121, 20);
+            this.label64.Size = new System.Drawing.Size(86, 20);
             this.label64.TabIndex = 106;
-            this.label64.Text = "Длительность";
+            this.label64.Text = "Задержка";
             // 
             // ComboBoxTypeStartCh9
             // 

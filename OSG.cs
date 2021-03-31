@@ -17,6 +17,7 @@ namespace Test_COM
     public partial class OSG : Form
     {
         byte START = 0;
+
         
  //////////////////////////////////////////////////// ПЕРЕМЕННЫЕ ДЛЯ КАНАЛА №1 /////////////////////////////////////////////////////////////////////////////////////////// 
        
@@ -195,53 +196,53 @@ namespace Test_COM
             ComComboBox.Items.AddRange(ports);    // Добавление полученных имен СОМ портов в  СОМ комбобокс
 
 
-            DurTextBoxCh1.Text = "0";             // Начальное значение длительности канала №1
+            DurTextBoxCh1.Text = "1";             // Начальное значение длительности канала №1
             DelTextBoxch1.Text = "1";             // Начальное значение паузы канала №1
            
-            DurTextBoxCh2.Text = "0";             
+            DurTextBoxCh2.Text = "1";             
             DelTextBoxch2.Text = "1";
 
-            DurTextBoxCh3.Text = "0";
+            DurTextBoxCh3.Text = "1";
             DelTextBoxch3.Text = "1";
 
-            DurTextBoxCh4.Text = "0";
+            DurTextBoxCh4.Text = "1";
             DelTextBoxch4.Text = "1";
 
-            DurTextBoxCh5.Text = "0";
+            DurTextBoxCh5.Text = "1";
             DelTextBoxch5.Text = "1";
 
-            DurTextBoxCh6.Text = "0";
+            DurTextBoxCh6.Text = "1";
             DelTextBoxch6.Text = "1";
 
-            DurTextBoxCh7.Text = "0";
+            DurTextBoxCh7.Text = "1";
             DelTextBoxch7.Text = "1";
 
-            DurTextBoxCh8.Text = "0";
+            DurTextBoxCh8.Text = "1";
             DelTextBoxch8.Text = "1";
 
-            DurTextBoxCh9.Text = "0";
+            DurTextBoxCh9.Text = "1";
             DelTextBoxch9.Text = "1";
 
-            DurTextBoxCh10.Text = "0";
+            DurTextBoxCh10.Text = "1";
             DelTextBoxch10.Text = "1";
 
-            DurTextBoxCh11.Text = "0";
+            DurTextBoxCh11.Text = "1";
             DelTextBoxch11.Text = "1";
 
-            DurTextBoxCh12.Text = "0";
+            DurTextBoxCh12.Text = "1";
             DelTextBoxch12.Text = "1";
 
-            DurTextBoxCh13.Text = "0";
+            DurTextBoxCh13.Text = "1";
             DelTextBoxch13.Text = "1";
 
-            DurTextBoxCh14.Text = "0";
+            DurTextBoxCh14.Text = "1";
             DelTextBoxch14.Text = "1";
 
-            DurTextBoxCh15.Text = "0";
+            DurTextBoxCh15.Text = "1";
             DelTextBoxch15.Text = "1";
 
             DurTextBoxCh16.Text = "1";
-            DelTextBoxch16.Text = "2";
+            DelTextBoxch16.Text = "1";
 
 
             DurTextBoxCh1.MaxLength = 5;  
@@ -278,13 +279,13 @@ namespace Test_COM
             DelTextBoxch15.MaxLength = 5;
             DelTextBoxch16.MaxLength = 5;
 
-            TypeLaunchComboBox.SelectedItem = "Внешний ПУСК";
+            TypeLaunchComboBox.SelectedItem = "ПУСК с ПК";
 
         }
 
 
 
-        SerialPort Port = new SerialPort("COM", 9600, Parity.None, 8, StopBits.One);            // Инициализация последовательного порта 
+        SerialPort Port = new SerialPort("COM", 115200, Parity.None, 8, StopBits.Two);            // Инициализация последовательного порта 
         // _serialPort.Handshake = Handshake.None;
 
         public void ComComboBox_SelectedIndexChanged(object sender, EventArgs e)                // При выборе СОМ порта осуществляем:
@@ -294,6 +295,7 @@ namespace Test_COM
                 Port.PortName = ComComboBox.Text.ToString();                                    // Изменение имени Комбобокса
                 Port.Open();                                                                    // Открываем порт
                 Port.BaudRate = 115200;
+                Port.DataBits = 8;
                 //Port.WriteTimeout = 1000;                                                       // Эти тайм ауты можно не ставить
                 //Port.ReadTimeout = 1000;                                                        // Эти тайм ауты можно не ставить
                 OffComButton.Text = "Отключить " + Port.PortName;                               // Изменяем текст на кнопке отключения порта на "Отключить СОМ порт"
@@ -379,7 +381,7 @@ namespace Test_COM
                                         DelMultiplierCH10,
                                         TypeStartCH10,
 
-                                        DurationMassiveDataCH11[0], DurationMassiveDataCH1[1],
+                                        DurationMassiveDataCH11[0], DurationMassiveDataCH11[1],
                                         DurMultiplierCH11,
                                         DelayMassiveDataCH11[0],    DelayMassiveDataCH11[1],
                                         DelMultiplierCH11,
@@ -464,7 +466,7 @@ namespace Test_COM
                                     Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
                                     SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
                                     SerialSendButton.Enabled = false;
-                                    Thread.Sleep(1000);
+                                    Thread.Sleep(100);
                                     SerialSendButton.Enabled = true;
                                     SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
                                 }
@@ -479,7 +481,7 @@ namespace Test_COM
                                 Port.Write(buffer, offset, count);                                  // Осуществляем передачу байтов
                                 SerialSendButton.Click -= new System.EventHandler(this.SerialSendButton_Click);
                                 SerialSendButton.Enabled = false;
-                                Thread.Sleep(1000);
+                                Thread.Sleep(100);
                                 SerialSendButton.Enabled = true;
                                 SerialSendButton.Click += new System.EventHandler(SerialSendButton_Click);
                             }   
@@ -2411,7 +2413,7 @@ namespace Test_COM
         {
             if (DelTextBoxch16.Text == "")
             {
-                DelTextBoxch16.Text = "2";
+                DelTextBoxch16.Text = "1";
             }
 
             
@@ -2431,17 +2433,16 @@ namespace Test_COM
 
             if (DelTextBoxch16.Text == "0")
             {
-                DelTextBoxch16.Text = "2";
+                DelTextBoxch16.Text = "1";
             }
 
-            if (DelTextBoxch16.Text == "1")
-            {
-                DelTextBoxch16.Text = "2";
-            }
-
+            
             string buf = DelTextBoxch16.Text;
             DelBetweenPulseCH16 = Convert.ToUInt16(buf);
             DelayMassiveDataCH16 = BitConverter.GetBytes(DelBetweenPulseCH16);
+        ///    DelayMassiveDataCH16[0] = 232;
+        ///    DelayMassiveDataCH16[1] = 3;
+        ///    DelMultiplierCH16 = 3;
         }
 
         public void DurComboBoxCh16_SelectedIndexChanged(object sender, EventArgs e)
@@ -2470,7 +2471,7 @@ namespace Test_COM
             {
                 DelMultiplierCH16 = 1;
             }
-            else if(DelComboBoxCh16.Text == "мкс")
+           else if(DelComboBoxCh16.Text == "мкс")
             {
                 DelMultiplierCH16 = 2;
             }
